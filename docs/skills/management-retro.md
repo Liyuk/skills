@@ -19,7 +19,7 @@
 
 预期产物：还原关键决定，比较解释，提出可检查的改进。 这是使用示意，不是已运行结果。
 
-可用 `$management-retro` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/management-retro`；Codex 用 `$management-retro`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 

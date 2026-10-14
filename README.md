@@ -6,47 +6,79 @@
 
 当前版本 **0.4.0 / preview**：共十六项技能，五项工程技能迁自 [engineering-decision-skills](https://github.com/Liyuk/engineering-decision-skills)，两项人际技能迁自 [RelationForge](https://github.com/Liyuk/relation-forge)。新提炼的方法仍需要真实使用与本人校准。中文优先，采用 Agent Skills 文件格式。
 
-## 先用一个
+## 安装与调用
 
-先克隆仓库，再复制所需目录。以下以 Ask Liyuk 为例：
+先克隆仓库，再按客户端复制所需技能。以下以 Ask Liyuk 为例：
 
 ```sh
 git clone https://github.com/Liyuk/skills.git
+```
+
+**Claude Code：用 `/名称` 调用。**
+
+```sh
+mkdir -p ~/.claude/skills
+cp -R skills/skills/ask-liyuk ~/.claude/skills/
+```
+
+安装后输入：
+
+```text
+/ask-liyuk 我要把一个失败项目写进自评，但不知道先复盘还是先写。
+```
+
+如果通过本仓库的插件 marketplace 安装，则带插件前缀：`/liyuk-skills:ask-liyuk`。文件安装与插件安装的命名规则见 [Claude Code 官方说明](https://code.claude.com/docs/en/skills#choose-where-skills-load)。插件清单经过静态检查，客户端插件安装尚未逐一验证。
+
+**Codex：用 `$名称` 调用。**
+
+```sh
 mkdir -p ~/.codex/skills
 cp -R skills/skills/ask-liyuk ~/.codex/skills/
 ```
 
-在 Codex 中使用 `$ask-liyuk`。只安装这个入口时，它推荐方法与下一步；执行专项任务还需要复制对应目录。已安装同名旧技能时先检查版本并选择一个来源，避免覆盖自己的修改或装入重复入口。
-
 ```text
-$ask-liyuk
-我要把一个失败项目写进自评，但不知道先复盘还是先写。请根据已有材料推荐下一步。
+$ask-liyuk 我要把一个失败项目写进自评，但不知道先复盘还是先写。
 ```
 
-Claude Code 可以将所需目录复制到自己的技能目录，也可使用仓库提供的插件 marketplace。插件清单目前经过静态检查，客户端插件安装尚未逐一验证。不同宿主的调用与发现行为请以实际结果为准。
+Codex CLI/IDE 也可通过 `/skills` 选择技能；它是选择入口，不是将每项技能写成 `/名称`。[OpenAI 官方调用说明](https://developers.openai.com/blog/eval-skills#2-create-the-skill)
+
+只安装 Ask Liyuk 时，它推荐方法与下一步；执行专项任务还需要复制对应目录。已安装同名旧技能时先检查版本并选择一个来源，避免覆盖自己的修改或装入重复入口。
+
+## 常用指令
+
+| 要做什么 | Claude Code 文件安装 | Codex |
+| --- | --- | --- |
+| 不知道该用哪个方法 | `/ask-liyuk` | `$ask-liyuk` |
+| 评审已有技术方案 | `/tech-review` | `$tech-review` |
+| 判断该指导、支持还是授权 | `/situational-leadership` | `$situational-leadership` |
+| 把自己的经历蒸馏成方法 | `/distill-experience` | `$distill-experience` |
+
+安装对应技能后，在指令后直接写问题或材料即可。Claude Code 插件安装时，以上 `/名称` 改为 `/liyuk-skills:名称`。
 
 ## 方法目录
 
+下表以 Claude Code 文件安装的 `/名称` 展示；Codex 对应 `$名称`，插件调用需加上述前缀。
+
 <!-- skills-catalog:start -->
 
-| 技能 | 核心判断 | 行为验证 |
+| 指令 / 技能 | 核心判断 | 行为验证 |
 | --- | --- | --- |
-| [Ask Liyuk](skills/ask-liyuk/SKILL.md) · [使用说明](docs/skills/ask-liyuk.md) | 先识别要作的决定或交付物，只走当前需要的路径 | 本轮改动待行为重测 |
-| [技术规划](skills/tech-planning/SKILL.md) · [使用说明](docs/skills/tech-planning.md) | 技术动作必须对应业务结果与能力缺口，并比较继续现状等选择 | 本轮改动待行为重测 |
-| [技术方案评审](skills/tech-review/SKILL.md) · [使用说明](docs/skills/tech-review.md) | 只报告有依据且会影响决定的问题，足够好可以通过 | 结构检查 |
-| [指标判断](skills/metric-decision/SKILL.md) · [使用说明](docs/skills/metric-decision.md) | 口径与可比性未确认前，指标变化不能直接充当成果或因果证据 | 有限指令冒烟 |
-| [工程复盘](skills/management-retro/SKILL.md) · [使用说明](docs/skills/management-retro.md) | 分清事实、解释与下一轮动作，不把事后解释写成根因 | 本轮改动待行为重测 |
-| [工程汇报](skills/eng-reporting/SKILL.md) · [使用说明](docs/skills/eng-reporting.md) | 先确定读者要作的决定，表达不能强化未知或补造收益 | 本轮改动待行为重测 |
-| [项目经历 Review](skills/experience-review/SKILL.md) · [使用说明](docs/skills/experience-review.md) | 团队结果与个人贡献分开，材料缺口不等于没有能力 | 本轮改动待行为重测 |
-| [蒸馏经验](skills/distill-experience/SKILL.md) · [使用说明](docs/skills/distill-experience.md) | 事实、解释与方法分开，明确确认只覆盖对应条件 | 本轮改动待行为重测 |
-| [人际深度解析](skills/person-deep-analysis/SKILL.md) · [使用说明](docs/skills/person-deep-analysis.md) | 按材料形成有限解释，单一片段不能补成稳定人格 | 有限指令冒烟 |
-| [互动风险分析](skills/interaction-risk-analysis/SKILL.md) · [使用说明](docs/skills/interaction-risk-analysis.md) | 行动保护不必等到证明恶意，效果和利益不能证明主观意图 | 有限指令冒烟 |
-| [冲突对齐](skills/conflict-alignment/SKILL.md) · [使用说明](docs/skills/conflict-alignment.md) | 同层资源权限死结停止重复说服，整理材料上升支持 | 有限指令冒烟 |
-| [沟通准备](skills/conversation-preparation/SKILL.md) · [使用说明](docs/skills/conversation-preparation.md) | 先澄清，再反馈，最后承诺；草稿和共识是不同状态 | 本轮改动待行为重测 |
-| [1-on-1 对齐](skills/one-on-one/SKILL.md) · [使用说明](docs/skills/one-on-one.md) | 先有共同验收标准；纯资源问题可保留成员负责，权限缺口负责人介入 | 有限指令冒烟 |
-| [情景领导力](skills/situational-leadership/SKILL.md) · [使用说明](docs/skills/situational-leadership.md) | 同一个人按任务分别判断；能力投入与组织权限分开，支持随证据调整 | 有限指令冒烟 |
-| [关系与边界](skills/relationship-boundaries/SKILL.md) · [使用说明](docs/skills/relationship-boundaries.md) | 介绍渠道与能力背书分开，拒绝不要求补偿性帮助 | 本轮改动待行为重测 |
-| [送礼规划](skills/gift-planning/SKILL.md) · [使用说明](docs/skills/gift-planning.md) | 先确认需求再设计惊喜，未知偏好不靠身份标签填补 | 有限指令冒烟 |
+| [/ask-liyuk](skills/ask-liyuk/SKILL.md) · Ask Liyuk · [使用说明](docs/skills/ask-liyuk.md) | 先识别要作的决定或交付物，只走当前需要的路径 | 本轮改动待行为重测 |
+| [/tech-planning](skills/tech-planning/SKILL.md) · 技术规划 · [使用说明](docs/skills/tech-planning.md) | 技术动作必须对应业务结果与能力缺口，并比较继续现状等选择 | 本轮改动待行为重测 |
+| [/tech-review](skills/tech-review/SKILL.md) · 技术方案评审 · [使用说明](docs/skills/tech-review.md) | 只报告有依据且会影响决定的问题，足够好可以通过 | 结构检查 |
+| [/metric-decision](skills/metric-decision/SKILL.md) · 指标判断 · [使用说明](docs/skills/metric-decision.md) | 口径与可比性未确认前，指标变化不能直接充当成果或因果证据 | 有限指令冒烟 |
+| [/management-retro](skills/management-retro/SKILL.md) · 工程复盘 · [使用说明](docs/skills/management-retro.md) | 分清事实、解释与下一轮动作，不把事后解释写成根因 | 本轮改动待行为重测 |
+| [/eng-reporting](skills/eng-reporting/SKILL.md) · 工程汇报 · [使用说明](docs/skills/eng-reporting.md) | 先确定读者要作的决定，表达不能强化未知或补造收益 | 本轮改动待行为重测 |
+| [/experience-review](skills/experience-review/SKILL.md) · 项目经历 Review · [使用说明](docs/skills/experience-review.md) | 团队结果与个人贡献分开，材料缺口不等于没有能力 | 本轮改动待行为重测 |
+| [/distill-experience](skills/distill-experience/SKILL.md) · 蒸馏经验 · [使用说明](docs/skills/distill-experience.md) | 事实、解释与方法分开，明确确认只覆盖对应条件 | 本轮改动待行为重测 |
+| [/person-deep-analysis](skills/person-deep-analysis/SKILL.md) · 人际深度解析 · [使用说明](docs/skills/person-deep-analysis.md) | 按材料形成有限解释，单一片段不能补成稳定人格 | 有限指令冒烟 |
+| [/interaction-risk-analysis](skills/interaction-risk-analysis/SKILL.md) · 互动风险分析 · [使用说明](docs/skills/interaction-risk-analysis.md) | 行动保护不必等到证明恶意，效果和利益不能证明主观意图 | 有限指令冒烟 |
+| [/conflict-alignment](skills/conflict-alignment/SKILL.md) · 冲突对齐 · [使用说明](docs/skills/conflict-alignment.md) | 同层资源权限死结停止重复说服，整理材料上升支持 | 有限指令冒烟 |
+| [/conversation-preparation](skills/conversation-preparation/SKILL.md) · 沟通准备 · [使用说明](docs/skills/conversation-preparation.md) | 先澄清，再反馈，最后承诺；草稿和共识是不同状态 | 本轮改动待行为重测 |
+| [/one-on-one](skills/one-on-one/SKILL.md) · 1-on-1 对齐 · [使用说明](docs/skills/one-on-one.md) | 先有共同验收标准；纯资源问题可保留成员负责，权限缺口负责人介入 | 有限指令冒烟 |
+| [/situational-leadership](skills/situational-leadership/SKILL.md) · 情景领导力 · [使用说明](docs/skills/situational-leadership.md) | 同一个人按任务分别判断；能力投入与组织权限分开，支持随证据调整 | 有限指令冒烟 |
+| [/relationship-boundaries](skills/relationship-boundaries/SKILL.md) · 关系与边界 · [使用说明](docs/skills/relationship-boundaries.md) | 介绍渠道与能力背书分开，拒绝不要求补偿性帮助 | 本轮改动待行为重测 |
+| [/gift-planning](skills/gift-planning/SKILL.md) · 送礼规划 · [使用说明](docs/skills/gift-planning.md) | 先确认需求再设计惊喜，未知偏好不靠身份标签填补 | 有限指令冒烟 |
 
 <!-- skills-catalog:end -->
 

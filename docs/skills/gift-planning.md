@@ -19,7 +19,7 @@
 
 预期产物：有条件的方向与关键确认项，具体商品另行核验。 这是使用示意，不是已运行结果。
 
-可用 `$gift-planning` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/gift-planning`；Codex 用 `$gift-planning`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 
