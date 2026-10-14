@@ -2,9 +2,9 @@
 
 把自己的工程经验和判断方法，变成能与 AI 一起使用的小能力。
 
-**不确定该从哪开始，就用 Ask Liyuk。** 整个仓库承载个人方法：规划、评审、指标、复盘、表达与经历自查。Ask Liyuk 帮你选路，各项技能完成具体任务。
+**不确定该从哪开始，就用 Ask Liyuk。** 整个仓库承载个人方法：规划、评审、指标、复盘、表达、经历自查、人际互动与日常选择。Ask Liyuk 帮你选路，各项技能完成具体任务。
 
-当前版本 **0.1.0 / preview**：五项工程技能迁自 [engineering-decision-skills](https://github.com/Liyuk/engineering-decision-skills)，三个新入口仍需要真实使用与本人校准。中文优先，采用 Agent Skills 文件格式。
+当前版本 **0.2.0 / preview**：共十五项技能，五项工程技能迁自 [engineering-decision-skills](https://github.com/Liyuk/engineering-decision-skills)，两项人际技能迁自 [RelationForge](https://github.com/Liyuk/relation-forge)。新提炼的方法仍需要真实使用与本人校准。中文优先，采用 Agent Skills 文件格式。
 
 ## 先用一个
 
@@ -41,13 +41,25 @@ Claude Code 可以将所需目录复制到自己的技能目录，也可使用�
 - [eng-reporting](skills/eng-reporting/SKILL.md)：把已有判断组织成读者能决策的汇报或总结。
 - [experience-review](skills/experience-review/SKILL.md)：检查项目经历的个人贡献、判断、结果与证据。
 
+### 人际、沟通与日常
+
+- [person-deep-analysis](skills/person-deep-analysis/SKILL.md)：依据材料理解需求、立场与互动，不给现实人物定型。
+- [interaction-risk-analysis](skills/interaction-risk-analysis/SKILL.md)：拆解可疑互动的要求、行为效果、风险和核验缺口。
+- [conflict-alignment](skills/conflict-alignment/SKILL.md)：项目冲突先对齐共同目标、事实与决策权。
+- [conversation-preparation](skills/conversation-preparation/SKILL.md)：把澄清、反馈、请求和可兑现承诺组织成谈话。
+- [one-on-one](skills/one-on-one/SKILL.md)：上下级对齐目标、预期、支持与授权。
+- [relationship-boundaries](skills/relationship-boundaries/SKILL.md)：明确求助、介绍、推荐、信息分享和承诺的边界。
+- [gift-planning](skills/gift-planning/SKILL.md)：先理解人和场合，再选通用、定制或体验礼物方向。
+
+以上均可按任务匹配使用。两项迁入技能保留已有方法；五项新提炼技能标为 preview，先用再调整。例：`$ask-liyuk 朋友请我给不熟的人写推荐，我想帮忙但不想背书。该从哪开始？`
+
 每项包都附带必要参考和许可，可单独复制。基本执行不要求能访问博客，也不依赖本仓库的其他目录。组合任务按实际需求选择，用户主动调用入口不会被自动串成工作流。
 
 ## 为什么这样做
 
 素材来自项目、博客、已有技能和成长问题。作者提供经验与校准，AI 帮助整理候选方法与检验反例。来源、事实与推断分别记录；缺少证据时保留缺口，避免把顺畅的表达当成可靠结论。
 
-我们借鉴 Matt Pocock 的技能分层、导航和小能力组合。[设计分析](docs/research/2026-10-14-matt-skills-design.md)与[首版设计](docs/design/2026-10-14-v1-design.md)说明借鉴和取舍。没有复制 Matt 的技能正文。
+我们借鉴 Matt Pocock 的技能分层、导航和小能力组合。[设计分析](docs/research/2026-10-14-matt-skills-design.md)、[首版设计](docs/design/2026-10-14-v1-design.md)和[人际扩展](docs/design/2026-10-14-v0.2-social-design.md)说明借鉴和取舍。没有复制 Matt 的技能正文。
 
 ## 验证与维护
 
@@ -59,7 +71,7 @@ python3 -m venv .venv
 .venv/bin/python scripts/validate_repo.py
 ```
 
-结构校验不证明模型行为有效。现有案例和本轮实际验证分别记录在 [验证报告](evals/reports/v0.1.md)；新增 expected_output 是检查标准，不是运行结果。来源固定版本与指纹见 [sources.json](catalog/sources.json)。
+结构校验不证明模型行为有效。现有案例和本轮实际验证分别记录在 [本轮验证报告](evals/reports/v0.2.md)（[首版记录](evals/reports/v0.1.md)）；新增 expected_output 是检查标准，不是运行结果。来源固定版本与指纹见 [sources.json](catalog/sources.json)。
 
 修改方法时补充能观察判断变化的案例。个人原始材料、公司内部信息和私人档案留在自己的工作区；公开贡献使用合成或明确可公开的材料。
 

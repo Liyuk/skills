@@ -137,6 +137,31 @@
         {
           "path": "src/content/writing/2023/08/career-growth-ten-questions/zh.md",
           "sha256": "7f8880cd60a13c199421a9d243d429eac2c72592f98395093c081fd88079a1d9"
+        },
+        {
+          "path": "src/content/writing/2023/03/resolving-project-conflicts/zh.md",
+          "sha256": "6c91a788e6312704b6be868e657822b881f203127a2f3767fd28b1b4c2f6603c",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2023/01/clarify-feedback-and-commitment/zh.md",
+          "sha256": "64a78e6118f1041357be3929b2005e2dfd97531712b058897249aa5f570d8cd9",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2023/03/one-on-ones-and-decision-rights/zh.md",
+          "sha256": "7ee5f1ca9f9159777e92c05ef05c8332d4e49eb1984f6073be8f4b3c12ac61aa",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2021/11/relationships-as-long-term-reciprocity/zh.md",
+          "sha256": "b657c8d1e996eec63325ea71d43eecfbce7624ed8dbcfd516391539425c74313",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2025/02/gifting-question-framework/zh.md",
+          "sha256": "c49ca149f7df868f93ecb4f706fd3b6c9f8f624e13004630f101492b8923f796",
+          "worktree_modified": false
         }
       ]
     },
@@ -149,6 +174,255 @@
     {
       "id": "v1-conversation",
       "role": "User requested personal experience distillation and public v1; generated method candidates are not author-endorsed."
+    },
+    {
+      "id": "relation-forge",
+      "repository": "https://github.com/Liyuk/relation-forge",
+      "commit": "a9e91f07a77c42abf01841461d622e11377a44d6",
+      "worktree_modified": false,
+      "files": [
+        {
+          "path": "skills/person-deep-analysis/SKILL.md",
+          "sha256": "f33b0d148d1f9d3f18d6f69f3a747e78e4e2583456ed81897e62ac4615d3a59a"
+        },
+        {
+          "path": "skills/person-deep-analysis/agents/openai.yaml",
+          "sha256": "d203ef1702d2fedc6f33717b9c1de874e77a6a7f630897e06fdd9b6776f4ab22"
+        },
+        {
+          "path": "skills/person-deep-analysis/dlc/fictional-character-analysis.md",
+          "sha256": "05fe1e8fb60506c777ad69c7755f66178cb35a8f59507b0006a93e1581d4798b"
+        },
+        {
+          "path": "skills/person-deep-analysis/dlc/narrative-identity.md",
+          "sha256": "21176f5dbd21db58213bad650f3139bc3a78298fdea02d8cc2894198d9f52c68"
+        },
+        {
+          "path": "skills/person-deep-analysis/dlc/relationship-dynamics.md",
+          "sha256": "45c2b848c91414b85de5a813da98507951b9aa6a8041c8f81d306b1709e1fc74"
+        },
+        {
+          "path": "skills/person-deep-analysis/modules/m1-needs-and-preferences.md",
+          "sha256": "5ca313f757856b3337026cdb3298c470754048cd4a6d12673eeaf7f8f8ac655d"
+        },
+        {
+          "path": "skills/person-deep-analysis/modules/m2-self-cognition.md",
+          "sha256": "3fef726ed36a122fffd79d549afe94bfbb7eb8193eb20765ae71360b0f8482f4"
+        },
+        {
+          "path": "skills/person-deep-analysis/modules/m3-experience-and-development.md",
+          "sha256": "2bd6b726fe0c79363fb5ae81c908607a8f86b3fc56b3f8643fa34ea0c67472b0"
+        },
+        {
+          "path": "skills/person-deep-analysis/modules/m4-shadow-risk.md",
+          "sha256": "3a296e7af384d1e3a92b7b97e916295e809e2b082e5bb98ac3f9f2cc84b2952f"
+        },
+        {
+          "path": "skills/person-deep-analysis/modules/m5-interaction-patterns.md",
+          "sha256": "f3ec64023451d5c26f72aefb41a13646ff30ca73855e901a28f50a1f4e5ea582"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/attachment-styles.md",
+          "sha256": "46caf8c7ff539697a298eaaa3db4eeb9bb3d3c15b891c2eb6f4cbbaa62c46449"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/axioms.md",
+          "sha256": "bf97411ea3c48a8d56912e26dc4454a87b8665efc356543e5072d234b699c8e5"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/fraud-and-coercive-control-support.md",
+          "sha256": "5d75cca96242909f7c0d23f687222e78b5d6d1b3d8b42e91ffdbd39482994a38"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/group-pressure-and-anxiety.md",
+          "sha256": "9b893e6251fb89a417e4ac8e323b25cbbea99a55a7ca6d775acc4c9a2cc3969e"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/influence-and-deception.md",
+          "sha256": "0fc472f3497cd9a60c70c608cb60a0827b9bb67672113723f0e75d5d45633a72"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/methodology-and-limitations.md",
+          "sha256": "28d0415ba2a2b006a83014198e5d2990e6e07cf6597dbc2ce3b13bf18c330956"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/perspectives/cbt-descriptive.md",
+          "sha256": "c9865eeb667ac89e20f94d18b9ee02d262ad11c6791d53043a6605024ce000ab"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/perspectives/dark-triad-behavioral-screening.md",
+          "sha256": "d0e0c752cfc430c89d18f1701dc474b2f97550e8cc4487ccaaa7b54955e426a1"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/perspectives/developmental-psychology.md",
+          "sha256": "e88e4d4b6612e91bd3a6d53995fd8242fe467785e9c89cee2a5532964a613284"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/perspectives/forensic-evidence-boundaries.md",
+          "sha256": "03b586bd08923fea1396edcaaea775eaea4460d01be8ad0d28a876604540fb33"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/perspectives/humanistic-and-needs.md",
+          "sha256": "7ffb6c0341db9c2d308051556a6a03e5c4fe5da693f6dd45bcd85d10f953e896"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/perspectives/psychodynamic.md",
+          "sha256": "9f931e54bde6270c7d5f63e7af9e3a21f0ded7a30dd8f34c51233c8ac4ba68e7"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/perspectives/steelman-report.md",
+          "sha256": "2bbec4e337fde60094d781af69aea94e17061dc1a9a76da9f9dd3a00f196e701"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/reasoning-kernel.md",
+          "sha256": "5909d5afd2b9ddcec7f5b481bc37b0b8b689bbcc79ea952e7efe702ec274e2da"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/safety-boundaries.md",
+          "sha256": "6fc339e303669031c66b99b47b24839a7bee71ec5d0b856394888bde9009016f"
+        },
+        {
+          "path": "skills/person-deep-analysis/references/signal-mapping.md",
+          "sha256": "1411ba0cd7a1629af6beb4ab05ff6916b1952d58837511474ab105c54b670c48"
+        },
+        {
+          "path": "evals/scenarios.json",
+          "sha256": "7395de08a51782786791f40eb5a662a4e2e0c3d6fa65d30b55bdc4ae2b6d9ecf"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/SKILL.md",
+          "sha256": "dec5e8e0cc0671677c5121740ea51c136def6e6831e626ba642cce2b28bddabd"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/agents/openai.yaml",
+          "sha256": "00e8ec356109bab7b92384aab130ee2c96eb03057c6e303d36547d168ffa01f4"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/dlc/fictional-character-analysis.md",
+          "sha256": "05fe1e8fb60506c777ad69c7755f66178cb35a8f59507b0006a93e1581d4798b"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/dlc/narrative-identity.md",
+          "sha256": "21176f5dbd21db58213bad650f3139bc3a78298fdea02d8cc2894198d9f52c68"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/dlc/relationship-dynamics.md",
+          "sha256": "45c2b848c91414b85de5a813da98507951b9aa6a8041c8f81d306b1709e1fc74"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/modules/m1-needs-and-preferences.md",
+          "sha256": "5ca313f757856b3337026cdb3298c470754048cd4a6d12673eeaf7f8f8ac655d"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/modules/m2-self-cognition.md",
+          "sha256": "e0ce3b89f503d9c4fcdbf3bd4dcdd1d076fecde5002a621309fcfabad69f9c49"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/modules/m3-experience-and-development.md",
+          "sha256": "2bd6b726fe0c79363fb5ae81c908607a8f86b3fc56b3f8643fa34ea0c67472b0"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/modules/m4-shadow-risk.md",
+          "sha256": "3a296e7af384d1e3a92b7b97e916295e809e2b082e5bb98ac3f9f2cc84b2952f"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/modules/m5-interaction-patterns.md",
+          "sha256": "f3ec64023451d5c26f72aefb41a13646ff30ca73855e901a28f50a1f4e5ea582"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/attachment-styles.md",
+          "sha256": "46caf8c7ff539697a298eaaa3db4eeb9bb3d3c15b891c2eb6f4cbbaa62c46449"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/axioms.md",
+          "sha256": "bf97411ea3c48a8d56912e26dc4454a87b8665efc356543e5072d234b699c8e5"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/fraud-and-coercive-control-support.md",
+          "sha256": "5d75cca96242909f7c0d23f687222e78b5d6d1b3d8b42e91ffdbd39482994a38"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/group-pressure-and-anxiety.md",
+          "sha256": "67c5f67cb9da9eb758e6a7be2cd30448a79c7050e1116bbac0825926fbbebfb8"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/influence-and-deception.md",
+          "sha256": "0d359f405c06d9f7fea75ac4b67cae7e4bdc3f274a15b9a04027de3a83c0819c"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/interaction-decomposition.md",
+          "sha256": "6e5002162e381cc2dc48659934ab753c66ed6a07582218a3fed7d4147c6122b2"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/methodology-and-limitations.md",
+          "sha256": "3a77d285c98487d9cdbe20af27f214954e86eb526dd41cfe9917c3ff65a2f8a9"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/perspectives/cbt-descriptive.md",
+          "sha256": "c9865eeb667ac89e20f94d18b9ee02d262ad11c6791d53043a6605024ce000ab"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/perspectives/dark-triad-behavioral-screening.md",
+          "sha256": "d0e0c752cfc430c89d18f1701dc474b2f97550e8cc4487ccaaa7b54955e426a1"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/perspectives/developmental-psychology.md",
+          "sha256": "e88e4d4b6612e91bd3a6d53995fd8242fe467785e9c89cee2a5532964a613284"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/perspectives/forensic-evidence-boundaries.md",
+          "sha256": "03b586bd08923fea1396edcaaea775eaea4460d01be8ad0d28a876604540fb33"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/perspectives/humanistic-and-needs.md",
+          "sha256": "7ffb6c0341db9c2d308051556a6a03e5c4fe5da693f6dd45bcd85d10f953e896"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/perspectives/psychodynamic.md",
+          "sha256": "9f931e54bde6270c7d5f63e7af9e3a21f0ded7a30dd8f34c51233c8ac4ba68e7"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/perspectives/steelman-report.md",
+          "sha256": "2bbec4e337fde60094d781af69aea94e17061dc1a9a76da9f9dd3a00f196e701"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/reasoning-kernel.md",
+          "sha256": "b7974ffb160b0847ed9ffef8f49cda92ab865fe71b228648838f59eba92c71d0"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/reasoning-with-the-user.md",
+          "sha256": "f778016d0c1e3bf3f7d717774b3742bcc56451d127b9405a362372fb57cac58c"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/relationship-coercion.md",
+          "sha256": "99b89178fbba4680b8df86bfc2d4d7e2fbfb2152249a10a1d664c446c1187621"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/safety-and-agency.md",
+          "sha256": "a7febfbda2e9e13b2fee236ddc55276d2595ac59aad7a9b7bd7f9f23eb512007"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/safety-boundaries.md",
+          "sha256": "6fc339e303669031c66b99b47b24839a7bee71ec5d0b856394888bde9009016f"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/scams-and-social-engineering.md",
+          "sha256": "bbd1d29b8026c6133fb119d9cd36fcc284418e56bf0e6a22b936d462c651864e"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/signal-mapping.md",
+          "sha256": "1411ba0cd7a1629af6beb4ab05ff6916b1952d58837511474ab105c54b670c48"
+        },
+        {
+          "path": "skills/interaction-risk-analysis/references/workplace-and-social-bullying.md",
+          "sha256": "21d12800164b86445b2c40b409ab5f61c81084b80701deeafa3cb078cfe62254"
+        },
+        {
+          "path": "evals/interaction-risk-cases.json",
+          "sha256": "6ff9206892afbec070bd56832bdc54ef318839f490edbffe62e93603877cd295"
+        }
+      ],
+      "migration": "Skill text/resources retained; add MIT license in each package and normalize synthetic cases to local eval schema."
     }
   ]
 }

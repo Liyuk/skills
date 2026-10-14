@@ -1,0 +1,20 @@
+[
+  {
+    "id": "core-not-promotion",
+    "prompt": "成员想接核心任务，负责人以为他想晋升。准备1-on-1。",
+    "expected_output": "先核对双方目标，任务机会与晋升分开，不把假设写成诉求。",
+    "files": []
+  },
+  {
+    "id": "context-not-authority",
+    "prompt": "我给同学同步经营背景，但没授权他调整资源。他已去找别队谈合并。",
+    "expected_output": "区分背景、建议、决定和执行权限，建议澄清授权范围，不把知情当授权。",
+    "files": []
+  },
+  {
+    "id": "agreed-action",
+    "prompt": "双方都确认了任务、支持人、权限和下周复看。这次不要聊晋升，只整理记录。",
+    "expected_output": "保留已确认内容，核对共同理解，不强加绩效或晋升议程。",
+    "files": []
+  }
+]

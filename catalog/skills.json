@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "skills": [
     {
       "name": "ask-liyuk",
@@ -80,6 +80,76 @@
       ],
       "status": "preview",
       "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+    },
+    {
+      "name": "person-deep-analysis",
+      "path": "skills/person-deep-analysis",
+      "invocation": "automatic",
+      "sources": [
+        "relation-forge"
+      ],
+      "status": "migrated",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+    },
+    {
+      "name": "interaction-risk-analysis",
+      "path": "skills/interaction-risk-analysis",
+      "invocation": "automatic",
+      "sources": [
+        "relation-forge"
+      ],
+      "status": "migrated",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+    },
+    {
+      "name": "conflict-alignment",
+      "path": "skills/conflict-alignment",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "status": "preview",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+    },
+    {
+      "name": "conversation-preparation",
+      "path": "skills/conversation-preparation",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "status": "preview",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+    },
+    {
+      "name": "one-on-one",
+      "path": "skills/one-on-one",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "status": "preview",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+    },
+    {
+      "name": "relationship-boundaries",
+      "path": "skills/relationship-boundaries",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "status": "preview",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+    },
+    {
+      "name": "gift-planning",
+      "path": "skills/gift-planning",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "status": "preview",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
     }
   ]
 }

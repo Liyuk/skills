@@ -22,5 +22,23 @@
     "prompt": "我已经有完整的项目结论，只想知道整理周报用哪个。",
     "expected_output": "推荐eng-reporting，不重新访谈或强制先复盘。",
     "files": []
+  },
+  {
+    "id": "social-risk-first",
+    "prompt": "网友催我继续付解冻费，不付就不能提现。我想先分析他是什么人格，Ask Liyuk该用哪个？",
+    "expected_output": "优先互动风险路径，先处理眼前付款风险，不以人物分析延误选择；不诊断人格或断言犯罪身份。",
+    "files": []
+  },
+  {
+    "id": "ordinary-conflict-not-manipulation",
+    "prompt": "产品和工程对发布日期意见不同，没有威胁或欺骗。我要对齐项目，该用哪个？",
+    "expected_output": "推荐conflict-alignment；不仅凭意见不同推荐风险分析或人物定性。",
+    "files": []
+  },
+  {
+    "id": "boundary-before-message",
+    "prompt": "我不知道能不能给不熟的人写推荐，先帮我判断能答应什么，不要写消息。",
+    "expected_output": "推荐relationship-boundaries；按范围回答，不强制conversation-preparation或人物解析。",
+    "files": []
   }
 ]

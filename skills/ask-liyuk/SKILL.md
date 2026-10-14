@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 # Ask Liyuk
 
-帮助用户找到适合当前问题的方法。整个仓库承载 Liyuk 的经验；这个入口说明路径，具体判断由对应技能完成。
+帮助用户找到适合当前问题的方法。整个仓库承载 Liyuk 的经验；这个入口说明路径，具体判断由对应技能完成。覆盖工程、成长、人际与日常方法。
 
 ## 先判断用户要解决什么
 
@@ -24,6 +24,15 @@ disable-model-invocation: true
 - 已有结论如何表达：eng-reporting。
 - 项目经历是否讲清贡献、取舍和证据：experience-review。
 - 本人要把真实经历提炼成新方法：建议用户主动调用 distill-experience。
+- 看懂自述、人物或聊天片段：person-deep-analysis。
+- 已有可疑要求、诈骗、胁迫或威胁线索：interaction-risk-analysis；迫近风险先处理，不先做人物解读。
+- 项目协作目标、事实或决策权有分歧：conflict-alignment。
+- 准备反馈、请求、澄清或拒绝的谈话：conversation-preparation。
+- 上下级的预期、支持与授权：one-on-one。
+- 先确定能答应、分享、介绍或承诺什么：relationship-boundaries。
+- 为具体人和场景选择礼物方向：gift-planning。
+
+一般意见不同不自动等于操控；只谈拒绝范围时不要强制人物分析。按用户当前任务选择，避免七项人际方法全部运行。
 
 多个任务有关时，只说明必要顺序，例如先核对指标，再形成投入选择，最后整理汇报。用户明确要求完成任务，且宿主支持调用对应方法技能时，可以在已授权范围内继续；否则提供可复制的调用提示。仅问“该用哪个”的用户得到推荐即可。distill-experience 是用户主动调用入口，不能代用户启动。
 

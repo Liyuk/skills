@@ -1,6 +1,6 @@
 # Repository guidance
 
-This repository distills Liyuk's practical methods. Ask Liyuk is the navigator; the collection carries the experience. Read docs/design/2026-10-14-v1-design.md for current architecture; older planning notes are historical.
+This repository distills Liyuk's practical methods. Ask Liyuk is the navigator; the collection carries the experience. Read docs/design/2026-10-14-v1-design.md for the base architecture and docs/design/2026-10-14-v0.2-social-design.md for the current social expansion; older planning notes are historical.
 
 - Keep each skills/<name> package self-contained. Local runtime links must stay inside it; no links to another skill or repository-only shared files.
 - catalog/skills.json owns released names, paths, invocation modes and source IDs. Update README, Ask Liyuk's method map, plugin manifests and metadata together when that map changes.

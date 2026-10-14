@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0 (2026-10-14)
+
+- Migrate two RelationForge skills with references, invocation policies and 48 synthetic cases.
+- Add five preview methods: conflict alignment, conversation preparation, one-on-one, relationship boundaries and gift planning.
+- Expand Ask Liyuk routing and synchronize the 15-skill catalog and plugin manifest.
+- Record source fingerprints and limited baseline / instruction smoke observations.
+
 ## 0.1.0 (2026-10-14)
 
 - Add Ask Liyuk navigation, experience review, and an author-led distillation workflow as previews.
