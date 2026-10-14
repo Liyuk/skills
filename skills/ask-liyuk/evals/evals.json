@@ -64,5 +64,11 @@
     "prompt": "想把一次经历整理成我的方法，Ask Liyuk给路径。",
     "expected_output": "建议用户主动调用distill-experience，说明候选与确认，不把导航授权当蒸馏背书或已发布。",
     "files": []
+  },
+  {
+    "id": "support-style-routing",
+    "prompt": "资深工程师在新任务上很积极但做不了判断，我要决定怎么带，不是整理谈话记录。",
+    "expected_output": "推荐实际可用的situational-leadership，按任务选指导支持；不以资深身份默认完全授权，也不要求全套人际分析。",
+    "files": []
   }
 ]

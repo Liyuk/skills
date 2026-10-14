@@ -15,6 +15,7 @@
 | 有具体可疑要求、欺骗、胁迫或霸凌线索 | interaction-risk-analysis | 一般人物或互动解读用person-deep-analysis。 行动保护不必等到证明恶意，效果和利益不能证明主观意图 |
 | 协作各方对目标、事实或取舍有实质分歧 | conflict-alignment | 怎样表达用conversation-preparation，是否答应用relationship-boundaries。 同层资源权限死结停止重复说服，整理材料上升支持 |
 | 想准备一次反馈、请求、拒绝或澄清谈话 | conversation-preparation | 先判断能承担什么用relationship-boundaries。 先澄清，再反馈，最后承诺；草稿和共识是不同状态 |
-| 上下级需要对齐目标、预期、支持或授权 | one-on-one | 通用谈话表达用conversation-preparation，团队间取舍用conflict-alignment。 先有共同验收标准；纯资源问题可保留成员负责，权限缺口负责人介入 |
+| 上下级需要对齐目标、预期、支持或授权 | one-on-one | 选指导、支持或授权方式用situational-leadership；通用谈话表达用conversation-preparation。 先有共同验收标准；纯资源问题可保留成员负责，权限缺口负责人介入 |
+| 决定一项任务该给多少指导、教练、支持或授权，或任务状态变化 | situational-leadership | 整理谈话与双方预期用one-on-one；本项选择管理支持方式，不给人格或整体绩效等级。 同一个人按任务分别判断；能力投入与组织权限分开，支持随证据调整 |
 | 面对求助、推荐、介绍、信息分享或承诺调整 | relationship-boundaries | 确定范围后，需要谈话草稿再用conversation-preparation。 介绍渠道与能力背书分开，拒绝不要求补偿性帮助 |
 | 选择通用、定制或体验礼物方向 | gift-planning | 关系表达规划不自动购买、订票或联系别人。 先确认需求再设计惊喜，未知偏好不靠身份标签填补 |

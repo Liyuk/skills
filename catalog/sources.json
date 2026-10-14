@@ -488,6 +488,21 @@
       "material_read": "Author book page",
       "verified_scope": "remain curious rather than rush to advice",
       "attribution": "External reference, not Liyuk endorsement, full-book reading or efficacy evidence."
+    },
+    {
+      "id": "slii-public-perspective",
+      "kind": "external-theory-perspective",
+      "model": "Blanchard SLII",
+      "url": "https://www.kenblanchardbooks.com/explore-the-versatility-of-slii/",
+      "authors": "Ken Blanchard; institutional explanation by Randy Conley",
+      "accessed": "2026-10-14",
+      "material_read": "Public author article and Blanchard institutional article; CLS public article checked for version distinction",
+      "additional_urls": [
+        "https://www.blanchard.com/blog/four-reasons-why-flexing-your-leadership-style-builds-trust",
+        "https://situational.com/blog/the-four-leadership-styles-of-situational-leadership/"
+      ],
+      "verified_scope": "Task-specific competence and commitment; four development states and directive/supportive combinations; model version distinction",
+      "attribution": "External model with original AI candidate engineering adaptations. Not full-book reading, author endorsement, certification or efficacy evidence."
     }
   ]
 }

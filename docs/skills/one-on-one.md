@@ -9,7 +9,7 @@
 
 上下级需要对齐目标、预期、支持或授权。可以主动调用，也可由Agent按任务匹配使用。
 
-通用谈话表达用conversation-preparation，团队间取舍用conflict-alignment。
+选指导、支持或授权方式用situational-leadership；通用谈话表达用conversation-preparation。
 
 ## 输入与产物
 

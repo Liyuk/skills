@@ -264,12 +264,33 @@
       "when_to_use": "上下级需要对齐目标、预期、支持或授权",
       "input_example": "成员说做不到，卡在资源还是权限？",
       "result_example": "明确缺口、谁提供支持与谁继续负责，未落实安排留待确认。",
-      "boundary": "通用谈话表达用conversation-preparation，团队间取舍用conflict-alignment。",
+      "boundary": "选指导、支持或授权方式用situational-leadership；通用谈话表达用conversation-preparation。",
       "group": "人际与日常",
       "origin": "distilled",
       "author_calibration": "partial",
       "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.4.md"
+    },
+    {
+      "name": "situational-leadership",
+      "path": "skills/situational-leadership",
+      "invocation": "automatic",
+      "sources": [
+        "slii-public-perspective",
+        "author-calibration-2026-10-14"
+      ],
+      "display_name": "情景领导力",
+      "short_description": "按具体任务的能力、投入和授权边界，选择指导、教练、支持或放权",
+      "core_judgment": "同一个人按任务分别判断；能力投入与组织权限分开，支持随证据调整",
+      "when_to_use": "决定一项任务该给多少指导、教练、支持或授权，或任务状态变化",
+      "input_example": "资深成员接陌生任务很积极，但判断不了回滚，能完全放权吗？",
+      "result_example": "区分任务能力与意愿，给具体指导、成员责任与调整信号，权限缺口单独处理。",
+      "boundary": "整理谈话与双方预期用one-on-one；本项选择管理支持方式，不给人格或整体绩效等级。",
+      "group": "人际与日常",
+      "origin": "distilled",
+      "author_calibration": "partial",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/situational-leadership.md"
     },
     {
       "name": "relationship-boundaries",

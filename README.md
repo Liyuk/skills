@@ -4,7 +4,7 @@
 
 **不确定该从哪开始，就用 Ask Liyuk。** 整个仓库承载个人方法：规划、评审、指标、复盘、表达、经历自查、人际互动与日常选择。Ask Liyuk 帮你选路，各项技能完成具体任务。
 
-当前版本 **0.4.0 / preview**：共十五项技能，五项工程技能迁自 [engineering-decision-skills](https://github.com/Liyuk/engineering-decision-skills)，两项人际技能迁自 [RelationForge](https://github.com/Liyuk/relation-forge)。新提炼的方法仍需要真实使用与本人校准。中文优先，采用 Agent Skills 文件格式。
+当前版本 **0.4.0 / preview**：共十六项技能，五项工程技能迁自 [engineering-decision-skills](https://github.com/Liyuk/engineering-decision-skills)，两项人际技能迁自 [RelationForge](https://github.com/Liyuk/relation-forge)。新提炼的方法仍需要真实使用与本人校准。中文优先，采用 Agent Skills 文件格式。
 
 ## 先用一个
 
@@ -44,6 +44,7 @@ Claude Code 可以将所需目录复制到自己的技能目录，也可使用�
 | [冲突对齐](skills/conflict-alignment/SKILL.md) · [使用说明](docs/skills/conflict-alignment.md) | 同层资源权限死结停止重复说服，整理材料上升支持 | 有限指令冒烟 |
 | [沟通准备](skills/conversation-preparation/SKILL.md) · [使用说明](docs/skills/conversation-preparation.md) | 先澄清，再反馈，最后承诺；草稿和共识是不同状态 | 本轮改动待行为重测 |
 | [1-on-1 对齐](skills/one-on-one/SKILL.md) · [使用说明](docs/skills/one-on-one.md) | 先有共同验收标准；纯资源问题可保留成员负责，权限缺口负责人介入 | 有限指令冒烟 |
+| [情景领导力](skills/situational-leadership/SKILL.md) · [使用说明](docs/skills/situational-leadership.md) | 同一个人按任务分别判断；能力投入与组织权限分开，支持随证据调整 | 有限指令冒烟 |
 | [关系与边界](skills/relationship-boundaries/SKILL.md) · [使用说明](docs/skills/relationship-boundaries.md) | 介绍渠道与能力背书分开，拒绝不要求补偿性帮助 | 本轮改动待行为重测 |
 | [送礼规划](skills/gift-planning/SKILL.md) · [使用说明](docs/skills/gift-planning.md) | 先确认需求再设计惊喜，未知偏好不靠身份标签填补 | 有限指令冒烟 |
 
@@ -57,7 +58,7 @@ Claude Code 可以将所需目录复制到自己的技能目录，也可使用�
 
 素材来自项目、博客、已有技能和成长问题。作者提供经验与校准，AI 帮助整理候选方法与检验反例。来源、事实与推断分别记录；缺少证据时保留缺口，避免把顺畅的表达当成可靠结论。
 
-我们借鉴 Matt Pocock 的技能分层、导航和小能力组合。[设计分析](docs/research/2026-10-14-matt-skills-design.md)、[首版设计](docs/design/2026-10-14-v1-design.md)、[人际扩展](docs/design/2026-10-14-v0.2-social-design.md)和[方法细节补充](docs/design/2026-10-14-v0.3-depth-design.md)说明借鉴和取舍。[本轮入口与目录设计](docs/design/2026-10-14-v0.4-usability-design.md)及[书籍视角与资料范围](docs/research/2026-10-14-book-perspectives.md)记录新的补充。没有复制 Matt 的技能正文。
+我们借鉴 Matt Pocock 的技能分层、导航和小能力组合。[设计分析](docs/research/2026-10-14-matt-skills-design.md)、[首版设计](docs/design/2026-10-14-v1-design.md)、[人际扩展](docs/design/2026-10-14-v0.2-social-design.md)和[方法细节补充](docs/design/2026-10-14-v0.3-depth-design.md)说明借鉴和取舍。[本轮入口与目录设计](docs/design/2026-10-14-v0.4-usability-design.md)及[书籍视角与资料范围](docs/research/2026-10-14-book-perspectives.md)记录新的补充。[书籍识别能力与情景领导力](docs/research/2026-10-14-book-recognition-and-situational-leadership.md)说明当前证据与理论版本。没有复制 Matt 的技能正文。
 
 ## 验证与维护
 
