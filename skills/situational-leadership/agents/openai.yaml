@@ -1,0 +1,4 @@
+interface:
+  display_name: 情景领导力
+  short_description: 按具体任务的能力、投入和授权边界，选择指导、教练、支持或放权
+  default_prompt: 用 $situational-leadership 帮我判断这项任务该给成员哪些指导、支持和授权。

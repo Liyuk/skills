@@ -29,3 +29,5 @@ license: MIT
 ## 按需深入
 
 遇到不同分歧、现层无法让步或需上升支持时，读 [场景方法](references/method-playbook.md)。需要完整应用或检查错误处理时，读 [构造正反例](references/worked-examples.md)。只处理简单片段时不必加载全部材料。
+
+当在固定立场下找真实诉求与评价标准会改变当前判断时，读 [可选书籍视角](references/book-perspectives.md)；它不替代已有方法或触发完整理论报告。

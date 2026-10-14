@@ -1,6 +1,6 @@
 # Repository guidance
 
-This repository distills Liyuk's practical methods. Ask Liyuk is the navigator; the collection carries the experience. Read docs/design/2026-10-14-v1-design.md for the base architecture and docs/design/2026-10-14-v0.2-social-design.md for the social expansion, and docs/design/2026-10-14-v0.3-depth-design.md for current method depth and bounded author calibration; older planning notes are historical.
+This repository distills Liyuk's practical methods. Ask Liyuk is the navigator; the collection carries the experience. Read docs/design/2026-10-14-v1-design.md for the base architecture and docs/design/2026-10-14-v0.2-social-design.md for the social expansion, and docs/design/2026-10-14-v0.3-depth-design.md for current method depth and bounded author calibration; docs/design/2026-10-14-v0.4-usability-design.md owns catalog generation and external-book perspective attribution. Read docs/design/2026-10-14-situational-leadership-design.md for task-specific leadership support and model version boundaries. Older planning notes are historical.
 
 ## Git synchronization: pull requests
 
@@ -13,11 +13,13 @@ This repository distills Liyuk's practical methods. Ask Liyuk is the navigator; 
 ## Skill maintenance
 
 - Keep each skills/<name> package self-contained. Local runtime links must stay inside it; no links to another skill or repository-only shared files.
-- catalog/skills.json owns released names, paths, invocation modes and source IDs. Update README, Ask Liyuk's method map, plugin manifests and metadata together when that map changes.
+- catalog/skills.json owns names, paths, invocation modes, picker descriptions, usage examples and source/calibration/validation states. Run python scripts/sync_catalog.py --write after editing it; README catalog block, method map, plugin manifest, client metadata and docs/skills are generated. Keep Ask Liyuk's task-flows and actual methods manually synchronized.
 - Explicit entries use disable-model-invocation: true and policy.allow_implicit_invocation: false together. Task methods remain discoverable unless the user changes policy.
 - Preserve facts, numbers, attribution and unknowns. Distinguish source-backed methods from new AI-generated candidates. Only explicit author confirmation is author endorsement.
 - Review and rewriting are separate unless the user requests both. Findings require evidence and impact; do not manufacture a fixed count.
 - Method changes require realistic cases, including missing or conflicting information. Expected output is a rubric, not an execution result.
 - Keep licenses with independently installable skills. Preserve provenance of migrated files. Shared decision-contract copies must stay identical.
 - Publish only authorized source material and safe examples. Do not introduce workstation paths, private transcripts, or full third-party archives.
-- Run python -m unittest discover -s tests -v and python scripts/validate_repo.py in the configured environment before committing.
+- Run python -m unittest discover -s tests -v and python scripts/validate_repo.py in the configured environment before committing; also run python scripts/sync_catalog.py --check.
+
+- External book perspectives are optional references, not author-confirmed personal doctrine or efficacy evidence. Preserve verified source scope and do not copy full books or worksheets.

@@ -31,3 +31,7 @@ license: MIT
 ## 按需深入
 
 需要区分任务情境、具体缺口与下一步时，读 [场景方法](references/method-playbook.md)。需要完整应用或检查错误处理时，读 [构造正反例](references/worked-examples.md)。只处理简单片段时不必加载全部材料。
+
+当在给路径前先看成员的真实难题与支持需求会改变当前判断时，读 [可选书籍视角](references/book-perspectives.md)；它不替代已有方法或触发完整理论报告。
+
+若当前问题是选择具体任务的指导、支持或授权方式，可使用实际可用的situational-leadership；它选择管理支持组合，本项继续处理谈话目标与责任约定。不要求每次1-on-1都给成员分级。

@@ -25,3 +25,5 @@ license: MIT
 设计新指标时，先给出任务定义、事件或状态变化、主指标和一个关键数据质量检查；只有确实影响决定的诊断项才继续展开。
 
 继续使用共享的证据状态和字段定义，见 [references/decision-and-review-contract.md](references/decision-and-review-contract.md)。详细方法见 [references/metric-decision-method.md](references/metric-decision-method.md)，示例见 [examples/instrumentation-change.md](examples/instrumentation-change.md)。
+
+当把反证问题用于指标解释会改变当前判断时，读 [可选书籍视角](references/book-perspectives.md)；它不替代已有方法或触发完整理论报告。

@@ -40,5 +40,35 @@
     "prompt": "我不知道能不能给不熟的人写推荐，先帮我判断能答应什么，不要写消息。",
     "expected_output": "推荐relationship-boundaries；按范围回答，不强制conversation-preparation或人物解析。",
     "files": []
+  },
+  {
+    "id": "flow-measurement-stop",
+    "prompt": "数字下降，但口径还未核对，我要据此立即规划重构。只问下一步方法。",
+    "expected_output": "metric-decision先核对，证据未明时停止投资归因；导航不假装已运行也不强制完整流程。",
+    "files": []
+  },
+  {
+    "id": "flow-ready-conclusions",
+    "prompt": "已有真实个人经历与复盘结论，只想写一份管理摘要。",
+    "expected_output": "直接eng-reporting，不强制重新复盘或审经历。",
+    "files": []
+  },
+  {
+    "id": "flow-clear-boundary-short-draft",
+    "prompt": "边界已确定，只想写一句礼貌拒绝，不需要人物分析。",
+    "expected_output": "conversation-preparation直接短稿，不重复边界诊断或人物解析。",
+    "files": []
+  },
+  {
+    "id": "flow-distill-user-choice",
+    "prompt": "想把一次经历整理成我的方法，Ask Liyuk给路径。",
+    "expected_output": "建议用户主动调用distill-experience，说明候选与确认，不把导航授权当蒸馏背书或已发布。",
+    "files": []
+  },
+  {
+    "id": "support-style-routing",
+    "prompt": "资深工程师在新任务上很积极但做不了判断，我要决定怎么带，不是整理谈话记录。",
+    "expected_output": "推荐实际可用的situational-leadership，按任务选指导支持；不以资深身份默认完全授权，也不要求全套人际分析。",
+    "files": []
   }
 ]
