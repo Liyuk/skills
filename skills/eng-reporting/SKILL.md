@@ -55,3 +55,5 @@ compatibility: 适用于可读取文档、会议纪要、文本笔记和本地�
 这比直接写“问题已解决、风险已消除”更可靠，也更方便读者知道下一步该判断什么。
 
 详细方法见 [references/REFERENCE.md](references/REFERENCE.md)，常用模板见 [assets/templates.md](assets/templates.md) 和 [assets/input-templates.md](assets/input-templates.md)。
+
+材料是一段口语化原话、众筹式规划，或要把同一进展同步给负责人、协作者和执行者时，读 [口语到可决策文档](references/spoken-to-decision.md)：整理只让表达更具体，不补原话没有的事实；转述涉及资源或优先级时引用最上游描述。

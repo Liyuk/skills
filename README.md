@@ -4,7 +4,7 @@
 
 **不确定该从哪开始，就用 Ask Liyuk。** 整个仓库承载个人方法：规划、评审、指标、复盘、表达、经历自查、人际互动与日常选择。Ask Liyuk 帮你选路，各项技能完成具体任务。
 
-当前版本 **0.4.0 / preview**：共十六项技能，五项工程技能迁自 [engineering-decision-skills](https://github.com/Liyuk/engineering-decision-skills)，两项人际技能迁自 [RelationForge](https://github.com/Liyuk/relation-forge)。新提炼的方法仍需要真实使用与本人校准。中文优先，采用 Agent Skills 文件格式。
+当前版本 **0.5.0 / preview**：共二十二项技能，五项工程技能迁自 [engineering-decision-skills](https://github.com/Liyuk/engineering-decision-skills)，两项人际技能迁自 [RelationForge](https://github.com/Liyuk/relation-forge)，其余从博客等素材提炼。新提炼的方法仍需要真实使用与本人校准。中文优先，采用 Agent Skills 文件格式。
 
 ## 安装与调用
 
@@ -66,19 +66,25 @@ Codex CLI/IDE 也可通过 `/skills` 选择技能；它是选择入口，不是�
 | [/ask-liyuk](skills/ask-liyuk/SKILL.md) · Ask Liyuk · [使用说明](docs/skills/ask-liyuk.md) | 先识别要作的决定或交付物，只走当前需要的路径 | 本轮改动待行为重测 |
 | [/tech-planning](skills/tech-planning/SKILL.md) · 技术规划 · [使用说明](docs/skills/tech-planning.md) | 技术动作必须对应业务结果与能力缺口，并比较继续现状等选择 | 本轮改动待行为重测 |
 | [/tech-review](skills/tech-review/SKILL.md) · 技术方案评审 · [使用说明](docs/skills/tech-review.md) | 只报告有依据且会影响决定的问题，足够好可以通过 | 结构检查 |
-| [/metric-decision](skills/metric-decision/SKILL.md) · 指标判断 · [使用说明](docs/skills/metric-decision.md) | 口径与可比性未确认前，指标变化不能直接充当成果或因果证据 | 有限指令冒烟 |
+| [/metric-decision](skills/metric-decision/SKILL.md) · 指标判断 · [使用说明](docs/skills/metric-decision.md) | 口径与可比性未确认前，指标变化不能直接充当成果或因果证据 | 本轮改动待行为重测 |
 | [/management-retro](skills/management-retro/SKILL.md) · 工程复盘 · [使用说明](docs/skills/management-retro.md) | 分清事实、解释与下一轮动作，不把事后解释写成根因 | 本轮改动待行为重测 |
+| [/problem-location](skills/problem-location/SKILL.md) · 问题定位 · [使用说明](docs/skills/problem-location.md) | 先让材料可被共同检查，再区分表层与底层；没有调查不宣布根因 | 结构检查 |
+| [/project-diligence](skills/project-diligence/SKILL.md) · 项目判断 · [使用说明](docs/skills/project-diligence.md) | 画布查自洽、路演是说服、尽调才独立验证；假设不能讲成事实 | 结构检查 |
 | [/eng-reporting](skills/eng-reporting/SKILL.md) · 工程汇报 · [使用说明](docs/skills/eng-reporting.md) | 先确定读者要作的决定，表达不能强化未知或补造收益 | 本轮改动待行为重测 |
 | [/experience-review](skills/experience-review/SKILL.md) · 项目经历 Review · [使用说明](docs/skills/experience-review.md) | 团队结果与个人贡献分开，材料缺口不等于没有能力 | 本轮改动待行为重测 |
 | [/distill-experience](skills/distill-experience/SKILL.md) · 蒸馏经验 · [使用说明](docs/skills/distill-experience.md) | 事实、解释与方法分开，明确确认只覆盖对应条件 | 本轮改动待行为重测 |
+| [/new-context-onboarding](skills/new-context-onboarding/SKILL.md) · 新环境入场 · [使用说明](docs/skills/new-context-onboarding.md) | 信息不足不等于能力不足；先获取信息，再汇报，再要资源 | 结构检查 |
 | [/person-deep-analysis](skills/person-deep-analysis/SKILL.md) · 人际深度解析 · [使用说明](docs/skills/person-deep-analysis.md) | 按材料形成有限解释，单一片段不能补成稳定人格 | 有限指令冒烟 |
 | [/interaction-risk-analysis](skills/interaction-risk-analysis/SKILL.md) · 互动风险分析 · [使用说明](docs/skills/interaction-risk-analysis.md) | 行动保护不必等到证明恶意，效果和利益不能证明主观意图 | 有限指令冒烟 |
 | [/conflict-alignment](skills/conflict-alignment/SKILL.md) · 冲突对齐 · [使用说明](docs/skills/conflict-alignment.md) | 同层资源权限死结停止重复说服，整理材料上升支持 | 有限指令冒烟 |
 | [/conversation-preparation](skills/conversation-preparation/SKILL.md) · 沟通准备 · [使用说明](docs/skills/conversation-preparation.md) | 先澄清，再反馈，最后承诺；草稿和共识是不同状态 | 本轮改动待行为重测 |
 | [/one-on-one](skills/one-on-one/SKILL.md) · 1-on-1 对齐 · [使用说明](docs/skills/one-on-one.md) | 先有共同验收标准；纯资源问题可保留成员负责，权限缺口负责人介入 | 有限指令冒烟 |
-| [/situational-leadership](skills/situational-leadership/SKILL.md) · 情景领导力 · [使用说明](docs/skills/situational-leadership.md) | 同一个人按任务分别判断；能力投入与组织权限分开，支持随证据调整 | 有限指令冒烟 |
+| [/situational-leadership](skills/situational-leadership/SKILL.md) · 情景领导力 · [使用说明](docs/skills/situational-leadership.md) | 同一个人按任务分别判断；能力投入与组织权限分开，支持随证据调整 | 本轮改动待行为重测 |
 | [/relationship-boundaries](skills/relationship-boundaries/SKILL.md) · 关系与边界 · [使用说明](docs/skills/relationship-boundaries.md) | 介绍渠道与能力背书分开，拒绝不要求补偿性帮助 | 本轮改动待行为重测 |
 | [/gift-planning](skills/gift-planning/SKILL.md) · 送礼规划 · [使用说明](docs/skills/gift-planning.md) | 先确认需求再设计惊喜，未知偏好不靠身份标签填补 | 有限指令冒烟 |
+| [/everyday-makeup](skills/everyday-makeup/SKILL.md) · 日常妆容 · [使用说明](docs/skills/everyday-makeup.md) | 冷暖是倾向不是身份；以自然光试色和带妆表现为准 | 结构检查 |
+| [/manager-of-managers](skills/manager-of-managers/SKILL.md) · 管理管理者 · [使用说明](docs/skills/manager-of-managers.md) | 决定、责任和代价要一起落地；安全合规公平不能用结果交换 | 结构检查 |
+| [/hiring-assessment](skills/hiring-assessment/SKILL.md) · 招聘评估 · [使用说明](docs/skills/hiring-assessment.md) | 反馈分事实、推断与偏好；潜力是开放假设，不是标签 | 结构检查 |
 
 <!-- skills-catalog:end -->
 

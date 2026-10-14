@@ -1,6 +1,6 @@
 {
   "name": "liyuk-skills",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Liyuk 的工程判断、人际互动、沟通与个人经验方法。",
   "author": {
     "name": "Liyuk"
@@ -23,6 +23,12 @@
     "./skills/one-on-one",
     "./skills/situational-leadership",
     "./skills/relationship-boundaries",
-    "./skills/gift-planning"
+    "./skills/gift-planning",
+    "./skills/problem-location",
+    "./skills/project-diligence",
+    "./skills/new-context-onboarding",
+    "./skills/manager-of-managers",
+    "./skills/hiring-assessment",
+    "./skills/everyday-makeup"
   ]
 }

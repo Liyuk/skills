@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "skills": [
     {
       "name": "ask-liyuk",
@@ -68,7 +68,8 @@
       "invocation": "automatic",
       "sources": [
         "engineering-decision-skills",
-        "book-decisive"
+        "book-decisive",
+        "liyuk.github.io"
       ],
       "display_name": "指标判断",
       "short_description": "先核对测量，再判断变化与行动",
@@ -80,8 +81,8 @@
       "group": "工程判断",
       "origin": "migrated",
       "author_calibration": "source-backed",
-      "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.4.md"
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.5.md"
     },
     {
       "name": "management-retro",
@@ -109,7 +110,8 @@
       "path": "skills/eng-reporting",
       "invocation": "automatic",
       "sources": [
-        "engineering-decision-skills"
+        "engineering-decision-skills",
+        "liyuk.github.io"
       ],
       "display_name": "工程汇报",
       "short_description": "把已有判断写成读者可决策的材料",
@@ -122,7 +124,7 @@
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.5.md"
     },
     {
       "name": "experience-review",
@@ -277,7 +279,8 @@
       "invocation": "automatic",
       "sources": [
         "slii-public-perspective",
-        "author-calibration-2026-10-14"
+        "author-calibration-2026-10-14",
+        "liyuk.github.io"
       ],
       "display_name": "情景领导力",
       "short_description": "按具体任务的能力、投入和授权边界，选择指导、教练、支持或放权",
@@ -289,8 +292,8 @@
       "group": "人际与日常",
       "origin": "distilled",
       "author_calibration": "partial",
-      "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/situational-leadership.md"
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.5.md"
     },
     {
       "name": "relationship-boundaries",
@@ -332,6 +335,126 @@
       "author_calibration": "candidate",
       "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.4.md"
+    },
+    {
+      "name": "problem-location",
+      "path": "skills/problem-location",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "问题定位",
+      "short_description": "把表层症状推到可检验的底层约束",
+      "core_judgment": "先让材料可被共同检查，再区分表层与底层；没有调查不宣布根因",
+      "when_to_use": "方案正确却没解决问题，或讨论停在症状与互相指责",
+      "input_example": "合作方投诉响应慢，老板让值班的人更快回复，这样对吗？",
+      "result_example": "四格命题、有用的联系、可反驳的底层陈述与方案对准检查。",
+      "boundary": "指标口径与实验用metric-decision，多方权限死结用conflict-alignment，已完成工作的复盘用management-retro。",
+      "group": "工程判断",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "structure-only",
+      "validation_report": "evals/reports/v0.5.md"
+    },
+    {
+      "name": "project-diligence",
+      "path": "skills/project-diligence",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "项目判断",
+      "short_description": "区分画布自洽、路演说服与尽调验证",
+      "core_judgment": "画布查自洽、路演是说服、尽调才独立验证；假设不能讲成事实",
+      "when_to_use": "判断创业项目或新业务是否成立、该不该继续投入",
+      "input_example": "九格画布都填满了，能拿去融资吗？",
+      "result_example": "当前阶段必须回答的问题、供需缺口、核验清单与进入继续退出条件。",
+      "boundary": "数字本身是否可信用metric-decision；不提供证券买卖建议或价格预测。",
+      "group": "工程判断",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "structure-only",
+      "validation_report": "evals/reports/v0.5.md"
+    },
+    {
+      "name": "new-context-onboarding",
+      "path": "skills/new-context-onboarding",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "新环境入场",
+      "short_description": "画价值链地图，拆出缺信息、授权还是支持",
+      "core_judgment": "信息不足不等于能力不足；先获取信息，再汇报，再要资源",
+      "when_to_use": "刚进入陌生团队、业务或系统，或要带新人、写入门概览",
+      "input_example": "入职两个月只有需求，想做增长证明自己，该怎么开始？",
+      "result_example": "缺口判断、一页地图与空白、下一周要找的人及汇报顺序。",
+      "boundary": "选具体任务的支持方式用situational-leadership，与主管对齐预期用one-on-one。",
+      "group": "表达与成长",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "structure-only",
+      "validation_report": "evals/reports/v0.5.md"
+    },
+    {
+      "name": "manager-of-managers",
+      "path": "skills/manager-of-managers",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "管理管理者",
+      "short_description": "二线的取舍、授权、梯队与治理底线",
+      "core_judgment": "决定、责任和代价要一起落地；安全合规公平不能用结果交换",
+      "when_to_use": "多位一线负责人之间的资源取舍、授权升级、负责人来源与交接",
+      "input_example": "我想直接给隔壁团队的工程师派活，因为这样最快。",
+      "result_example": "是否二线问题、卡在哪一层、选项与代价、决定后留下的记录。",
+      "boundary": "单个成员的任务支持用situational-leadership，面试证据用hiring-assessment；具体人事与法律处理交专业角色。",
+      "group": "管理与组织",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "structure-only",
+      "validation_report": "evals/reports/v0.5.md"
+    },
+    {
+      "name": "hiring-assessment",
+      "path": "skills/hiring-assessment",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "招聘评估",
+      "short_description": "定义缺口、设计追问并整理面试证据",
+      "core_judgment": "反馈分事实、推断与偏好；潜力是开放假设，不是标签",
+      "when_to_use": "用人方或面试官定义岗位缺口、追问项目、整理面试与定级证据",
+      "input_example": "三位面试官分别写技术还行、文化不匹配、不够成熟，帮我汇总。",
+      "result_example": "把感觉改写成具体事实与待补证据，列追问，不替组织作录用决定。",
+      "boundary": "候选人检查自己的经历用experience-review；不以受保护特征为评估依据。",
+      "group": "管理与组织",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "structure-only",
+      "validation_report": "evals/reports/v0.5.md"
+    },
+    {
+      "name": "everyday-makeup",
+      "path": "skills/everyday-makeup",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "日常妆容",
+      "short_description": "按自然光观察与当天肤感选色、选质地",
+      "core_judgment": "冷暖是倾向不是身份；以自然光试色和带妆表现为准",
+      "when_to_use": "规划日常上妆顺序，或选择彩妆颜色、质地与试色记录",
+      "input_example": "我的粉底总显得很白，怎么选色？",
+      "result_example": "观察方法、选择条件和试色记录，不评价外貌。",
+      "boundary": "不做皮肤或医疗诊断；具体色号与价格需查当前来源。",
+      "group": "人际与日常",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "structure-only",
+      "validation_report": "evals/reports/v0.5.md"
     }
   ]
 }

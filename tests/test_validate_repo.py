@@ -99,6 +99,15 @@ class ValidationTests(unittest.TestCase):
         p.write_text(p.read_text().replace('name: sample', 'name: sample\nname: sample'))
         self.assertTrue(any('duplicate' in e for e in self.check()))
 
+    def test_task_flow_with_unknown_hyphenated_skill_is_rejected(self):
+        self.write('skills/ask-liyuk/references/task-flows.md', '先用ghost-skill，再接sample。\n')
+        self.assertTrue(any('task-flows' in e and 'ghost-skill' in e for e in self.check()))
+
+    def test_task_flow_with_only_known_skills_passes(self):
+        self.put('catalog/skills.json', {'version': '0.1.0', 'skills': [{'name': 'sample', 'path': 'skills/sample', 'invocation': 'automatic', 'sources': ['origin'], 'status': 'preview'}]})
+        self.write('skills/ask-liyuk/references/task-flows.md', '先用sample。\n')
+        self.assertEqual([], self.check())
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -162,6 +162,151 @@
           "path": "src/content/writing/2025/02/gifting-question-framework/zh.md",
           "sha256": "c49ca149f7df868f93ecb4f706fd3b6c9f8f624e13004630f101492b8923f796",
           "worktree_modified": false
+        },
+        {
+          "path": "src/content/research/2026/08/connection-oriented-problem-location/zh.md",
+          "sha256": "dcab05b9c5f40af6383c30feadaf70bb245b0aa68f740e2748b23a7031edd3ed",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/08/structured-thinking-practice/zh.md",
+          "sha256": "e6920d5a50a5fa4d9b41062774f97dda985a364970fbd6e0476762a71e66c5dd",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2022/06/structured-thinking-at-work/zh.md",
+          "sha256": "9cd313aa15f210cc2ca9af58e0cca1f1306dec42f634c8b970133e7002c9cb17",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2024/02/top-k-thinking/zh.md",
+          "sha256": "d1d49d9cd5654bdf3a62e8909d59013f3dfa351dc72c189e5ae4ccd302e16946",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2025/08/counting-practice/zh.md",
+          "sha256": "29d2f71bb0745fbc75139f3efc23bf55a45938b8ae073f83fb16f6ff4a89ba31",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2023/04/how-to-ask-yourself-better-questions/zh.md",
+          "sha256": "851bb1eadd23b35573d5a487342d10e69ab1c0ae5f88bea39e2913494caa0e0a",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2023/03/mapping-an-unfamiliar-value-chain/zh.md",
+          "sha256": "e837a7a456cae218e50fc8654c8c5f35f9153d228b2bacb47716d1d8ff42f768",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/consulting/2026/08/newcomer-without-a-map/zh.md",
+          "sha256": "b8ffe2aa49c757846ae96e9544a04e31aff5649600546c3b5859cd8e7e05be53",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2020/10/mentor-relationship-and-first-90-days/zh.md",
+          "sha256": "d7d25ba93559374090f65bfcde1434262d54e0a768fcd96ec60eadc61762410f",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2021/09/product-overview-is-a-decision-model/zh.md",
+          "sha256": "b8b07666980b0649ca090a4f1b297aad37b6d78f408d7b087308145ba13814af",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/08/managing-managers-and-leader-profile/zh.md",
+          "sha256": "632bdb59f9573d2ce17ba6a1026883c4e7a79d989468b0c14098b722cb3bef91",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/08/manager-of-managers-management-and-authority/zh.md",
+          "sha256": "c5daae71863a45694843c957a307dc566e384b5ca0868e80d23c65ee0ae1dd0e",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/08/manager-of-managers-leadership-supply/zh.md",
+          "sha256": "2c24d9f0dd38475368032b6062ebbf4a09d54cbe10118174a42f911a5d614c01",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/08/sustaining-frontline-managers/zh.md",
+          "sha256": "a1bcf548dadb7164708e96147f2d3e00e671f122c05c486f90796af5c819dc05",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/08/governance-boundaries-for-managers/zh.md",
+          "sha256": "7d8f6a2baa4d690b00ee8bb8e7f51b82e94e13d2b59a0d1d0990e2b1a1193435",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2023/04/headcount-is-not-a-ratio/zh.md",
+          "sha256": "ccffbfd2ac4879d834729446ca160e2b0516340321037ac5334a151508195981",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2022/01/technical-hiring-long-term-judgment/zh.md",
+          "sha256": "8843cc3baa6c28b8d58c89c7335e768cc2f5f44b8eb4ae760bd842418580a556",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2022/07/campus-recruitment-training/zh.md",
+          "sha256": "d3ab558b4e3895c820558f2b0433e92a9dfec98e000c406444233e5896474394",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2023/02/evaluating-potential-with-care/zh.md",
+          "sha256": "9ca934281a2979101d7fd0b6d90f2f3dff7f4a1324b8bcbde3b5e1e441a81b53",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/08/business-model-canvas/zh.md",
+          "sha256": "1461d65ac0be8913e81ca07c7a14bc6cedd631e5fc9383b6f04c01f8ee649f57",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/08/canvas-pitch-diligence/zh.md",
+          "sha256": "25d0b41c1a9e78cf20f18100d28ec7fc8f3653a772c9039250dedd21dc127a47",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/09/every-choice-is-a-trade/zh.md",
+          "sha256": "c4c8ec9e037d5255b4382ee1060e1d6bc6f056d8b87e464652df6c57629d607a",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2025/04/everyday-full-makeup-decision-framework/zh.md",
+          "sha256": "d24c3618c52d7cdb137e62b8b5d40bd7d3fa2959aec49a6d8fde109e5c7539e2",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2025/04/from-skin-observation-to-product-selection/zh.md",
+          "sha256": "ac7e24261df636cc4eda976b7dd300d90289f3ad2b6c5d46d74051467c0fd028",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2025/12/turn-spoken-ideas-into-decision-documents/zh.md",
+          "sha256": "700d23e5c8efaf53b895f127577e305ca6629bde9bbfc52a51382e15eab549a5",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2023/03/information-sync-for-decisions/zh.md",
+          "sha256": "5a01b5b5ae40199ce82c502b3b01868fefa5a838e26e491189ccab199795ae51",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2026/08/seo-experiments/zh.md",
+          "sha256": "b93a4cbbf0c679f8b103741495ca8d31765d8bd4482bfb57e66a776274b494cc",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/writing/2023/03/when-a-team-member-loses-motivation/zh.md",
+          "sha256": "2fae450c55c3ae87a9c5e7dda726728c20859539190c6bffe157856ef2a176a8",
+          "worktree_modified": false
+        },
+        {
+          "path": "src/content/research/2026/08/human-motivation-situational-model/zh.md",
+          "sha256": "7cd95b1d20c544f6bf20eaeb42a135d0903050c29979bfc03ba2f50ceae6b737",
+          "worktree_modified": false
         }
       ]
     },
