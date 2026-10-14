@@ -13,9 +13,9 @@ Ask Liyuk 是导航；整套方法是 Liyuk 的经验蒸馏。当前方法覆盖
 | 作者提炼真实经历 | distill-experience | 用户主动选择；产出待确认方法卡 |
 | 理解自述、人物或互动片段 | person-deep-analysis | 有限材料只作有限解释，不给现实人物定型 |
 | 具体可疑要求与互动风险 | interaction-risk-analysis | 资金、凭证或现实威胁优先处理，动机未明不妨碍设边界 |
-| 项目或协作的实质分歧 | conflict-alignment | 对齐目标、事实与决策权；一般分歧不是操控证据 |
+| 项目或协作的实质分歧 | conflict-alignment | 对齐目标、事实与决策权；同层权限资源死结可上升支持 |
 | 准备一次澄清、反馈、请求或拒绝谈话 | conversation-preparation | 组织表达与确认；先确定能答应什么用 relationship-boundaries |
-| 上下级目标、支持与授权 | one-on-one | 有具体角色预期与决策权，不能只当状态会 |
+| 上下级目标、支持与授权 | one-on-one | 先验收目标再诊断能力／资源／权限，不能只当状态会 |
 | 求助、推荐、介绍与承诺边界 | relationship-boundaries | 先选可承担范围；不默认切断关系或必须补偿 |
 | 关系与场景中的礼物选择 | gift-planning | 类别筛选与具体购买核验分开 |
 

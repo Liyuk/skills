@@ -26,9 +26,9 @@ disable-model-invocation: true
 - 本人要把真实经历提炼成新方法：建议用户主动调用 distill-experience。
 - 看懂自述、人物或聊天片段：person-deep-analysis。
 - 已有可疑要求、诈骗、胁迫或威胁线索：interaction-risk-analysis；迫近风险先处理，不先做人物解读。
-- 项目协作目标、事实或决策权有分歧：conflict-alignment。
+- 项目协作目标、事实或决策权有分歧：conflict-alignment；同层无法解开的资源／权限死结包含上升支持路径。
 - 准备反馈、请求、澄清或拒绝的谈话：conversation-preparation。
-- 上下级的预期、支持与授权：one-on-one。
+- 上下级的预期、支持与授权：one-on-one，先看目标验收，再区分能力、资源和权限缺口。
 - 先确定能答应、分享、介绍或承诺什么：relationship-boundaries。
 - 为具体人和场景选择礼物方向：gift-planning。
 

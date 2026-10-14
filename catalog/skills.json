@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "skills": [
     {
       "name": "ask-liyuk",
@@ -69,7 +69,7 @@
         "liyuk.github.io"
       ],
       "status": "preview",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
     },
     {
       "name": "distill-experience",
@@ -79,7 +79,7 @@
         "v1-conversation"
       ],
       "status": "preview",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
     },
     {
       "name": "person-deep-analysis",
@@ -106,10 +106,11 @@
       "path": "skills/conflict-alignment",
       "invocation": "automatic",
       "sources": [
-        "liyuk.github.io"
+        "liyuk.github.io",
+        "author-calibration-2026-10-14"
       ],
       "status": "preview",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
     },
     {
       "name": "conversation-preparation",
@@ -119,17 +120,18 @@
         "liyuk.github.io"
       ],
       "status": "preview",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
     },
     {
       "name": "one-on-one",
       "path": "skills/one-on-one",
       "invocation": "automatic",
       "sources": [
-        "liyuk.github.io"
+        "liyuk.github.io",
+        "author-calibration-2026-10-14"
       ],
       "status": "preview",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
     },
     {
       "name": "relationship-boundaries",
@@ -139,7 +141,7 @@
         "liyuk.github.io"
       ],
       "status": "preview",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
     },
     {
       "name": "gift-planning",
@@ -149,7 +151,7 @@
         "liyuk.github.io"
       ],
       "status": "preview",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
     }
   ]
 }

@@ -25,3 +25,7 @@ license: MIT
 不按公司职级给统一分数，不自动推导录用、晋升或人格结论。岗位需求用于选审查视角；它不是通用评级标准。
 
 需要解释方法归属时读 [来源与限制](references/sources.md)。
+
+## 按需深入
+
+需要区分任务情境、具体缺口与下一步时，读 [场景方法](references/method-playbook.md)。需要完整应用或检查错误处理时，读 [构造正反例](references/worked-examples.md)。只处理简单片段时不必加载全部材料。

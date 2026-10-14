@@ -423,6 +423,16 @@
         }
       ],
       "migration": "Skill text/resources retained; add MIT license in each package and normalize synthetic cases to local eval schema."
+    },
+    {
+      "id": "author-calibration-2026-10-14",
+      "kind": "author-confirmed-method-summary",
+      "date": "2026-10-14",
+      "scope": [
+        "conflict-alignment: same-level deadlock beyond available support/resources/authority",
+        "one-on-one: observable agreed goals, task capabilities, resource coordination and authority intervention"
+      ],
+      "confirmation": "User explicitly described these methods in this chat; only the bounded summaries are public. Task-specific extensions remain candidates."
     }
   ]
 }

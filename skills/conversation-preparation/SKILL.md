@@ -25,3 +25,7 @@ license: MIT
 通常给谈话目标、几句可用表达和一个确认共识的问题；用户只要短消息时给短稿。最终行动由用户选择，生成草稿不代表已发送、已达成一致或已形成承诺。
 
 跨团队目标或决策权争议可用 conflict-alignment；要先决定能答应什么可用 relationship-boundaries；上下级预期与授权可用 one-on-one。它们是按需方法，不强制串联。来源见 [方法来源](references/sources.md)。
+
+## 按需深入
+
+需要区分任务情境、具体缺口与下一步时，读 [场景方法](references/method-playbook.md)。需要完整应用或检查错误处理时，读 [构造正反例](references/worked-examples.md)。只处理简单片段时不必加载全部材料。
