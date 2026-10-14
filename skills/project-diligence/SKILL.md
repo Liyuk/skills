@@ -2,6 +2,7 @@
 name: project-diligence
 description: 判断一个创业项目、新业务或投入方向是否成立、值不值得继续投入时使用：区分商业模式画布的自洽、路演的说服与尽调的独立验证，检查供需关系、当前阶段的关键假设与资源进入退出条件。
 license: MIT
+disable-model-invocation: true
 ---
 
 # 项目判断

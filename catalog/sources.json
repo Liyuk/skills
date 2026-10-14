@@ -274,16 +274,6 @@
           "worktree_modified": false
         },
         {
-          "path": "src/content/writing/2025/04/everyday-full-makeup-decision-framework/zh.md",
-          "sha256": "d24c3618c52d7cdb137e62b8b5d40bd7d3fa2959aec49a6d8fde109e5c7539e2",
-          "worktree_modified": false
-        },
-        {
-          "path": "src/content/writing/2025/04/from-skin-observation-to-product-selection/zh.md",
-          "sha256": "ac7e24261df636cc4eda976b7dd300d90289f3ad2b6c5d46d74051467c0fd028",
-          "worktree_modified": false
-        },
-        {
           "path": "src/content/writing/2025/12/turn-spoken-ideas-into-decision-documents/zh.md",
           "sha256": "700d23e5c8efaf53b895f127577e305ca6629bde9bbfc52a51382e15eab549a5",
           "worktree_modified": false

@@ -9,7 +9,7 @@
 
 已有面试、晋升或自查经历需要审阅。可以主动调用，也可由Agent按任务匹配使用。
 
-eng-reporting组织表达，本技能检查经历与证据。
+eng-reporting组织表达，本技能检查经历与证据。面试官评估候选人用hiring-assessment。
 
 ## 输入与产物
 

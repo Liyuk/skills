@@ -36,7 +36,7 @@
 
 ## 评估候选人或项目
 
-用户是面试官或用人方，用hiring-assessment整理缺口、追问与证据；用户是候选人想检查自己的经历，用experience-review。判断创业项目或新业务是否成立、该不该继续投入，用project-diligence，其中的数字可信度先接metric-decision。hiring-assessment不替组织作录用决定。
+用户是面试官或用人方，用hiring-assessment整理缺口、追问与证据；用户是候选人想检查自己的经历，用experience-review。判断创业项目或新业务是否成立、该不该继续投入，建议用户主动调用project-diligence（它不会自动启动），其中的数字可信度先接metric-decision。hiring-assessment不替组织作录用决定。
 
 ## 输出与可用性
 

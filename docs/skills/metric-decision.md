@@ -9,7 +9,7 @@
 
 定义指标，解释变化或判断数字支持什么行动。可以主动调用，也可由Agent按任务匹配使用。
 
-它核对数字证据；较广方案审查用tech-review。
+它核对数字证据；较广方案审查用tech-review。症状还没形成可检验的问题用problem-location。
 
 ## 输入与产物
 
@@ -29,6 +29,6 @@ Claude Code 文件安装后用 `/metric-decision`；Codex 用 `$metric-decision`
 
 - 来源：既有技能迁入。
 - 作者校准：有作者来源，适配未全量校准。
-- 行为验证：本轮改动待行为重测；范围见 [验证记录](../../evals/reports/v0.5.md)。
+- 行为验证：有限指令冒烟；范围见 [验证记录](../../evals/reports/v0.5.md)。
 
 [技能正文](../../skills/metric-decision/SKILL.md)包含实际方法与按需参考。迁入、作者校准和行为验证是不同维度，均不单独证明普遍有效。

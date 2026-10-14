@@ -18,8 +18,8 @@
       "group": "入口",
       "origin": "navigation",
       "author_calibration": "not-applicable",
-      "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.5.md"
     },
     {
       "name": "tech-planning",
@@ -77,11 +77,11 @@
       "when_to_use": "定义指标，解释变化或判断数字支持什么行动",
       "input_example": "SDK迁移同周成功率下降，是否立刻重构？",
       "result_example": "区分测量变化与系统变化，提出能区分解释的验证。",
-      "boundary": "它核对数字证据；较广方案审查用tech-review。",
+      "boundary": "它核对数字证据；较广方案审查用tech-review。症状还没形成可检验的问题用problem-location。",
       "group": "工程判断",
       "origin": "migrated",
       "author_calibration": "source-backed",
-      "behavior_validation": "needs-retest",
+      "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.5.md"
     },
     {
@@ -98,7 +98,7 @@
       "when_to_use": "完成的项目、周期或事故需要形成学习",
       "input_example": "项目延期后，哪些机制值得改变？",
       "result_example": "还原关键决定，比较解释，提出可检查的改进。",
-      "boundary": "已有结论的表达用eng-reporting。",
+      "boundary": "已有结论的表达用eng-reporting。症状或指责还没形成可检验的问题时先用problem-location。",
       "group": "工程判断",
       "origin": "migrated",
       "author_calibration": "source-backed",
@@ -140,7 +140,7 @@
       "when_to_use": "已有面试、晋升或自查经历需要审阅",
       "input_example": "团队CTR涨18%，我负责接口，这样写个人贡献准确吗？",
       "result_example": "指出主张支持范围和关键追问，仅review时不重写。",
-      "boundary": "eng-reporting组织表达，本技能检查经历与证据。",
+      "boundary": "eng-reporting组织表达，本技能检查经历与证据。面试官评估候选人用hiring-assessment。",
       "group": "表达与成长",
       "origin": "distilled",
       "author_calibration": "candidate",
@@ -223,7 +223,7 @@
       "when_to_use": "协作各方对目标、事实或取舍有实质分歧",
       "input_example": "双方无权改变各自承诺，又争同一资源窗口。",
       "result_example": "找出卡点及适当的核验或上升决定请求。",
-      "boundary": "怎样表达用conversation-preparation，是否答应用relationship-boundaries。",
+      "boundary": "怎样表达用conversation-preparation，是否答应用relationship-boundaries。二线在多个团队间取舍与授权用manager-of-managers。",
       "group": "人际与日常",
       "origin": "distilled",
       "author_calibration": "partial",
@@ -266,7 +266,7 @@
       "when_to_use": "上下级需要对齐目标、预期、支持或授权",
       "input_example": "成员说做不到，卡在资源还是权限？",
       "result_example": "明确缺口、谁提供支持与谁继续负责，未落实安排留待确认。",
-      "boundary": "选指导、支持或授权方式用situational-leadership；通用谈话表达用conversation-preparation。",
+      "boundary": "选指导、支持或授权方式用situational-leadership；通用谈话表达用conversation-preparation。刚进入新环境、需要先获取信息用new-context-onboarding。",
       "group": "人际与日常",
       "origin": "distilled",
       "author_calibration": "partial",
@@ -288,11 +288,11 @@
       "when_to_use": "决定一项任务该给多少指导、教练、支持或授权，或任务状态变化",
       "input_example": "资深成员接陌生任务很积极，但判断不了回滚，能完全放权吗？",
       "result_example": "区分任务能力与意愿，给具体指导、成员责任与调整信号，权限缺口单独处理。",
-      "boundary": "整理谈话与双方预期用one-on-one；本项选择管理支持方式，不给人格或整体绩效等级。",
+      "boundary": "整理谈话与双方预期用one-on-one；本项选择管理支持方式，不给人格或整体绩效等级。二线管理多位负责人的资源与授权用manager-of-managers。",
       "group": "人际与日常",
       "origin": "distilled",
       "author_calibration": "partial",
-      "behavior_validation": "needs-retest",
+      "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.5.md"
     },
     {
@@ -353,13 +353,13 @@
       "group": "工程判断",
       "origin": "distilled",
       "author_calibration": "source-backed",
-      "behavior_validation": "structure-only",
+      "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.5.md"
     },
     {
       "name": "project-diligence",
       "path": "skills/project-diligence",
-      "invocation": "automatic",
+      "invocation": "explicit",
       "sources": [
         "liyuk.github.io"
       ],
@@ -373,7 +373,7 @@
       "group": "工程判断",
       "origin": "distilled",
       "author_calibration": "source-backed",
-      "behavior_validation": "structure-only",
+      "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.5.md"
     },
     {
@@ -393,7 +393,7 @@
       "group": "表达与成长",
       "origin": "distilled",
       "author_calibration": "source-backed",
-      "behavior_validation": "structure-only",
+      "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.5.md"
     },
     {
@@ -413,7 +413,7 @@
       "group": "管理与组织",
       "origin": "distilled",
       "author_calibration": "source-backed",
-      "behavior_validation": "structure-only",
+      "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.5.md"
     },
     {
@@ -433,27 +433,7 @@
       "group": "管理与组织",
       "origin": "distilled",
       "author_calibration": "source-backed",
-      "behavior_validation": "structure-only",
-      "validation_report": "evals/reports/v0.5.md"
-    },
-    {
-      "name": "everyday-makeup",
-      "path": "skills/everyday-makeup",
-      "invocation": "automatic",
-      "sources": [
-        "liyuk.github.io"
-      ],
-      "display_name": "日常妆容",
-      "short_description": "按自然光观察与当天肤感选色、选质地",
-      "core_judgment": "冷暖是倾向不是身份；以自然光试色和带妆表现为准",
-      "when_to_use": "规划日常上妆顺序，或选择彩妆颜色、质地与试色记录",
-      "input_example": "我的粉底总显得很白，怎么选色？",
-      "result_example": "观察方法、选择条件和试色记录，不评价外貌。",
-      "boundary": "不做皮肤或医疗诊断；具体色号与价格需查当前来源。",
-      "group": "人际与日常",
-      "origin": "distilled",
-      "author_calibration": "source-backed",
-      "behavior_validation": "structure-only",
+      "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.5.md"
     }
   ]
