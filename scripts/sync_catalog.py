@@ -58,12 +58,12 @@ def render(root: Path) -> dict[str, str]:
     if readme.count(START) != 1 or readme.count(END) != 1 or readme.index(END) < readme.index(START):
         raise ValueError('README requires one ordered catalog marker pair')
     outputs = {}
-    rows = ['| 技能 | 核心判断 | 行为验证 |', '| --- | --- | --- |']
+    rows = ['| 指令 / 技能 | 核心判断 | 行为验证 |', '| --- | --- | --- |']
     groups = list(dict.fromkeys(e['group'] for e in entries))
     for group in groups:
         for e in entries:
             if e['group'] == group:
-                rows.append(f"| [{cell(e['display_name'])}]({e['path']}/SKILL.md) · [使用说明](docs/skills/{e['name']}.md) | {cell(e['core_judgment'])} | {BEHAVIOR[e['behavior_validation']]} |")
+                rows.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name'])} · [使用说明](docs/skills/{e['name']}.md) | {cell(e['core_judgment'])} | {BEHAVIOR[e['behavior_validation']]} |")
     a = readme.index(START) + len(START)
     b = readme.index(END)
     outputs['README.md'] = readme[:a] + '\n\n' + '\n'.join(rows) + '\n\n' + readme[b:]
@@ -95,7 +95,7 @@ def render(root: Path) -> dict[str, str]:
 
 预期产物：{e['result_example']} 这是使用示意，不是已运行结果。
 
-可用 `${name}` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/{name}`；Codex 用 `${name}`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 

@@ -19,7 +19,7 @@
 
 预期产物：候选方法卡、反例及最有区分力的校准问题。 这是使用示意，不是已运行结果。
 
-可用 `$distill-experience` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/distill-experience`；Codex 用 `$distill-experience`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 

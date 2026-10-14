@@ -19,7 +19,7 @@
 
 预期产物：给可靠帮助范围与可选回应，既有承诺不抹掉。 这是使用示意，不是已运行结果。
 
-可用 `$relationship-boundaries` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/relationship-boundaries`；Codex 用 `$relationship-boundaries`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 

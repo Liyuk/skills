@@ -19,7 +19,7 @@
 
 预期产物：准确短稿或议程，不编对方动机及自己的承诺。 这是使用示意，不是已运行结果。
 
-可用 `$conversation-preparation` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/conversation-preparation`；Codex 用 `$conversation-preparation`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 

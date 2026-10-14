@@ -19,7 +19,7 @@
 
 预期产物：可见事实、候选解释和影响判断的未知。 这是使用示意，不是已运行结果。
 
-可用 `$person-deep-analysis` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/person-deep-analysis`；Codex 用 `$person-deep-analysis`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 

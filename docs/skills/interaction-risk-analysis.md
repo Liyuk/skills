@@ -19,7 +19,7 @@
 
 预期产物：先处理当前风险，再给事件依据与可独立核验的选择。 这是使用示意，不是已运行结果。
 
-可用 `$interaction-risk-analysis` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/interaction-risk-analysis`；Codex 用 `$interaction-risk-analysis`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 

@@ -19,7 +19,7 @@
 
 预期产物：区分测量变化与系统变化，提出能区分解释的验证。 这是使用示意，不是已运行结果。
 
-可用 `$metric-decision` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/metric-decision`；Codex 用 `$metric-decision`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 

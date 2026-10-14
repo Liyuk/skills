@@ -19,7 +19,7 @@ eng-reporting组织表达，本技能检查经历与证据。
 
 预期产物：指出主张支持范围和关键追问，仅review时不重写。 这是使用示意，不是已运行结果。
 
-可用 `$experience-review` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/experience-review`；Codex 用 `$experience-review`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 

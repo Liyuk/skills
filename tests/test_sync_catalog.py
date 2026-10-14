@@ -54,6 +54,13 @@ class CatalogSyncTests(unittest.TestCase):
         self.assertIn('Evidence bounds the conclusion', output['docs/skills/sample.md'])
         self.assertFalse((self.root / 'docs/skills/sample.md').exists())
 
+    def test_readme_and_usage_docs_show_both_client_invocations(self):
+        output = self.renderer().render(self.root)
+        self.assertIn('[/sample](skills/sample/SKILL.md)', output['README.md'])
+        self.assertIn('Claude Code', output['docs/skills/sample.md'])
+        self.assertIn('`/sample`', output['docs/skills/sample.md'])
+        self.assertIn('`$sample`', output['docs/skills/sample.md'])
+
     def test_metadata_preserves_prompt_and_unrelated_policy(self):
         output = self.renderer().render(self.root)
         meta = yaml.safe_load(output['skills/sample/agents/openai.yaml'])

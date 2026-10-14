@@ -19,7 +19,7 @@
 
 预期产物：结论与有原文依据的风险、影响和补充动作。 这是使用示意，不是已运行结果。
 
-可用 `$tech-review` 显式调用；宿主调用方式以实际环境为准。
+Claude Code 文件安装后用 `/tech-review`；Codex 用 `$tech-review`。Claude Code 插件安装时，命令需加实际插件名作为前缀。
 
 ## 判断是否有用
 
