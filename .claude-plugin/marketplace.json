@@ -1,0 +1,14 @@
+{
+  "name": "liyuk",
+  "owner": {
+    "name": "Liyuk"
+  },
+  "plugins": [
+    {
+      "name": "liyuk-skills",
+      "source": "./",
+      "description": "Liyuk 的个人经验技能集"
+    }
+  ],
+  "description": "Liyuk 的工程判断、经历审查与个人经验蒸馏技能"
+}

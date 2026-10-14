@@ -1,0 +1,85 @@
+{
+  "version": "0.1.0",
+  "skills": [
+    {
+      "name": "ask-liyuk",
+      "path": "skills/ask-liyuk",
+      "invocation": "explicit",
+      "sources": [
+        "v1-conversation"
+      ],
+      "status": "preview",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+    },
+    {
+      "name": "tech-planning",
+      "path": "skills/tech-planning",
+      "invocation": "automatic",
+      "sources": [
+        "engineering-decision-skills"
+      ],
+      "status": "migrated",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+    },
+    {
+      "name": "tech-review",
+      "path": "skills/tech-review",
+      "invocation": "automatic",
+      "sources": [
+        "engineering-decision-skills"
+      ],
+      "status": "migrated",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+    },
+    {
+      "name": "metric-decision",
+      "path": "skills/metric-decision",
+      "invocation": "automatic",
+      "sources": [
+        "engineering-decision-skills"
+      ],
+      "status": "migrated",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+    },
+    {
+      "name": "management-retro",
+      "path": "skills/management-retro",
+      "invocation": "automatic",
+      "sources": [
+        "engineering-decision-skills"
+      ],
+      "status": "migrated",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+    },
+    {
+      "name": "eng-reporting",
+      "path": "skills/eng-reporting",
+      "invocation": "automatic",
+      "sources": [
+        "engineering-decision-skills"
+      ],
+      "status": "migrated",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+    },
+    {
+      "name": "experience-review",
+      "path": "skills/experience-review",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "status": "preview",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+    },
+    {
+      "name": "distill-experience",
+      "path": "skills/distill-experience",
+      "invocation": "explicit",
+      "sources": [
+        "v1-conversation"
+      ],
+      "status": "preview",
+      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+    }
+  ]
+}

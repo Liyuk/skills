@@ -1,0 +1,20 @@
+{
+  "name": "liyuk-skills",
+  "version": "0.1.0",
+  "description": "Liyuk 的工程判断、经历审查与个人经验方法。",
+  "author": {
+    "name": "Liyuk"
+  },
+  "repository": "https://github.com/Liyuk/skills",
+  "license": "MIT",
+  "skills": [
+    "./skills/ask-liyuk",
+    "./skills/tech-planning",
+    "./skills/tech-review",
+    "./skills/metric-decision",
+    "./skills/management-retro",
+    "./skills/eng-reporting",
+    "./skills/experience-review",
+    "./skills/distill-experience"
+  ]
+}

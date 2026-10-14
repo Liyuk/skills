@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ask Liyuk"
+  short_description: "按任务使用 Liyuk 的工程判断与经验方法"
+policy:
+  allow_implicit_invocation: false

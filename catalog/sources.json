@@ -1,0 +1,154 @@
+{
+  "sources": [
+    {
+      "id": "engineering-decision-skills",
+      "repository": "https://github.com/Liyuk/engineering-decision-skills",
+      "commit": "df2b5b676f0ce107f9169f57e3d302500e055e5a",
+      "worktree_modified": false,
+      "files": [
+        {
+          "path": "skills/tech-planning/LICENSE",
+          "sha256": "c5291a19c13a5526d3888388e5cf5114d2e219e24be5b1482db3a07bc9e3ecf7"
+        },
+        {
+          "path": "skills/tech-planning/SKILL.md",
+          "sha256": "5289a5496e26ee23688474f2578c8047c78e4b22d61158d49def22d18da8ac42"
+        },
+        {
+          "path": "skills/tech-planning/evals/evals.json",
+          "sha256": "5c7b3bb40f0644d4c80c4899dca30c5ebd6e15a4b37954336ec8b87b0cf49378"
+        },
+        {
+          "path": "skills/tech-planning/references/architecture_design.md",
+          "sha256": "252bd7a6d2c8a54ec6833ef8c78a968c9f500d67b490e94156ed681ed964f95f"
+        },
+        {
+          "path": "skills/tech-planning/references/good_bad_examples.md",
+          "sha256": "4da3efafea092a10c74dd7b06221e125d6a632796e58941b57bd9ffe8f4531a8"
+        },
+        {
+          "path": "skills/tech-planning/references/planning_methodology.md",
+          "sha256": "f6510d64332e788edacbc349472ea2c813aef0639694c762755598794f398e6a"
+        },
+        {
+          "path": "skills/tech-review/LICENSE",
+          "sha256": "c5291a19c13a5526d3888388e5cf5114d2e219e24be5b1482db3a07bc9e3ecf7"
+        },
+        {
+          "path": "skills/tech-review/SKILL.md",
+          "sha256": "d7dc62f9f5788f136ca6d23665e4ec51a1a872a503cc5d5eedd911d2c5e73f2b"
+        },
+        {
+          "path": "skills/tech-review/evals/evals.json",
+          "sha256": "73b208b816af0c9a12cac9656f6236430e44ee413d3d1e70d33dbba0b07c4620"
+        },
+        {
+          "path": "skills/tech-review/references/good_bad_examples.md",
+          "sha256": "9a88299e9404e47df437e43abafd93acc8dbb8f531111f3cbf84237e4a4e4dc7"
+        },
+        {
+          "path": "skills/tech-review/references/interrogation_snippets.md",
+          "sha256": "e612e5662d51c6a839a28d71526ef2e4b60d9f0fb85f06cca4350695715a49ee"
+        },
+        {
+          "path": "skills/tech-review/references/method-sources.md",
+          "sha256": "079e38e80e952fe33db4925e688b732fb496acb61157d6f84f1beca0629c5daf"
+        },
+        {
+          "path": "skills/tech-review/references/presentation_template.md",
+          "sha256": "12afb5eecff3fa8c481db5a2ffe7e3d85df66bdc94e31971032a58426f8942e5"
+        },
+        {
+          "path": "skills/metric-decision/LICENSE",
+          "sha256": "c5291a19c13a5526d3888388e5cf5114d2e219e24be5b1482db3a07bc9e3ecf7"
+        },
+        {
+          "path": "skills/metric-decision/SKILL.md",
+          "sha256": "24012cd62e791f77e08214494d2c3437a8b3e2cb16cc948bbf4b326b8d0ccca5"
+        },
+        {
+          "path": "skills/metric-decision/evals/evals.json",
+          "sha256": "3f76a0c87bba4f048440571a2b399a8de7de5be061da2ff065802ad779d95341"
+        },
+        {
+          "path": "skills/metric-decision/examples/instrumentation-change.md",
+          "sha256": "99e58e674854610aded02d90b9086a2bc57b391882bfff37ce8192caea9df282"
+        },
+        {
+          "path": "skills/metric-decision/references/metric-decision-method.md",
+          "sha256": "3ad4d88cf3855254119c8f99acaca5bbfec25e95a91d85a1bcafbdec4450139c"
+        },
+        {
+          "path": "skills/management-retro/LICENSE",
+          "sha256": "c5291a19c13a5526d3888388e5cf5114d2e219e24be5b1482db3a07bc9e3ecf7"
+        },
+        {
+          "path": "skills/management-retro/SKILL.md",
+          "sha256": "bcec75b66dda6f94d205d40da2ab7324a5c06be0fea785517965c442125f2832"
+        },
+        {
+          "path": "skills/management-retro/evals/evals.json",
+          "sha256": "ecf1547c4c41abd6eaa6c2926861c6878e76d80439d6d1037604dcc0158fd4c8"
+        },
+        {
+          "path": "skills/management-retro/references/eight-judgments.md",
+          "sha256": "983436fe845263c1cc42c94fcbfc2533e6cae24ed2f5b7ec1b301755783d6e6e"
+        },
+        {
+          "path": "skills/eng-reporting/LICENSE",
+          "sha256": "c5291a19c13a5526d3888388e5cf5114d2e219e24be5b1482db3a07bc9e3ecf7"
+        },
+        {
+          "path": "skills/eng-reporting/SKILL.md",
+          "sha256": "378a1de82c0fcae895464df2197e058a4b5e8a2ca7076f62f1a26b0685a6dc8a"
+        },
+        {
+          "path": "skills/eng-reporting/assets/input-templates.md",
+          "sha256": "1017edde0ee774063e5df0ec043b3f1a5adc3fdbf78e78f99cc130c66183f43e"
+        },
+        {
+          "path": "skills/eng-reporting/assets/templates.md",
+          "sha256": "d3c031ba0be68807630fccf0b1c038fd6431a1cc510412f95336e357ec12c0ea"
+        },
+        {
+          "path": "skills/eng-reporting/evals/evals.json",
+          "sha256": "4a4a75c59f47df3afb645a3935002bbdfaba4142f8ac17afcd9ecfa7b30c813d"
+        },
+        {
+          "path": "skills/eng-reporting/references/REFERENCE.md",
+          "sha256": "06ff66fe89d049576aa43a06d55126645988983d6e0db0bdb3619339d2b36be7"
+        },
+        {
+          "path": "skills/eng-reporting/scripts/scaffold_from_json.py",
+          "sha256": "a8386d77b21015ca826bdafb5e11cb6a87e39f30cdc57f25c3b207f27a629bcf"
+        },
+        {
+          "path": "agent/decision-and-review-contract.md",
+          "sha256": "c8b6e89298bfff2c283daf235cce1449f88b7afd779bf6d05c9a3b30d89dd4bf"
+        }
+      ]
+    },
+    {
+      "id": "liyuk.github.io",
+      "repository": "https://github.com/Liyuk/liyuk.github.io",
+      "commit": "394b5f1f68dbf3ee12203243821461e170459e2e",
+      "worktree_modified": false,
+      "files": [
+        {
+          "path": "src/content/writing/2023/08/career-growth-ten-questions/zh.md",
+          "sha256": "7f8880cd60a13c199421a9d243d429eac2c72592f98395093c081fd88079a1d9"
+        }
+      ]
+    },
+    {
+      "id": "matt-reference",
+      "repository": "https://github.com/mattpocock/skills",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "role": "architecture-reference-only; no skill text copied"
+    },
+    {
+      "id": "v1-conversation",
+      "role": "User requested personal experience distillation and public v1; generated method candidates are not author-endorsed."
+    }
+  ]
+}

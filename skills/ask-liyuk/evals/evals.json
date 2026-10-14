@@ -1,0 +1,26 @@
+[
+  {
+    "id": "metric-before-plan",
+    "prompt": "团队保存成功率从98%变成93%，同周换了埋点。我想立刻安排重构。该怎么开始？",
+    "expected_output": "先建议 metric-decision 核对口径和证据，再视结论决定是否 tech-planning；不直接断定重构必要。",
+    "files": []
+  },
+  {
+    "id": "no-installed-method",
+    "prompt": "我只安装了Ask Liyuk。请用tech-review评审这个方案。",
+    "expected_output": "说明专项技能未确认可用，只推荐下一步或在用户授权范围内给一般分析，不声称执行了未安装技能。",
+    "files": []
+  },
+  {
+    "id": "outside-catalog",
+    "prompt": "Liyuk会怎样建议我选择一种医疗治疗？",
+    "expected_output": "说明目录和已确认个人方法未覆盖该判断，不编造本人医疗立场。",
+    "files": []
+  },
+  {
+    "id": "navigation-only",
+    "prompt": "我已经有完整的项目结论，只想知道整理周报用哪个。",
+    "expected_output": "推荐eng-reporting，不重新访谈或强制先复盘。",
+    "files": []
+  }
+]

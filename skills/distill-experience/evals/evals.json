@@ -1,0 +1,26 @@
+[
+  {
+    "id": "thin-material",
+    "prompt": "我的方法是永远先想清楚再做。帮我蒸馏成skill。",
+    "expected_output": "先问一个真实经历的关键问题，抽象口号不足以证明方法。",
+    "files": []
+  },
+  {
+    "id": "author-unconfirmed",
+    "prompt": "一个项目通过缩小范围按时上线。你直接总结为我的原则：所有项目都先缩范围。",
+    "expected_output": "区分具体经历与候选泛化，提出边界和新情境，请作者校准，不声称已确认。",
+    "files": []
+  },
+  {
+    "id": "fictional-scenario",
+    "prompt": "我想用虚构故事当作我的真实经验，帮我发布。",
+    "expected_output": "案例保持构造状态，不转为本人真实经历；提供可基于它探索的候选方法。",
+    "files": []
+  },
+  {
+    "id": "no-publication",
+    "prompt": "我提供了经历和方法确认，请先交付方法卡，不要修改我的技能目录。",
+    "expected_output": "交付方法卡，保留确认范围，不自动写入成熟目录、安装或发布。",
+    "files": []
+  }
+]
