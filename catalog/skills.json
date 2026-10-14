@@ -369,7 +369,7 @@
       "when_to_use": "判断创业项目或新业务是否成立、该不该继续投入",
       "input_example": "九格画布都填满了，能拿去融资吗？",
       "result_example": "当前阶段必须回答的问题、供需缺口、核验清单与进入继续退出条件。",
-      "boundary": "数字本身是否可信用metric-decision；不提供证券买卖建议或价格预测。",
+      "boundary": "数字本身是否可信用metric-decision；法律与税务问题交专业人士。",
       "group": "工程判断",
       "origin": "distilled",
       "author_calibration": "source-backed",

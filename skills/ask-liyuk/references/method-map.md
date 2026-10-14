@@ -20,7 +20,7 @@
 | 面对求助、推荐、介绍、信息分享或承诺调整 | relationship-boundaries | 确定范围后，需要谈话草稿再用conversation-preparation。 介绍渠道与能力背书分开，拒绝不要求补偿性帮助 |
 | 选择通用、定制或体验礼物方向 | gift-planning | 关系表达规划不自动购买、订票或联系别人。 先确认需求再设计惊喜，未知偏好不靠身份标签填补 |
 | 方案正确却没解决问题，或讨论停在症状与互相指责 | problem-location | 指标口径与实验用metric-decision，多方权限死结用conflict-alignment，已完成工作的复盘用management-retro。 先让材料可被共同检查，再区分表层与底层；没有调查不宣布根因 |
-| 判断创业项目或新业务是否成立、该不该继续投入 | project-diligence | 数字本身是否可信用metric-decision；不提供证券买卖建议或价格预测。 画布查自洽、路演是说服、尽调才独立验证；假设不能讲成事实 |
+| 判断创业项目或新业务是否成立、该不该继续投入 | project-diligence | 数字本身是否可信用metric-decision；法律与税务问题交专业人士。 画布查自洽、路演是说服、尽调才独立验证；假设不能讲成事实 |
 | 刚进入陌生团队、业务或系统，或要带新人、写入门概览 | new-context-onboarding | 选具体任务的支持方式用situational-leadership，与主管对齐预期用one-on-one。 信息不足不等于能力不足；先获取信息，再汇报，再要资源 |
 | 多位一线负责人之间的资源取舍、授权升级、负责人来源与交接 | manager-of-managers | 单个成员的任务支持用situational-leadership，面试证据用hiring-assessment；具体人事与法律处理交专业角色。 决定、责任和代价要一起落地；安全合规公平不能用结果交换 |
 | 用人方或面试官定义岗位缺口、追问项目、整理面试与定级证据 | hiring-assessment | 候选人检查自己的经历用experience-review；不以受保护特征为评估依据。 反馈分事实、推断与偏好；潜力是开放假设，不是标签 |
