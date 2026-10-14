@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 (2026-10-14)
+
+- Add clear usage examples, core judgments and separate provenance, author calibration and behavior validation states for all fifteen skills.
+- Add four conditional Ask Liyuk task flows and generate catalog artifacts with drift checks.
+- Extend nine methods with optional perspectives from five books, using bounded public primary materials and original task adaptations.
+- Add thirteen rubric cases, ten generator tests and a five-probe baseline/forward instruction smoke; retain limits rather than claim effectiveness.
+
 ## 0.3.0 (2026-10-14)
 
 - Expand seven preview skills with conditional method playbooks and worked synthetic examples.

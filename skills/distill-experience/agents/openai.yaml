@@ -1,5 +1,5 @@
 interface:
-  display_name: "蒸馏经验"
-  short_description: "按任务使用 Liyuk 的工程判断与经验方法"
+  display_name: 蒸馏经验
+  short_description: 与作者把真实经历提炼为候选方法
 policy:
   allow_implicit_invocation: false

@@ -1,3 +1,3 @@
 interface:
-  display_name: "送礼规划"
-  short_description: "根据关系、场合、预算、已知偏好与实际需求选择礼物方向；适用于送礼规划、定制或体验方案，不按性别、星座或价格代替个人偏好。"
+  display_name: 送礼规划
+  short_description: 匹配关系、场合、需求与预算

@@ -433,6 +433,61 @@
         "one-on-one: observable agreed goals, task capabilities, resource coordination and authority intervention"
       ],
       "confirmation": "User explicitly described these methods in this chat; only the bounded summaries are public. Task-specific extensions remain candidates."
+    },
+    {
+      "id": "book-getting-to-yes",
+      "kind": "external-book-perspective",
+      "book": "Getting to Yes",
+      "authors": "Roger Fisher, William Ury, Bruce Patton",
+      "url": "https://www.pon.harvard.edu/daily/negotiation-skills-daily/principled-negotiation-focus-interests-create-value/",
+      "accessed": "2026-10-14",
+      "material_read": "Harvard PON institutional explanation",
+      "verified_scope": "interests behind positions; objective criteria; alternatives to agreement",
+      "attribution": "External reference, not Liyuk endorsement, full-book reading or efficacy evidence."
+    },
+    {
+      "id": "book-difficult-conversations",
+      "kind": "external-book-perspective",
+      "book": "Difficult Conversations",
+      "authors": "Douglas Stone, Bruce Patton, Sheila Heen",
+      "url": "https://www.triadconsultinggroup.com/s/Triad_Consulting_Group_Diffcon_Preparation_Worksheet_Insructions_2018.pdf",
+      "accessed": "2026-10-14",
+      "material_read": "Author consulting-group preparation sheet; indexed excerpt read, direct PDF fetch returned 404",
+      "verified_scope": "intent versus impact; contributions rather than assigning blame",
+      "attribution": "External reference, not Liyuk endorsement, full-book reading or efficacy evidence."
+    },
+    {
+      "id": "book-decisive",
+      "kind": "external-book-perspective",
+      "book": "Decisive",
+      "authors": "Chip Heath, Dan Heath",
+      "url": "https://heathbrothers.com/wp-content/uploads/resources/The_WRAP_Process_one_pager.pdf",
+      "accessed": "2026-10-14",
+      "material_read": "Author one-page summary, 2013; no full book copied",
+      "verified_scope": "widen options; test assumptions; perspective distance; reconsideration signals",
+      "attribution": "External reference, not Liyuk endorsement, full-book reading or efficacy evidence."
+    },
+    {
+      "id": "book-thinking-in-bets",
+      "kind": "external-book-perspective",
+      "book": "Thinking in Bets",
+      "authors": "Annie Duke",
+      "url": "https://www.annieduke.com/how-to-make-smarter-decisions-when-you-dont-have-all-the-facts-thinking-in-bets/",
+      "accessed": "2026-10-14",
+      "material_read": "Author website hosting interview notes, 2018",
+      "verified_scope": "decision quality is not determined only by the outcome",
+      "attribution": "External reference, not Liyuk endorsement, full-book reading or efficacy evidence."
+    },
+    {
+      "id": "book-coaching-habit",
+      "kind": "external-book-perspective",
+      "book": "The Coaching Habit",
+      "authors": "Michael Bungay Stanier",
+      "url": "https://www.mbs.works/tch10-hub/",
+      "accessed": "2026-10-14",
+      "material_read": "Author book page",
+      "verified_scope": "remain curious rather than rush to advice",
+      "attribution": "External reference, not Liyuk endorsement, full-book reading or efficacy evidence."
     }
   ]
 }

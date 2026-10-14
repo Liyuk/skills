@@ -1,6 +1,6 @@
 interface:
-  display_name: "RelationForge · 人际深度解析"
-  short_description: "Evidence-first analysis with optional psychology lenses"
-  default_prompt: "使用 $person-deep-analysis 梳理材料明确表达了什么、有哪些解释和未知；如需多流派 Steelman 对照，请明确说明。"
+  display_name: 人际深度解析
+  short_description: 理解材料中的表达、诉求与互动
+  default_prompt: 使用 $person-deep-analysis 梳理材料明确表达了什么、有哪些解释和未知；如需多流派 Steelman 对照，请明确说明。
 policy:
   allow_implicit_invocation: true

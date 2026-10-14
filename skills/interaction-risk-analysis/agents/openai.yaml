@@ -1,6 +1,6 @@
 interface:
-  display_name: "RelationForge · 互动风险识别与解构"
-  short_description: "拆解人物与互动线索，判断风险、核验证据、自己选下一步"
-  default_prompt: "使用 $interaction-risk-analysis 解构这段互动：区分时间线、原话和行为、重复模式、实际效果、可能目的、不同解释、反证与未知；说明什么证据会改变判断，再给可选的核验和安全步骤，不要诊断或替我下结论。"
+  display_name: 互动风险分析
+  short_description: 拆解可疑要求、行为效果和核验缺口
+  default_prompt: 使用 $interaction-risk-analysis 解构这段互动：区分时间线、原话和行为、重复模式、实际效果、可能目的、不同解释、反证与未知；说明什么证据会改变判断，再给可选的核验和安全步骤，不要诊断或替我下结论。
 policy:
   allow_implicit_invocation: true

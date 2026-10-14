@@ -1,26 +1,20 @@
 # 方法地图
 
-Ask Liyuk 是导航；整套方法是 Liyuk 的经验蒸馏。当前方法覆盖工程判断、经历审查、人际互动、沟通与日常选择，尚未覆盖全部个人经验。
+由 catalog/skills.json 生成。表格用于导航；推荐前读取实际可用的技能入口。常用路径见 [任务路径](task-flows.md)。
 
-| 任务 | 技能 | 与相邻任务的边界 |
+| 用户任务 | 方法 | 边界与关键判断 |
 | --- | --- | --- |
-| 形成未来投入选择 | tech-planning | 已有方案的审查用 tech-review |
-| 审查已有技术方案 | tech-review | 检查方案，不默认重写 |
-| 指标定义、可信度与行动 | metric-decision | 先核对口径，再讨论行动 |
-| 已完成工程工作的学习 | management-retro | 讨论下次改变，整理既有结论用 eng-reporting |
-| 组织已形成的结论 | eng-reporting | 不代替未完成的原因分析 |
-| 审查项目经历与个人证据 | experience-review | 关注材料，不给人评级 |
-| 作者提炼真实经历 | distill-experience | 用户主动选择；产出待确认方法卡 |
-| 理解自述、人物或互动片段 | person-deep-analysis | 有限材料只作有限解释，不给现实人物定型 |
-| 具体可疑要求与互动风险 | interaction-risk-analysis | 资金、凭证或现实威胁优先处理，动机未明不妨碍设边界 |
-| 项目或协作的实质分歧 | conflict-alignment | 对齐目标、事实与决策权；同层权限资源死结可上升支持 |
-| 准备一次澄清、反馈、请求或拒绝谈话 | conversation-preparation | 组织表达与确认；先确定能答应什么用 relationship-boundaries |
-| 上下级目标、支持与授权 | one-on-one | 先验收目标再诊断能力／资源／权限，不能只当状态会 |
-| 求助、推荐、介绍与承诺边界 | relationship-boundaries | 先选可承担范围；不默认切断关系或必须补偿 |
-| 关系与场景中的礼物选择 | gift-planning | 类别筛选与具体购买核验分开 |
-
-复杂问题可分段处理。例如“失败项目怎样写进自评”：需要形成学习时先 management-retro，检查经历是否有证据时用 experience-review，已有判断的成稿用 eng-reporting。用户只要其中一项时按其范围完成。
-
-仅安装 Ask Liyuk 时可以获得路径与下一步提示。确认专项技能可用后再执行；这些名称不是已经运行过的证据。
-
-人际任务先看用户想理解、准备沟通还是决定边界；一般关系材料用 person-deep-analysis。材料已有付款、凭证或威胁风险时优先 interaction-risk-analysis，不让人物解析延误当前选择。拒绝话术可先 relationship-boundaries 定范围，再按需 conversation-preparation；用户只要其中一项时不强制串联。
+| 形成未来投入、路线图或比较工程投资 | tech-planning | 已有方案够不够支持决定，用tech-review。 技术动作必须对应业务结果与能力缺口，并比较继续现状等选择 |
+| 已有架构、迁移、试点或采纳方案需要评审 | tech-review | 从空白选择投资用tech-planning，数字本身的可信度用metric-decision。 只报告有依据且会影响决定的问题，足够好可以通过 |
+| 定义指标，解释变化或判断数字支持什么行动 | metric-decision | 它核对数字证据；较广方案审查用tech-review。 口径与可比性未确认前，指标变化不能直接充当成果或因果证据 |
+| 完成的项目、周期或事故需要形成学习 | management-retro | 已有结论的表达用eng-reporting。 分清事实、解释与下一轮动作，不把事后解释写成根因 |
+| 整理纪要、已有结论、成果和自评材料 | eng-reporting | 经历是否有证据用experience-review，原因未形成用management-retro。 先确定读者要作的决定，表达不能强化未知或补造收益 |
+| 已有面试、晋升或自查经历需要审阅 | experience-review | eng-reporting组织表达，本技能检查经历与证据。 团队结果与个人贡献分开，材料缺口不等于没有能力 |
+| 作者想将自己的经历与判断变成可复用方法 | distill-experience | 已发生工程工作的学习用management-retro；这里还要形成方法。 事实、解释与方法分开，明确确认只覆盖对应条件 |
+| 理解自述、聊天、个人介绍或虚构角色 | person-deep-analysis | 有具体付款、凭证或威胁风险用interaction-risk-analysis。 按材料形成有限解释，单一片段不能补成稳定人格 |
+| 有具体可疑要求、欺骗、胁迫或霸凌线索 | interaction-risk-analysis | 一般人物或互动解读用person-deep-analysis。 行动保护不必等到证明恶意，效果和利益不能证明主观意图 |
+| 协作各方对目标、事实或取舍有实质分歧 | conflict-alignment | 怎样表达用conversation-preparation，是否答应用relationship-boundaries。 同层资源权限死结停止重复说服，整理材料上升支持 |
+| 想准备一次反馈、请求、拒绝或澄清谈话 | conversation-preparation | 先判断能承担什么用relationship-boundaries。 先澄清，再反馈，最后承诺；草稿和共识是不同状态 |
+| 上下级需要对齐目标、预期、支持或授权 | one-on-one | 通用谈话表达用conversation-preparation，团队间取舍用conflict-alignment。 先有共同验收标准；纯资源问题可保留成员负责，权限缺口负责人介入 |
+| 面对求助、推荐、介绍、信息分享或承诺调整 | relationship-boundaries | 确定范围后，需要谈话草稿再用conversation-preparation。 介绍渠道与能力背书分开，拒绝不要求补偿性帮助 |
+| 选择通用、定制或体验礼物方向 | gift-planning | 关系表达规划不自动购买、订票或联系别人。 先确认需求再设计惊喜，未知偏好不靠身份标签填补 |

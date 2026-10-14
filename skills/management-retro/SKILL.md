@@ -42,3 +42,5 @@ compatibility: Works in Agent Skills environments that can read the supplied pro
 短问题就直接回答，不要为了显得完整而制造固定数量的发现、负责人或行动项。可以得出的结论也可能是：目前没有证据支持某个系统性原因，某项改变应该先试验，或暂时没有需要阻塞决定的学习。
 
 详细判断视角见 [references/eight-judgments.md](references/eight-judgments.md)。
+
+当决定质量与结果分别审视会改变当前判断时，读 [可选书籍视角](references/book-perspectives.md)；它不替代已有方法或触发完整理论报告。

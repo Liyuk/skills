@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "skills": [
     {
       "name": "ask-liyuk",
@@ -8,18 +8,39 @@
       "sources": [
         "v1-conversation"
       ],
-      "status": "preview",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+      "display_name": "Ask Liyuk",
+      "short_description": "根据问题选择方法和必要顺序",
+      "core_judgment": "先识别要作的决定或交付物，只走当前需要的路径",
+      "when_to_use": "不确定该从哪个方法开始，或任务横跨多个方法",
+      "input_example": "失败项目怎样写进自评？",
+      "result_example": "说明先形成学习、检查经历或直接组织表达的适用路径。",
+      "boundary": "入口做导航；具体判断由相应技能完成。",
+      "group": "入口",
+      "origin": "navigation",
+      "author_calibration": "not-applicable",
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "tech-planning",
       "path": "skills/tech-planning",
       "invocation": "automatic",
       "sources": [
-        "engineering-decision-skills"
+        "engineering-decision-skills",
+        "book-decisive"
       ],
-      "status": "migrated",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+      "display_name": "技术规划",
+      "short_description": "选择技术投入、优先级与重审信号",
+      "core_judgment": "技术动作必须对应业务结果与能力缺口，并比较继续现状等选择",
+      "when_to_use": "形成未来投入、路线图或比较工程投资",
+      "input_example": "资源只够做两项，如何选择本季投入？",
+      "result_example": "给出可比较选择、约束和检查点，未知容量不编排期。",
+      "boundary": "已有方案够不够支持决定，用tech-review。",
+      "group": "工程判断",
+      "origin": "migrated",
+      "author_calibration": "source-backed",
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "tech-review",
@@ -28,28 +49,60 @@
       "sources": [
         "engineering-decision-skills"
       ],
-      "status": "migrated",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+      "display_name": "技术方案评审",
+      "short_description": "审查已有方案的证据与交付准备",
+      "core_judgment": "只报告有依据且会影响决定的问题，足够好可以通过",
+      "when_to_use": "已有架构、迁移、试点或采纳方案需要评审",
+      "input_example": "这份灰度方案有测试却没有停止条件，能上线吗？",
+      "result_example": "结论与有原文依据的风险、影响和补充动作。",
+      "boundary": "从空白选择投资用tech-planning，数字本身的可信度用metric-decision。",
+      "group": "工程判断",
+      "origin": "migrated",
+      "author_calibration": "source-backed",
+      "behavior_validation": "structure-only",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "metric-decision",
       "path": "skills/metric-decision",
       "invocation": "automatic",
       "sources": [
-        "engineering-decision-skills"
+        "engineering-decision-skills",
+        "book-decisive"
       ],
-      "status": "migrated",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+      "display_name": "指标判断",
+      "short_description": "先核对测量，再判断变化与行动",
+      "core_judgment": "口径与可比性未确认前，指标变化不能直接充当成果或因果证据",
+      "when_to_use": "定义指标，解释变化或判断数字支持什么行动",
+      "input_example": "SDK迁移同周成功率下降，是否立刻重构？",
+      "result_example": "区分测量变化与系统变化，提出能区分解释的验证。",
+      "boundary": "它核对数字证据；较广方案审查用tech-review。",
+      "group": "工程判断",
+      "origin": "migrated",
+      "author_calibration": "source-backed",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "management-retro",
       "path": "skills/management-retro",
       "invocation": "automatic",
       "sources": [
-        "engineering-decision-skills"
+        "engineering-decision-skills",
+        "book-thinking-in-bets"
       ],
-      "status": "migrated",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+      "display_name": "工程复盘",
+      "short_description": "还原完成的工作，选择下一次改进",
+      "core_judgment": "分清事实、解释与下一轮动作，不把事后解释写成根因",
+      "when_to_use": "完成的项目、周期或事故需要形成学习",
+      "input_example": "项目延期后，哪些机制值得改变？",
+      "result_example": "还原关键决定，比较解释，提出可检查的改进。",
+      "boundary": "已有结论的表达用eng-reporting。",
+      "group": "工程判断",
+      "origin": "migrated",
+      "author_calibration": "source-backed",
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "eng-reporting",
@@ -58,28 +111,60 @@
       "sources": [
         "engineering-decision-skills"
       ],
-      "status": "migrated",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.1.md"
+      "display_name": "工程汇报",
+      "short_description": "把已有判断写成读者可决策的材料",
+      "core_judgment": "先确定读者要作的决定，表达不能强化未知或补造收益",
+      "when_to_use": "整理纪要、已有结论、成果和自评材料",
+      "input_example": "把已确认的试点结论整理成管理摘要。",
+      "result_example": "保留证据状态，清楚说明待决事项与所需支持。",
+      "boundary": "经历是否有证据用experience-review，原因未形成用management-retro。",
+      "group": "表达与成长",
+      "origin": "migrated",
+      "author_calibration": "source-backed",
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "experience-review",
       "path": "skills/experience-review",
       "invocation": "automatic",
       "sources": [
-        "liyuk.github.io"
+        "liyuk.github.io",
+        "book-thinking-in-bets"
       ],
-      "status": "preview",
-      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
+      "display_name": "项目经历 Review",
+      "short_description": "检查个人贡献、判断、结果与证据",
+      "core_judgment": "团队结果与个人贡献分开，材料缺口不等于没有能力",
+      "when_to_use": "已有面试、晋升或自查经历需要审阅",
+      "input_example": "团队CTR涨18%，我负责接口，这样写个人贡献准确吗？",
+      "result_example": "指出主张支持范围和关键追问，仅review时不重写。",
+      "boundary": "eng-reporting组织表达，本技能检查经历与证据。",
+      "group": "表达与成长",
+      "origin": "distilled",
+      "author_calibration": "candidate",
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "distill-experience",
       "path": "skills/distill-experience",
       "invocation": "explicit",
       "sources": [
-        "v1-conversation"
+        "v1-conversation",
+        "book-thinking-in-bets"
       ],
-      "status": "preview",
-      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
+      "display_name": "蒸馏经验",
+      "short_description": "与作者把真实经历提炼为候选方法",
+      "core_judgment": "事实、解释与方法分开，明确确认只覆盖对应条件",
+      "when_to_use": "作者想将自己的经历与判断变成可复用方法",
+      "input_example": "一次MVP成功，怎样提炼成适用条件明确的经验？",
+      "result_example": "候选方法卡、反例及最有区分力的校准问题。",
+      "boundary": "已发生工程工作的学习用management-retro；这里还要形成方法。",
+      "group": "表达与成长",
+      "origin": "distilled",
+      "author_calibration": "candidate",
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "person-deep-analysis",
@@ -88,8 +173,18 @@
       "sources": [
         "relation-forge"
       ],
-      "status": "migrated",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+      "display_name": "人际深度解析",
+      "short_description": "理解材料中的表达、诉求与互动",
+      "core_judgment": "按材料形成有限解释，单一片段不能补成稳定人格",
+      "when_to_use": "理解自述、聊天、个人介绍或虚构角色",
+      "input_example": "对方一次晚回消息，可以推断什么？",
+      "result_example": "可见事实、候选解释和影响判断的未知。",
+      "boundary": "有具体付款、凭证或威胁风险用interaction-risk-analysis。",
+      "group": "人际与日常",
+      "origin": "migrated",
+      "author_calibration": "source-backed",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "interaction-risk-analysis",
@@ -98,8 +193,18 @@
       "sources": [
         "relation-forge"
       ],
-      "status": "migrated",
-      "validation": "structure-and-package; behavioral status see evals/reports/v0.2.md"
+      "display_name": "互动风险分析",
+      "short_description": "拆解可疑要求、行为效果和核验缺口",
+      "core_judgment": "行动保护不必等到证明恶意，效果和利益不能证明主观意图",
+      "when_to_use": "有具体可疑要求、欺骗、胁迫或霸凌线索",
+      "input_example": "提现每付一次费用又要加钱，该怎样理解？",
+      "result_example": "先处理当前风险，再给事件依据与可独立核验的选择。",
+      "boundary": "一般人物或互动解读用person-deep-analysis。",
+      "group": "人际与日常",
+      "origin": "migrated",
+      "author_calibration": "source-backed",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "conflict-alignment",
@@ -107,20 +212,42 @@
       "invocation": "automatic",
       "sources": [
         "liyuk.github.io",
-        "author-calibration-2026-10-14"
+        "author-calibration-2026-10-14",
+        "book-getting-to-yes"
       ],
-      "status": "preview",
-      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
+      "display_name": "冲突对齐",
+      "short_description": "厘清目标、事实、取舍与决定权",
+      "core_judgment": "同层资源权限死结停止重复说服，整理材料上升支持",
+      "when_to_use": "协作各方对目标、事实或取舍有实质分歧",
+      "input_example": "双方无权改变各自承诺，又争同一资源窗口。",
+      "result_example": "找出卡点及适当的核验或上升决定请求。",
+      "boundary": "怎样表达用conversation-preparation，是否答应用relationship-boundaries。",
+      "group": "人际与日常",
+      "origin": "distilled",
+      "author_calibration": "partial",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "conversation-preparation",
       "path": "skills/conversation-preparation",
       "invocation": "automatic",
       "sources": [
-        "liyuk.github.io"
+        "liyuk.github.io",
+        "book-difficult-conversations"
       ],
-      "status": "preview",
-      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
+      "display_name": "沟通准备",
+      "short_description": "准备澄清、反馈、请求与可兑现承诺",
+      "core_judgment": "先澄清，再反馈，最后承诺；草稿和共识是不同状态",
+      "when_to_use": "想准备一次反馈、请求、拒绝或澄清谈话",
+      "input_example": "只写一句拒绝临时任务的短消息。",
+      "result_example": "准确短稿或议程，不编对方动机及自己的承诺。",
+      "boundary": "先判断能承担什么用relationship-boundaries。",
+      "group": "人际与日常",
+      "origin": "distilled",
+      "author_calibration": "candidate",
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "one-on-one",
@@ -128,20 +255,42 @@
       "invocation": "automatic",
       "sources": [
         "liyuk.github.io",
-        "author-calibration-2026-10-14"
+        "author-calibration-2026-10-14",
+        "book-coaching-habit"
       ],
-      "status": "preview",
-      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
+      "display_name": "1-on-1 对齐",
+      "short_description": "诊断目标、能力、资源与授权支持",
+      "core_judgment": "先有共同验收标准；纯资源问题可保留成员负责，权限缺口负责人介入",
+      "when_to_use": "上下级需要对齐目标、预期、支持或授权",
+      "input_example": "成员说做不到，卡在资源还是权限？",
+      "result_example": "明确缺口、谁提供支持与谁继续负责，未落实安排留待确认。",
+      "boundary": "通用谈话表达用conversation-preparation，团队间取舍用conflict-alignment。",
+      "group": "人际与日常",
+      "origin": "distilled",
+      "author_calibration": "partial",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "relationship-boundaries",
       "path": "skills/relationship-boundaries",
       "invocation": "automatic",
       "sources": [
-        "liyuk.github.io"
+        "liyuk.github.io",
+        "book-getting-to-yes"
       ],
-      "status": "preview",
-      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
+      "display_name": "关系与边界",
+      "short_description": "选择能答应、转介、分享或拒绝的范围",
+      "core_judgment": "介绍渠道与能力背书分开，拒绝不要求补偿性帮助",
+      "when_to_use": "面对求助、推荐、介绍、信息分享或承诺调整",
+      "input_example": "朋友希望我推荐一个从没合作过的人。",
+      "result_example": "给可靠帮助范围与可选回应，既有承诺不抹掉。",
+      "boundary": "确定范围后，需要谈话草稿再用conversation-preparation。",
+      "group": "人际与日常",
+      "origin": "distilled",
+      "author_calibration": "candidate",
+      "behavior_validation": "needs-retest",
+      "validation_report": "evals/reports/v0.4.md"
     },
     {
       "name": "gift-planning",
@@ -150,8 +299,18 @@
       "sources": [
         "liyuk.github.io"
       ],
-      "status": "preview",
-      "validation": "structure-and-package; method depth and validation scope see evals/reports/v0.3.md"
+      "display_name": "送礼规划",
+      "short_description": "匹配关系、场合、需求与预算",
+      "core_judgment": "先确认需求再设计惊喜，未知偏好不靠身份标签填补",
+      "when_to_use": "选择通用、定制或体验礼物方向",
+      "input_example": "预算500元、不知道气味喜好，怎样规划生日礼物？",
+      "result_example": "有条件的方向与关键确认项，具体商品另行核验。",
+      "boundary": "关系表达规划不自动购买、订票或联系别人。",
+      "group": "人际与日常",
+      "origin": "distilled",
+      "author_calibration": "candidate",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.4.md"
     }
   ]
 }

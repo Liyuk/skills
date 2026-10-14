@@ -30,3 +30,5 @@ disable-model-invocation: true
 ## 按需深入
 
 需要区分任务情境、具体缺口与下一步时，读 [场景方法](references/method-playbook.md)。需要完整应用或检查错误处理时，读 [构造正反例](references/worked-examples.md)。只处理简单片段时不必加载全部材料。
+
+当从成功案例提炼方法时检查结果偏差会改变当前判断时，读 [可选书籍视角](references/book-perspectives.md)；它不替代已有方法或触发完整理论报告。

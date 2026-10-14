@@ -1,5 +1,5 @@
 interface:
-  display_name: "Ask Liyuk"
-  short_description: "按任务使用 Liyuk 的工程判断与经验方法"
+  display_name: Ask Liyuk
+  short_description: 根据问题选择方法和必要顺序
 policy:
   allow_implicit_invocation: false

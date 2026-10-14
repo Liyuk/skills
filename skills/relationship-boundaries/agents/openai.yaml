@@ -1,3 +1,3 @@
 interface:
-  display_name: "关系与边界"
-  short_description: "面对求助、推荐、介绍、隐私分享或持续消耗时，厘清能力、时间和责任边界，选择答应、部分帮助、拒绝或重新协商；不把人际关系当作资源交易。"
+  display_name: 关系与边界
+  short_description: 选择能答应、转介、分享或拒绝的范围
