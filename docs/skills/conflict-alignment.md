@@ -9,7 +9,7 @@
 
 协作各方对目标、事实或取舍有实质分歧。可以主动调用，也可由Agent按任务匹配使用。
 
-怎样表达用conversation-preparation，是否答应用relationship-boundaries。
+怎样表达用conversation-preparation，是否答应用relationship-boundaries。二线在多个团队间取舍与授权用manager-of-managers。
 
 ## 输入与产物
 

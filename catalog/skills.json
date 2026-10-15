@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "skills": [
     {
       "name": "ask-liyuk",
@@ -18,8 +18,8 @@
       "group": "入口",
       "origin": "navigation",
       "author_calibration": "not-applicable",
-      "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.5.md"
     },
     {
       "name": "tech-planning",
@@ -68,7 +68,8 @@
       "invocation": "automatic",
       "sources": [
         "engineering-decision-skills",
-        "book-decisive"
+        "book-decisive",
+        "liyuk.github.io"
       ],
       "display_name": "指标判断",
       "short_description": "先核对测量，再判断变化与行动",
@@ -76,12 +77,12 @@
       "when_to_use": "定义指标，解释变化或判断数字支持什么行动",
       "input_example": "SDK迁移同周成功率下降，是否立刻重构？",
       "result_example": "区分测量变化与系统变化，提出能区分解释的验证。",
-      "boundary": "它核对数字证据；较广方案审查用tech-review。",
+      "boundary": "它核对数字证据；较广方案审查用tech-review。症状还没形成可检验的问题用problem-location。",
       "group": "工程判断",
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.5.md"
     },
     {
       "name": "management-retro",
@@ -97,7 +98,7 @@
       "when_to_use": "完成的项目、周期或事故需要形成学习",
       "input_example": "项目延期后，哪些机制值得改变？",
       "result_example": "还原关键决定，比较解释，提出可检查的改进。",
-      "boundary": "已有结论的表达用eng-reporting。",
+      "boundary": "已有结论的表达用eng-reporting。症状或指责还没形成可检验的问题时先用problem-location。",
       "group": "工程判断",
       "origin": "migrated",
       "author_calibration": "source-backed",
@@ -109,7 +110,8 @@
       "path": "skills/eng-reporting",
       "invocation": "automatic",
       "sources": [
-        "engineering-decision-skills"
+        "engineering-decision-skills",
+        "liyuk.github.io"
       ],
       "display_name": "工程汇报",
       "short_description": "把已有判断写成读者可决策的材料",
@@ -122,7 +124,7 @@
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.5.md"
     },
     {
       "name": "experience-review",
@@ -138,7 +140,7 @@
       "when_to_use": "已有面试、晋升或自查经历需要审阅",
       "input_example": "团队CTR涨18%，我负责接口，这样写个人贡献准确吗？",
       "result_example": "指出主张支持范围和关键追问，仅review时不重写。",
-      "boundary": "eng-reporting组织表达，本技能检查经历与证据。",
+      "boundary": "eng-reporting组织表达，本技能检查经历与证据。面试官评估候选人用hiring-assessment。",
       "group": "表达与成长",
       "origin": "distilled",
       "author_calibration": "candidate",
@@ -221,7 +223,7 @@
       "when_to_use": "协作各方对目标、事实或取舍有实质分歧",
       "input_example": "双方无权改变各自承诺，又争同一资源窗口。",
       "result_example": "找出卡点及适当的核验或上升决定请求。",
-      "boundary": "怎样表达用conversation-preparation，是否答应用relationship-boundaries。",
+      "boundary": "怎样表达用conversation-preparation，是否答应用relationship-boundaries。二线在多个团队间取舍与授权用manager-of-managers。",
       "group": "人际与日常",
       "origin": "distilled",
       "author_calibration": "partial",
@@ -264,7 +266,7 @@
       "when_to_use": "上下级需要对齐目标、预期、支持或授权",
       "input_example": "成员说做不到，卡在资源还是权限？",
       "result_example": "明确缺口、谁提供支持与谁继续负责，未落实安排留待确认。",
-      "boundary": "选指导、支持或授权方式用situational-leadership；通用谈话表达用conversation-preparation。",
+      "boundary": "选指导、支持或授权方式用situational-leadership；通用谈话表达用conversation-preparation。刚进入新环境、需要先获取信息用new-context-onboarding。",
       "group": "人际与日常",
       "origin": "distilled",
       "author_calibration": "partial",
@@ -277,7 +279,8 @@
       "invocation": "automatic",
       "sources": [
         "slii-public-perspective",
-        "author-calibration-2026-10-14"
+        "author-calibration-2026-10-14",
+        "liyuk.github.io"
       ],
       "display_name": "情景领导力",
       "short_description": "按具体任务的能力、投入和授权边界，选择指导、教练、支持或放权",
@@ -285,12 +288,12 @@
       "when_to_use": "决定一项任务该给多少指导、教练、支持或授权，或任务状态变化",
       "input_example": "资深成员接陌生任务很积极，但判断不了回滚，能完全放权吗？",
       "result_example": "区分任务能力与意愿，给具体指导、成员责任与调整信号，权限缺口单独处理。",
-      "boundary": "整理谈话与双方预期用one-on-one；本项选择管理支持方式，不给人格或整体绩效等级。",
+      "boundary": "整理谈话与双方预期用one-on-one；本项选择管理支持方式，不给人格或整体绩效等级。二线管理多位负责人的资源与授权用manager-of-managers。",
       "group": "人际与日常",
       "origin": "distilled",
       "author_calibration": "partial",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/situational-leadership.md"
+      "validation_report": "evals/reports/v0.5.md"
     },
     {
       "name": "relationship-boundaries",
@@ -332,6 +335,106 @@
       "author_calibration": "candidate",
       "behavior_validation": "instruction-smoke",
       "validation_report": "evals/reports/v0.4.md"
+    },
+    {
+      "name": "problem-location",
+      "path": "skills/problem-location",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "问题定位",
+      "short_description": "把表层症状推到可检验的底层约束",
+      "core_judgment": "先让材料可被共同检查，再区分表层与底层；没有调查不宣布根因",
+      "when_to_use": "方案正确却没解决问题，或讨论停在症状与互相指责",
+      "input_example": "合作方投诉响应慢，老板让值班的人更快回复，这样对吗？",
+      "result_example": "四格命题、有用的联系、可反驳的底层陈述与方案对准检查。",
+      "boundary": "指标口径与实验用metric-decision，多方权限死结用conflict-alignment，已完成工作的复盘用management-retro。",
+      "group": "工程判断",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.5.md"
+    },
+    {
+      "name": "project-diligence",
+      "path": "skills/project-diligence",
+      "invocation": "explicit",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "项目判断",
+      "short_description": "区分画布自洽、路演说服与尽调验证",
+      "core_judgment": "画布查自洽、路演是说服、尽调才独立验证；假设不能讲成事实",
+      "when_to_use": "判断创业项目或新业务是否成立、该不该继续投入",
+      "input_example": "九格画布都填满了，能拿去融资吗？",
+      "result_example": "当前阶段必须回答的问题、供需缺口、核验清单与进入继续退出条件。",
+      "boundary": "数字本身是否可信用metric-decision；法律与税务问题交专业人士。",
+      "group": "工程判断",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.5.md"
+    },
+    {
+      "name": "new-context-onboarding",
+      "path": "skills/new-context-onboarding",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "新环境入场",
+      "short_description": "画价值链地图，拆出缺信息、授权还是支持",
+      "core_judgment": "信息不足不等于能力不足；先获取信息，再汇报，再要资源",
+      "when_to_use": "刚进入陌生团队、业务或系统，或要带新人、写入门概览",
+      "input_example": "入职两个月只有需求，想做增长证明自己，该怎么开始？",
+      "result_example": "缺口判断、一页地图与空白、下一周要找的人及汇报顺序。",
+      "boundary": "选具体任务的支持方式用situational-leadership，与主管对齐预期用one-on-one。",
+      "group": "表达与成长",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.5.md"
+    },
+    {
+      "name": "manager-of-managers",
+      "path": "skills/manager-of-managers",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "管理管理者",
+      "short_description": "二线的取舍、授权、梯队与治理底线",
+      "core_judgment": "决定、责任和代价要一起落地；安全合规公平不能用结果交换",
+      "when_to_use": "多位一线负责人之间的资源取舍、授权升级、负责人来源与交接",
+      "input_example": "我想直接给隔壁团队的工程师派活，因为这样最快。",
+      "result_example": "是否二线问题、卡在哪一层、选项与代价、决定后留下的记录。",
+      "boundary": "单个成员的任务支持用situational-leadership，面试证据用hiring-assessment；具体人事与法律处理交专业角色。",
+      "group": "管理与组织",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.5.md"
+    },
+    {
+      "name": "hiring-assessment",
+      "path": "skills/hiring-assessment",
+      "invocation": "automatic",
+      "sources": [
+        "liyuk.github.io"
+      ],
+      "display_name": "招聘评估",
+      "short_description": "定义缺口、设计追问并整理面试证据",
+      "core_judgment": "反馈分事实、推断与偏好；潜力是开放假设，不是标签",
+      "when_to_use": "用人方或面试官定义岗位缺口、追问项目、整理面试与定级证据",
+      "input_example": "三位面试官分别写技术还行、文化不匹配、不够成熟，帮我汇总。",
+      "result_example": "把感觉改写成具体事实与待补证据，列追问，不替组织作录用决定。",
+      "boundary": "候选人检查自己的经历用experience-review；不以受保护特征为评估依据。",
+      "group": "管理与组织",
+      "origin": "distilled",
+      "author_calibration": "source-backed",
+      "behavior_validation": "instruction-smoke",
+      "validation_report": "evals/reports/v0.5.md"
     }
   ]
 }

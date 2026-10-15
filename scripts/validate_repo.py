@@ -195,6 +195,11 @@ def validate(root: Path) -> list[str]:
             routed = set(re.findall(r'\|\s*([a-z]+(?:-[a-z]+)+)\s*\|', router.read_text()))
             if routed != names - {'ask-liyuk'}:
                 error('router method map does not match catalog')
+    flows = root / 'skills/ask-liyuk/references/task-flows.md'
+    if flows.is_file():
+        mentioned = set(re.findall(r'`([a-z0-9]+(?:-[a-z0-9]+)*)`', flows.read_text()))
+        for unknown in sorted(mentioned - names):
+            error('task-flows mentions unknown skill: ' + unknown)
     contracts = list((root / 'skills').glob('*/references/decision-and-review-contract.md'))
     if len({p.read_bytes() for p in contracts}) > 1:
         error('shared decision contract copies have drifted')

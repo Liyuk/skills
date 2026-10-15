@@ -26,4 +26,6 @@ license: MIT
 
 继续使用共享的证据状态和字段定义，见 [references/decision-and-review-contract.md](references/decision-and-review-contract.md)。详细方法见 [references/metric-decision-method.md](references/metric-decision-method.md)，示例见 [examples/instrumentation-change.md](examples/instrumentation-change.md)。
 
+判断在线实验结果，或排查流量／指标拐点时，读 [实验与异常时间线](references/experiment-protocol.md)：先查样本比例、版本与生效时间，污染事件写进时间线；“尚未显著”不等于无效，结论按预设条件落到采用、延长、暂停或回滚。
+
 当把反证问题用于指标解释会改变当前判断时，读 [可选书籍视角](references/book-perspectives.md)；它不替代已有方法或触发完整理论报告。

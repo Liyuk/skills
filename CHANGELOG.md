@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0 (2026-10-14)
+
+- Distill five new previews from pinned public blog posts: problem location, new-context onboarding, manager of managers, hiring assessment and project diligence (explicit invocation only).
+- Extend eng-reporting, metric-decision and situational-leadership with bounded references from blog sources; keep SLII definitions unchanged.
+- Add four conditional Ask Liyuk task flows and a validator check that task-flow skill names exist in the catalog.
+- Add 55 rubric cases (41 for the new skills, 14 for extended skills and router routes), record 33 pinned blog source fingerprints and run a small with/without-skill instruction probe on eight skills (24 prompt pairs); it found and fixed two defects and does not prove effectiveness, author calibration or client installation.
+
 ## 0.4.0 (2026-10-14)
 
 - Add a situational leadership preview based on bounded public SLII sources, with task-specific recognition criteria, support actions and fourteen additional rubric cases.

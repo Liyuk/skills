@@ -9,7 +9,7 @@
 
 完成的项目、周期或事故需要形成学习。可以主动调用，也可由Agent按任务匹配使用。
 
-已有结论的表达用eng-reporting。
+已有结论的表达用eng-reporting。症状或指责还没形成可检验的问题时先用problem-location。
 
 ## 输入与产物
 

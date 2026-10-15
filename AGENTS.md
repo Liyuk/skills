@@ -1,6 +1,6 @@
 # Repository guidance
 
-This repository distills Liyuk's practical methods. Ask Liyuk is the navigator; the collection carries the experience. Read docs/design/2026-10-14-v1-design.md for the base architecture and docs/design/2026-10-14-v0.2-social-design.md for the social expansion, and docs/design/2026-10-14-v0.3-depth-design.md for current method depth and bounded author calibration; docs/design/2026-10-14-v0.4-usability-design.md owns catalog generation and external-book perspective attribution. Read docs/design/2026-10-14-situational-leadership-design.md for task-specific leadership support and model version boundaries. Older planning notes are historical.
+This repository distills Liyuk's practical methods. Ask Liyuk is the navigator; the collection carries the experience. Read docs/design/2026-10-14-v1-design.md for the base architecture and docs/design/2026-10-14-v0.2-social-design.md for the social expansion, and docs/design/2026-10-14-v0.3-depth-design.md for current method depth and bounded author calibration; docs/design/2026-10-14-v0.4-usability-design.md owns catalog generation and external-book perspective attribution. Read docs/design/2026-10-14-situational-leadership-design.md for task-specific leadership support and model version boundaries. Read docs/design/2026-10-14-v0.5-blog-distillation-design.md for blog-sourced methods, their pinned fingerprints and scope limits. Older planning notes are historical.
 
 ## Git synchronization: pull requests
 

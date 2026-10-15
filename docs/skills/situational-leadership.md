@@ -9,7 +9,7 @@
 
 决定一项任务该给多少指导、教练、支持或授权，或任务状态变化。可以主动调用，也可由Agent按任务匹配使用。
 
-整理谈话与双方预期用one-on-one；本项选择管理支持方式，不给人格或整体绩效等级。
+整理谈话与双方预期用one-on-one；本项选择管理支持方式，不给人格或整体绩效等级。二线管理多位负责人的资源与授权用manager-of-managers。
 
 ## 输入与产物
 
@@ -29,6 +29,6 @@ Claude Code 文件安装后用 `/situational-leadership`；Codex 用 `$situation
 
 - 来源：素材提炼。
 - 作者校准：部分条件经本人确认。
-- 行为验证：有限指令冒烟；范围见 [验证记录](../../evals/reports/situational-leadership.md)。
+- 行为验证：有限指令冒烟；范围见 [验证记录](../../evals/reports/v0.5.md)。
 
 [技能正文](../../skills/situational-leadership/SKILL.md)包含实际方法与按需参考。迁入、作者校准和行为验证是不同维度，均不单独证明普遍有效。

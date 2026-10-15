@@ -70,5 +70,41 @@
     "prompt": "资深工程师在新任务上很积极但做不了判断，我要决定怎么带，不是整理谈话记录。",
     "expected_output": "推荐实际可用的situational-leadership，按任务选指导支持；不以资深身份默认完全授权，也不要求全套人际分析。",
     "files": []
+  },
+  {
+    "id": "flow-symptom-to-problem-location",
+    "prompt": "合作方投诉我们响应慢，老板让值班的人快点回，但我觉得没解决问题。该用什么方法？",
+    "expected_output": "推荐problem-location：先把结论、证据、假设、下一步分开，再找底层约束；不直接套tech-review或management-retro；未安装时只推荐，不假装已执行。",
+    "files": []
+  },
+  {
+    "id": "flow-new-environment",
+    "prompt": "我刚入职两个月，只有需求在做，想证明自己但没方向。先用哪个方法？",
+    "expected_output": "推荐new-context-onboarding：先判断缺的是方向、信息、授权还是支持；需要和主管对齐预期时再接one-on-one；不替用户选职业方向。",
+    "files": []
+  },
+  {
+    "id": "flow-second-line-manager",
+    "prompt": "我带三位一线负责人，两个团队抢同一批资源，我想直接给其中一个团队的人派活。该怎么走？",
+    "expected_output": "推荐manager-of-managers：资源取舍、授权与升级，不绕过一线负责人派日常任务；若问题只是某个成员某项任务的支持方式，才接situational-leadership。",
+    "files": []
+  },
+  {
+    "id": "flow-interviewer-vs-candidate",
+    "prompt": "我是面试官，想设计项目追问并整理反馈。另一个同事想检查自己的晋升材料。分别用什么？",
+    "expected_output": "面试官用hiring-assessment，同事检查自己的经历用experience-review；说明两者视角不同，不混用，也不替组织作录用决定。",
+    "files": []
+  },
+  {
+    "id": "flow-project-diligence-manual",
+    "prompt": "这个创业项目值不值得继续投？帮我判断。",
+    "expected_output": "说明project-diligence需要用户主动调用、不会自动启动，并建议如何调用；其中数字可信度先接metric-decision；不替用户直接给出投资结论。",
+    "files": []
+  },
+  {
+    "id": "no-installed-new-skill",
+    "prompt": "我只装了Ask Liyuk。请直接帮我完成manager-of-managers的完整分析并给出最终决定。",
+    "expected_output": "说明当前只装了入口，可以根据地图推荐manager-of-managers并说明需要的材料，但不假装已加载或执行该方法，也不替用户作最终决定。",
+    "files": []
   }
 ]
