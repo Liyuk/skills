@@ -19,7 +19,9 @@
       "origin": "navigation",
       "author_calibration": "not-applicable",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.5.md"
+      "validation_report": "evals/reports/v0.5.md",
+      "display_name_en": "Ask Liyuk",
+      "core_judgment_en": "Identify the decision or deliverable, then follow only the path needed now."
     },
     {
       "name": "tech-planning",
@@ -40,7 +42,9 @@
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Technical planning",
+      "core_judgment_en": "Tie technical work to business outcomes and capability gaps; compare it with keeping the status quo."
     },
     {
       "name": "tech-review",
@@ -60,7 +64,9 @@
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "structure-only",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Technical review",
+      "core_judgment_en": "Report only evidence-backed issues that affect the decision; pass proposals that are good enough."
     },
     {
       "name": "metric-decision",
@@ -82,7 +88,9 @@
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.5.md"
+      "validation_report": "evals/reports/v0.5.md",
+      "display_name_en": "Metric decisions",
+      "core_judgment_en": "Until definitions and comparability are confirmed, metric changes are not outcome or causal evidence."
     },
     {
       "name": "management-retro",
@@ -103,7 +111,9 @@
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Engineering retrospective",
+      "core_judgment_en": "Separate facts, explanations, and next actions; do not treat hindsight as root cause."
     },
     {
       "name": "eng-reporting",
@@ -124,7 +134,9 @@
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.5.md"
+      "validation_report": "evals/reports/v0.5.md",
+      "display_name_en": "Engineering communication",
+      "core_judgment_en": "Identify the reader’s decision first; do not strengthen uncertain claims or invent benefits."
     },
     {
       "name": "experience-review",
@@ -145,7 +157,9 @@
       "origin": "distilled",
       "author_calibration": "candidate",
       "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Experience review",
+      "core_judgment_en": "Separate team outcomes from personal contribution; missing evidence does not prove a lack of ability."
     },
     {
       "name": "distill-experience",
@@ -166,7 +180,9 @@
       "origin": "distilled",
       "author_calibration": "candidate",
       "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Experience distillation",
+      "core_judgment_en": "Keep facts, interpretations, and methods separate; explicit confirmation applies only to the conditions confirmed."
     },
     {
       "name": "person-deep-analysis",
@@ -186,7 +202,9 @@
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Interpersonal analysis",
+      "core_judgment_en": "Form bounded interpretations from the available material; one interaction cannot establish a stable personality."
     },
     {
       "name": "interaction-risk-analysis",
@@ -206,7 +224,9 @@
       "origin": "migrated",
       "author_calibration": "source-backed",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Interaction risk analysis",
+      "core_judgment_en": "Protective action need not wait for proof of malice; impact and benefit do not prove intent."
     },
     {
       "name": "conflict-alignment",
@@ -228,7 +248,9 @@
       "origin": "distilled",
       "author_calibration": "partial",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Conflict alignment",
+      "core_judgment_en": "When a peer-level resource or authority deadlock persists, stop repeating persuasion and seek support with the evidence."
     },
     {
       "name": "conversation-preparation",
@@ -249,7 +271,9 @@
       "origin": "distilled",
       "author_calibration": "candidate",
       "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Conversation preparation",
+      "core_judgment_en": "Clarify first, give feedback next, and make commitments last; a draft is not agreement."
     },
     {
       "name": "one-on-one",
@@ -271,7 +295,9 @@
       "origin": "distilled",
       "author_calibration": "partial",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "One-on-one alignment",
+      "core_judgment_en": "Set shared acceptance criteria first; keep ownership with the teammate for resource gaps, and involve the manager for authority gaps."
     },
     {
       "name": "situational-leadership",
@@ -293,7 +319,9 @@
       "origin": "distilled",
       "author_calibration": "partial",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.5.md"
+      "validation_report": "evals/reports/v0.5.md",
+      "display_name_en": "Situational leadership",
+      "core_judgment_en": "Assess the same person by task; distinguish capability and motivation from organizational authority, and adjust support as evidence changes."
     },
     {
       "name": "relationship-boundaries",
@@ -314,7 +342,9 @@
       "origin": "distilled",
       "author_calibration": "candidate",
       "behavior_validation": "needs-retest",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Relationships and boundaries",
+      "core_judgment_en": "Keep introductions separate from endorsements; declining a request does not require compensatory help."
     },
     {
       "name": "gift-planning",
@@ -334,7 +364,9 @@
       "origin": "distilled",
       "author_calibration": "candidate",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.4.md"
+      "validation_report": "evals/reports/v0.4.md",
+      "display_name_en": "Gift planning",
+      "core_judgment_en": "Understand the recipient’s needs before planning a surprise; do not infer preferences from identity labels."
     },
     {
       "name": "problem-location",
@@ -354,7 +386,9 @@
       "origin": "distilled",
       "author_calibration": "source-backed",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.5.md"
+      "validation_report": "evals/reports/v0.5.md",
+      "display_name_en": "Problem diagnosis",
+      "core_judgment_en": "Make evidence jointly inspectable, then distinguish symptoms from deeper causes; do not declare a root cause without investigation."
     },
     {
       "name": "project-diligence",
@@ -374,7 +408,9 @@
       "origin": "distilled",
       "author_calibration": "source-backed",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.5.md"
+      "validation_report": "evals/reports/v0.5.md",
+      "display_name_en": "Project diligence",
+      "core_judgment_en": "Use a canvas to check coherence, a pitch to persuade, and diligence to verify independently; keep assumptions distinct from facts."
     },
     {
       "name": "new-context-onboarding",
@@ -394,7 +430,9 @@
       "origin": "distilled",
       "author_calibration": "source-backed",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.5.md"
+      "validation_report": "evals/reports/v0.5.md",
+      "display_name_en": "New-context onboarding",
+      "core_judgment_en": "Limited information does not imply limited ability; learn the context before reporting or requesting resources."
     },
     {
       "name": "manager-of-managers",
@@ -414,7 +452,9 @@
       "origin": "distilled",
       "author_calibration": "source-backed",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.5.md"
+      "validation_report": "evals/reports/v0.5.md",
+      "display_name_en": "Managing managers",
+      "core_judgment_en": "Align decisions, responsibility, and consequences; do not trade away safety, compliance, or fairness for outcomes."
     },
     {
       "name": "hiring-assessment",
@@ -434,7 +474,9 @@
       "origin": "distilled",
       "author_calibration": "source-backed",
       "behavior_validation": "instruction-smoke",
-      "validation_report": "evals/reports/v0.5.md"
+      "validation_report": "evals/reports/v0.5.md",
+      "display_name_en": "Hiring assessment",
+      "core_judgment_en": "Separate observed facts, inferences, and preferences; treat potential as an open hypothesis, not a label."
     }
   ]
 }
