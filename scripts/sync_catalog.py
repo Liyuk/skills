@@ -55,9 +55,9 @@ def render(root: Path) -> dict[str, str]:
         if not (root / report).is_file():
             raise ValueError(f'{name}: missing validation report')
 
-    readme = (root / 'README.md').read_text()
-    chinese_readme = (root / 'README.zh-CN.md').read_text()
-    for filename, content in [('README.md', readme), ('README.zh-CN.md', chinese_readme)]:
+    chinese_readme = (root / 'README.md').read_text()
+    english_readme = (root / 'README.en.md').read_text()
+    for filename, content in [('README.md', chinese_readme), ('README.en.md', english_readme)]:
         if content.count(START) != 1 or content.count(END) != 1 or content.index(END) < content.index(START):
             raise ValueError(f'{filename} requires one ordered catalog marker pair')
     outputs = {}
@@ -69,7 +69,7 @@ def render(root: Path) -> dict[str, str]:
             if e['group'] == group:
                 rows_en.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name_en'])} · [Usage guide](docs/skills/{e['name']}.md) | {cell(e['core_judgment_en'])} | {BEHAVIOR_EN[e['behavior_validation']]} |")
                 rows_zh.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name'])} · [使用说明](docs/skills/{e['name']}.md) | {cell(e['core_judgment'])} | {BEHAVIOR[e['behavior_validation']]} |")
-    for filename, content, rows in [('README.md', readme, rows_en), ('README.zh-CN.md', chinese_readme, rows_zh)]:
+    for filename, content, rows in [('README.md', chinese_readme, rows_zh), ('README.en.md', english_readme, rows_en)]:
         a = content.index(START) + len(START)
         b = content.index(END)
         outputs[filename] = content[:a] + '\n\n' + '\n'.join(rows) + '\n\n' + content[b:]
