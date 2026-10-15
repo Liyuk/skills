@@ -12,7 +12,8 @@ END = '<!-- skills-catalog:end -->'
 ORIGINS = {'migrated': '既有技能迁入', 'distilled': '素材提炼', 'navigation': '导航入口'}
 CALIBRATION = {'source-backed': '有作者来源，适配未全量校准', 'partial': '部分条件经本人确认', 'candidate': '候选，待本人校准', 'not-applicable': '导航职责'}
 BEHAVIOR = {'structure-only': '结构检查', 'instruction-smoke': '有限指令冒烟', 'needs-retest': '本轮改动待行为重测'}
-REQUIRED = ['display_name', 'short_description', 'core_judgment', 'when_to_use', 'input_example', 'result_example', 'boundary', 'group', 'validation_report']
+BEHAVIOR_EN = {'structure-only': 'Structure check', 'instruction-smoke': 'Limited instruction smoke check', 'needs-retest': 'Behavioral retest pending'}
+REQUIRED = ['display_name', 'display_name_en', 'short_description', 'core_judgment', 'core_judgment_en', 'when_to_use', 'input_example', 'result_example', 'boundary', 'group', 'validation_report']
 
 
 def cell(value: str) -> str:
@@ -54,19 +55,24 @@ def render(root: Path) -> dict[str, str]:
         if not (root / report).is_file():
             raise ValueError(f'{name}: missing validation report')
 
-    readme = (root / 'README.md').read_text()
-    if readme.count(START) != 1 or readme.count(END) != 1 or readme.index(END) < readme.index(START):
-        raise ValueError('README requires one ordered catalog marker pair')
+    chinese_readme = (root / 'README.md').read_text()
+    english_readme = (root / 'README.en.md').read_text()
+    for filename, content in [('README.md', chinese_readme), ('README.en.md', english_readme)]:
+        if content.count(START) != 1 or content.count(END) != 1 or content.index(END) < content.index(START):
+            raise ValueError(f'{filename} requires one ordered catalog marker pair')
     outputs = {}
-    rows = ['| 指令 / 技能 | 核心判断 | 行为验证 |', '| --- | --- | --- |']
+    rows_en = ['| Skill | Core judgment | Behavior check |', '| --- | --- | --- |']
+    rows_zh = ['| 指令 / 技能 | 核心判断 | 行为验证 |', '| --- | --- | --- |']
     groups = list(dict.fromkeys(e['group'] for e in entries))
     for group in groups:
         for e in entries:
             if e['group'] == group:
-                rows.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name'])} · [使用说明](docs/skills/{e['name']}.md) | {cell(e['core_judgment'])} | {BEHAVIOR[e['behavior_validation']]} |")
-    a = readme.index(START) + len(START)
-    b = readme.index(END)
-    outputs['README.md'] = readme[:a] + '\n\n' + '\n'.join(rows) + '\n\n' + readme[b:]
+                rows_en.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name_en'])} · [Usage guide](docs/skills/{e['name']}.md) | {cell(e['core_judgment_en'])} | {BEHAVIOR_EN[e['behavior_validation']]} |")
+                rows_zh.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name'])} · [使用说明](docs/skills/{e['name']}.md) | {cell(e['core_judgment'])} | {BEHAVIOR[e['behavior_validation']]} |")
+    for filename, content, rows in [('README.md', chinese_readme, rows_zh), ('README.en.md', english_readme, rows_en)]:
+        a = content.index(START) + len(START)
+        b = content.index(END)
+        outputs[filename] = content[:a] + '\n\n' + '\n'.join(rows) + '\n\n' + content[b:]
 
     method_rows = ['# 方法地图', '', '由 catalog/skills.json 生成。表格用于导航；推荐前读取实际可用的技能入口。常用路径见 [任务路径](task-flows.md)。', '', '| 用户任务 | 方法 | 边界与关键判断 |', '| --- | --- | --- |']
     for e in entries:

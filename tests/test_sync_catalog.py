@@ -17,15 +17,16 @@ class CatalogSyncTests(unittest.TestCase):
         self.root = Path(self.tmp.name)
         self.entry = {
             'name': 'sample', 'path': 'skills/sample', 'invocation': 'explicit',
-            'display_name': 'Sample', 'short_description': 'Review the evidence',
-            'core_judgment': 'Evidence bounds the conclusion', 'when_to_use': 'Review existing material',
+            'display_name': '示例', 'display_name_en': 'Sample', 'short_description': 'Review the evidence',
+            'core_judgment': '证据限定结论', 'core_judgment_en': 'Evidence bounds the conclusion', 'when_to_use': 'Review existing material',
             'input_example': 'Review this proposal', 'result_example': 'Evidence and next action',
             'boundary': 'Do not rewrite unless asked', 'group': 'Engineering',
             'origin': 'distilled', 'author_calibration': 'candidate',
             'behavior_validation': 'structure-only', 'validation_report': 'evals/report.md',
             'sources': ['test'],
         }
-        self.write('README.md', 'Human introduction\n<!-- skills-catalog:start -->\nold\n<!-- skills-catalog:end -->\nHuman footer\n')
+        self.write('README.md', '中文介绍\n<!-- skills-catalog:start -->\n旧目录\n<!-- skills-catalog:end -->\n中文结尾\n')
+        self.write('README.en.md', 'Human introduction\n<!-- skills-catalog:start -->\nold\n<!-- skills-catalog:end -->\nHuman footer\n')
         self.put('catalog/skills.json', {'version': '0.4.0', 'skills': [self.entry]})
         self.write('evals/report.md', '# Actual validation scope\n')
         self.put('.claude-plugin/plugin.json', {'name': 'liyuk-skills', 'author': {'name': 'Liyuk'}, 'version': '0.3.0', 'skills': []})
@@ -48,15 +49,18 @@ class CatalogSyncTests(unittest.TestCase):
 
     def test_render_preserves_human_readme_and_has_usable_doc(self):
         output = self.renderer().render(self.root)
-        self.assertIn('Human introduction', output['README.md'])
-        self.assertIn('Human footer', output['README.md'])
-        self.assertIn('docs/skills/sample.md', output['README.md'])
-        self.assertIn('Evidence bounds the conclusion', output['docs/skills/sample.md'])
+        self.assertIn('Human introduction', output['README.en.md'])
+        self.assertIn('Human footer', output['README.en.md'])
+        self.assertIn('中文介绍', output['README.md'])
+        self.assertIn('docs/skills/sample.md', output['README.en.md'])
+        self.assertIn('| Skill | Core judgment | Behavior check |', output['README.en.md'])
+        self.assertIn('| 指令 / 技能 | 核心判断 | 行为验证 |', output['README.md'])
+        self.assertIn('证据限定结论', output['docs/skills/sample.md'])
         self.assertFalse((self.root / 'docs/skills/sample.md').exists())
 
     def test_readme_and_usage_docs_show_both_client_invocations(self):
         output = self.renderer().render(self.root)
-        self.assertIn('[/sample](skills/sample/SKILL.md)', output['README.md'])
+        self.assertIn('[/sample](skills/sample/SKILL.md)', output['README.en.md'])
         self.assertIn('Claude Code', output['docs/skills/sample.md'])
         self.assertIn('`/sample`', output['docs/skills/sample.md'])
         self.assertIn('`$sample`', output['docs/skills/sample.md'])

@@ -1,14 +1,14 @@
-# Liyuk Skills
+# Liyuk Skills（简体中文）
+
+[English README](README.en.md)
 
 把工程判断、团队管理和沟通经验，变成可以直接调用的 AI 技能。
-
-Reusable AI agent skills for engineering decisions, leadership, communication, and personal knowledge distillation. Chinese-first, with Claude Code and Codex usage examples.
 
 [快速开始](#安装与调用) · [常用指令](#常用指令) · [方法目录](#方法目录) · [更新记录](CHANGELOG.md) · [贡献方法](CONTRIBUTING.md) · [MIT 许可](LICENSE)
 
 **不确定该从哪开始，就用 Ask Liyuk。** 整个仓库承载个人方法：规划、评审、指标、复盘、表达、经历自查、人际互动与日常选择。Ask Liyuk 帮你选路，各项技能完成具体任务。
 
-当前版本 **0.5.0 / preview**：共二十一项技能，五项工程技能迁自 [engineering-decision-skills](https://github.com/Liyuk/engineering-decision-skills)，两项人际技能迁自 [RelationForge](https://github.com/Liyuk/relation-forge)，其余从博客等素材提炼。新提炼的方法仍需要真实使用与本人校准。中文优先，采用 [Agent Skills 文件格式](https://agentskills.io/specification)。
+当前版本 **0.5.0 / preview**：共二十一项技能，五项工程技能迁自 [engineering-decision-skills](https://github.com/Liyuk/engineering-decision-skills)，两项人际技能迁自 [RelationForge](https://github.com/Liyuk/relation-forge)，其余从博客等素材提炼。新提炼的方法仍需要真实使用与本人校准。本文件为中文版本，与英文 README 对应；采用 [Agent Skills 文件格式](https://agentskills.io/specification)。
 
 ## 安装与调用
 
@@ -84,6 +84,8 @@ Codex CLI/IDE 也可通过 `/skills` 选择技能；它是选择入口，不是�
 ## 方法目录
 
 下表以 Claude Code 文件安装的 `/名称` 展示；Codex 对应 `$名称`，插件调用需加上述前缀。
+
+目录中的技能名称、核心判断与验证状态见下表。
 
 <!-- skills-catalog:start -->
 
