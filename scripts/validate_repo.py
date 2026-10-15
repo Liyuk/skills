@@ -197,7 +197,7 @@ def validate(root: Path) -> list[str]:
                 error('router method map does not match catalog')
     flows = root / 'skills/ask-liyuk/references/task-flows.md'
     if flows.is_file():
-        mentioned = set(re.findall(r'(?<![A-Za-z0-9_-])([a-z]+(?:-[a-z]+)+)(?![A-Za-z0-9_-])', flows.read_text()))
+        mentioned = set(re.findall(r'`([a-z0-9]+(?:-[a-z0-9]+)*)`', flows.read_text()))
         for unknown in sorted(mentioned - names):
             error('task-flows mentions unknown skill: ' + unknown)
     contracts = list((root / 'skills').glob('*/references/decision-and-review-contract.md'))

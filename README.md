@@ -52,6 +52,11 @@ Codex CLI/IDE 也可通过 `/skills` 选择技能；它是选择入口，不是�
 | 评审已有技术方案 | `/tech-review` | `$tech-review` |
 | 判断该指导、支持还是授权 | `/situational-leadership` | `$situational-leadership` |
 | 把自己的经历蒸馏成方法 | `/distill-experience` | `$distill-experience` |
+| 方案看似正确却没解决问题 | `/problem-location` | `$problem-location` |
+| 刚进入陌生团队或业务 | `/new-context-onboarding` | `$new-context-onboarding` |
+| 统筹多位负责人和团队 | `/manager-of-managers` | `$manager-of-managers` |
+| 准备面试追问、整理候选人证据 | `/hiring-assessment` | `$hiring-assessment` |
+| 主动判断新业务或创业项目 | `/project-diligence` | `$project-diligence` |
 
 安装对应技能后，在指令后直接写问题或材料即可。Claude Code 插件安装时，以上 `/名称` 改为 `/liyuk-skills:名称`。
 

@@ -100,13 +100,23 @@ class ValidationTests(unittest.TestCase):
         self.assertTrue(any('duplicate' in e for e in self.check()))
 
     def test_task_flow_with_unknown_hyphenated_skill_is_rejected(self):
-        self.write('skills/ask-liyuk/references/task-flows.md', '先用ghost-skill，再接sample。\n')
+        self.write('skills/ask-liyuk/references/task-flows.md', '先用`ghost-skill`，再接`sample`。\n')
         self.assertTrue(any('task-flows' in e and 'ghost-skill' in e for e in self.check()))
 
     def test_task_flow_with_only_known_skills_passes(self):
         self.put('catalog/skills.json', {'version': '0.1.0', 'skills': [{'name': 'sample', 'path': 'skills/sample', 'invocation': 'automatic', 'sources': ['origin'], 'status': 'preview'}]})
-        self.write('skills/ask-liyuk/references/task-flows.md', '先用sample。\n')
+        self.write('skills/ask-liyuk/references/task-flows.md', '先用`sample`。\n')
         self.assertEqual([], self.check())
+
+    def test_task_flow_prose_is_not_a_skill_reference(self):
+        self.write('skills/ask-liyuk/references/task-flows.md', 'source-backed / 1-on-1 是说明文字。先用`sample`。\n')
+        self.assertEqual([], self.check())
+
+    def test_task_flow_unknown_single_word_and_numeric_names_rejected(self):
+        self.write('skills/ask-liyuk/references/task-flows.md', '先用`missing`，再用`stage-2`。\n')
+        errors = self.check()
+        for name in ['missing', 'stage-2']:
+            self.assertTrue(any('task-flows' in e and name in e for e in errors))
 
 
 if __name__ == '__main__':
