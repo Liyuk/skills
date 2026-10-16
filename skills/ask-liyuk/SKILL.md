@@ -1,6 +1,6 @@
 ---
 name: ask-liyuk
-description: 根据当前问题，选择 Liyuk Skills 中合适的方法和下一步。
+description: 根据当前问题，选择 Liyuk Skills 中合适的方法和下一步。只做导航，不代替专项技能完成判断。
 license: MIT
 disable-model-invocation: true
 ---

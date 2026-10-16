@@ -1,12 +1,12 @@
 ---
 name: conflict-alignment
-description: 处理项目或协作分歧，厘清共同目标、事实版本、选择与决策权；适用于解决合作冲突，不把意见不同当作人格问题。
+description: 处理项目或协作分歧，厘清共同目标、事实版本、选择与决策权。怎样表达用 conversation-preparation，是否答应用 relationship-boundaries，二线跨团队取舍与授权用 manager-of-managers。不把意见不同当作人格问题。
 license: MIT
 ---
 
 # 冲突对齐
 
-把“对方不配合”还原成可以协商的对象：要改变什么、各自基于哪些事实、谁能决定什么。
+把“对方不配合”还原成可以协商的对象：要改变什么、各自基于哪些事实、谁能决定什么。怎样把已经决定的范围说出来，用 `conversation-preparation`。还没判断自己能答应什么，用 `relationship-boundaries`。二线要在多个团队之间取舍或授权，用 `manager-of-managers`。
 
 ## 工作方法
 

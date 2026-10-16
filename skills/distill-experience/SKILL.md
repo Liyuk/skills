@@ -1,13 +1,13 @@
 ---
 name: distill-experience
-description: 与作者一起把一个真实经历整理为可验证的方法卡和候选 skill。
+description: 与作者一起把一个真实经历整理为可验证的方法卡和候选 skill。已完成的工程工作只需要形成学习时用 management-retro，不在这里代替复盘。
 license: MIT
 disable-model-invocation: true
 ---
 
 # 蒸馏经验
 
-作者提供经历并确认方法，AI 帮助整理、检查和设计新案例。适用于 Liyuk 或其他明确提供材料的作者；用户材料不自动成为 Liyuk 的观点。
+作者提供经历并确认方法，AI 帮助整理、检查和设计新案例。适用于 Liyuk 或其他明确提供材料的作者；用户材料不自动成为 Liyuk 的观点。只想从已完成的工程工作里决定下次保留、改变或停止什么，用 `management-retro`；这里还要把经历整理成可复用方法。
 
 ## 从经历还原判断
 

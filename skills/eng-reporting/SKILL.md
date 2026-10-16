@@ -1,6 +1,6 @@
 ---
 name: eng-reporting
-description: Use when turning notes, meeting records, established project conclusions, or engineering achievements into a management update, project summary, self-review, or promotion narrative.
+description: Use when turning notes, meeting records, established project conclusions, or engineering achievements into a management update, project summary, self-review, or promotion narrative without upgrading the evidence. Do not use it to decide why something happened or what to change next (use management-retro), to judge whether an experience claim is evidenced (use experience-review), to judge an unshipped proposal (use tech-review), to choose future capacity (use tech-planning), or to validate a metric (use metric-decision).
 license: MIT
 compatibility: 适用于可读取文档、会议纪要、文本笔记和本地参考文件的 Agent 环境。
 ---
@@ -18,7 +18,7 @@ compatibility: 适用于可读取文档、会议纪要、文本笔记和本地�
 - 把成果条目整理成自评、晋升或答辩材料；
 - 把已有结论的复盘改写成老板或跨团队伙伴看得懂的版本。
 
-如果还需要判断“为什么会这样”以及下次该保留、改变或停止什么，用 `management-retro`。如果主要问题是指标是否可信，用 `metric-decision`；如果是评审一份尚未实施的方案，用 `tech-review`。
+如果还需要判断“为什么会这样”以及下次该保留、改变或停止什么，用 `management-retro`。如果主要问题是指标是否可信，用 `metric-decision`；如果是评审一份尚未实施的方案，用 `tech-review`；如果要决定未来把能力投向哪里，用 `tech-planning`。经历材料是否有证据，用 `experience-review`。
 
 ## 工作方式
 
@@ -54,6 +54,6 @@ compatibility: 适用于可读取文档、会议纪要、文本笔记和本地�
 
 这比直接写“问题已解决、风险已消除”更可靠，也更方便读者知道下一步该判断什么。
 
-详细方法见 [references/REFERENCE.md](references/REFERENCE.md)，常用模板见 [assets/templates.md](assets/templates.md) 和 [assets/input-templates.md](assets/input-templates.md)。
+详细方法见 [references/REFERENCE.md](references/REFERENCE.md)，常用模板见 [assets/templates.md](assets/templates.md) 和 [assets/input-templates.md](assets/input-templates.md)。证据状态见 [references/decision-and-review-contract.md](references/decision-and-review-contract.md)。
 
 材料是一段口语化原话、众筹式规划，或要把同一进展同步给负责人、协作者和执行者时，读 [口语到可决策文档](references/spoken-to-decision.md)：整理只让表达更具体，不补原话没有的事实；转述涉及资源或优先级时引用最上游描述。

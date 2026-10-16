@@ -21,7 +21,8 @@ class ValidationTests(unittest.TestCase):
         self.put('catalog/sources.json', {'sources': [{'id': 'origin', 'role': 'test fixture'}]})
         self.put('.claude-plugin/plugin.json', {'name': 'liyuk-skills', 'version': '0.1.0', 'skills': ['./skills/sample']})
         self.put('.claude-plugin/marketplace.json', {'name': 'liyuk', 'owner': {'name': 'Liyuk'}, 'plugins': [{'name': 'liyuk-skills', 'source': './'}]})
-        self.write('README.md', '[sample](skills/sample/SKILL.md)\n')
+        self.write('README.md', '[English README](README.en.md)\n[sample](skills/sample/SKILL.md)\n')
+        self.write('README.en.md', '[Chinese](README.md)\n')
 
     def write(self, name, text):
         p = self.root / name
@@ -117,6 +118,29 @@ class ValidationTests(unittest.TestCase):
         errors = self.check()
         for name in ['missing', 'stage-2']:
             self.assertTrue(any('task-flows' in e and name in e for e in errors))
+
+    def test_description_must_name_boundary_neighbor(self):
+        self.write('skills/other/SKILL.md', '---\nname: other\ndescription: Handle the other task.\nlicense: MIT\n---\n# Other\n')
+        self.write('skills/other/LICENSE', 'MIT License\n')
+        self.write('skills/other/agents/openai.yaml', 'interface:\n  display_name: Other\n  short_description: Other task\n')
+        self.put('skills/other/evals/evals.json', [{'id': 'normal', 'prompt': 'Review.', 'expected_output': 'Bound conclusions.', 'files': []}])
+        catalog = json.loads((self.root / 'catalog/skills.json').read_text())
+        catalog['skills'].append({'name': 'other', 'path': 'skills/other', 'invocation': 'automatic', 'sources': ['origin'], 'boundary': '改用 sample。'})
+        catalog['skills'][0]['boundary'] = '改用 other。'
+        self.put('catalog/skills.json', catalog)
+        self.put('.claude-plugin/plugin.json', {'name': 'liyuk-skills', 'version': '0.1.0', 'skills': ['./skills/sample', './skills/other']})
+        errors = self.check()
+        self.assertTrue(any('sample: description omits neighboring skill' in e and 'other' in e for e in errors))
+        self.assertTrue(any('other: description omits neighboring skill' in e and 'sample' in e for e in errors))
+
+    def test_readme_section_counts_must_match(self):
+        self.write('README.md', '[English README](README.en.md)\n[sample](skills/sample/SKILL.md)\n\n## 一\n\n## 二\n')
+        self.write('README.en.md', '[Chinese](README.md)\n\n## One\n')
+        self.assertTrue(any('section count differs' in e for e in self.check()))
+
+    def test_missing_repo_link_is_reported(self):
+        self.write('docs/note.md', '[Missing](missing.md)\n')
+        self.assertTrue(any('missing local link' in e for e in self.check()))
 
 
 if __name__ == '__main__':

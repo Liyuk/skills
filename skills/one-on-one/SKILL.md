@@ -1,12 +1,12 @@
 ---
 name: one-on-one
-description: 准备或整理上下级一对一，关注双方目标、预期、支持、风险与授权；适用于管理沟通，不将状态同步、晋升或心理判断强加给每次谈话。
+description: 准备或整理上下级一对一，关注双方目标、预期、支持、风险与授权。选择某项任务的指导或授权方式用 situational-leadership；通用谈话措辞用 conversation-preparation；刚进入新环境、需要先获取信息时用 new-context-onboarding。不将状态同步、晋升或心理判断强加给每次谈话。
 license: MIT
 ---
 
 # 1-on-1 对齐
 
-帮助上下级了解彼此希望获得什么，并把信息、支持和决策权讲清楚。
+帮助上下级了解彼此希望获得什么，并把信息、支持和决策权讲清楚。要选择某项任务的指导、支持或授权方式，用 `situational-leadership`。只需要谈话措辞时用 `conversation-preparation`。刚进入陌生环境、还缺信息时先用 `new-context-onboarding`。
 
 ## 工作方法
 
