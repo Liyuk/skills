@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Name neighboring skills in each entrypoint description, and state the handoff in the skill body where the loaded method could otherwise continue.
+- Keep shared evidence-contract and RelationForge reference copies installable inside each skill package, with `shared/` as the only editable source.
+- Stop eng-reporting examples from upgrading a note into a stronger role, benefit, or mechanism than the source contains.
+- Check that README.md and README.zh-CN.md stay paired, that local Markdown links resolve, and that descriptions include the neighboring skills named in the catalog.
+- Make README.md the English default page and keep the Chinese edition at README.zh-CN.md. Generate a Use instead / 改用 column in both catalogs from boundary and boundary_en.
+
 ## 0.5.0 (2026-10-14)
 
 - Distill five new previews from pinned public blog posts: problem location, new-context onboarding, manager of managers, hiring assessment and project diligence (explicit invocation only).

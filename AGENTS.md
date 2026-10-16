@@ -13,12 +13,12 @@ This repository distills Liyuk's practical methods. Ask Liyuk is the navigator; 
 ## Skill maintenance
 
 - Keep each skills/<name> package self-contained. Local runtime links must stay inside it; no links to another skill or repository-only shared files.
-- catalog/skills.json owns names, paths, invocation modes, picker descriptions, usage examples and source/calibration/validation states. Run python scripts/sync_catalog.py --write after editing it; README catalog block, method map, plugin manifest, client metadata and docs/skills are generated. Keep Ask Liyuk's task-flows and actual methods manually synchronized.
+- catalog/skills.json owns names, paths, invocation modes, picker descriptions, usage examples, Chinese and English handoff boundaries, and source/calibration/validation states. Run python scripts/sync_catalog.py --write after editing it; README catalog block, method map, plugin manifest, client metadata and docs/skills are generated. Keep Ask Liyuk's task-flows and actual methods manually synchronized.
 - Explicit entries use disable-model-invocation: true and policy.allow_implicit_invocation: false together. Task methods remain discoverable unless the user changes policy.
 - Preserve facts, numbers, attribution and unknowns. Distinguish source-backed methods from new AI-generated candidates. Only explicit author confirmation is author endorsement.
 - Review and rewriting are separate unless the user requests both. Findings require evidence and impact; do not manufacture a fixed count.
 - Method changes require realistic cases, including missing or conflicting information. Expected output is a rubric, not an execution result.
-- Keep licenses with independently installable skills. Preserve provenance of migrated files. Shared decision-contract copies must stay identical.
+- Keep licenses with independently installable skills. Preserve provenance of migrated files. Shared files listed in shared/manifest.json have one canonical copy; run python scripts/sync_shared_copies.py --write after editing it, and do not edit the skill-package copies by hand.
 - Publish only authorized source material and safe examples. Do not introduce workstation paths, private transcripts, or full third-party archives.
 - Run python -m unittest discover -s tests -v and python scripts/validate_repo.py in the configured environment before committing; also run python scripts/sync_catalog.py --check.
 

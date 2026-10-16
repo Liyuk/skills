@@ -1,6 +1,6 @@
 ---
 name: problem-location
-description: 当方案看似正确却没解决问题、讨论停在表层症状或互相指责，需要把散乱材料结构化、找出底层约束并检查方案是否对准它时使用；已有方案的评审用tech-review，完成工作的复盘用management-retro。
+description: 当方案看似正确却没解决问题、讨论停在表层症状或互相指责，需要把散乱材料结构化、找出底层约束并检查方案是否对准它时使用；已有方案的评审用 tech-review，指标口径与实验用 metric-decision，多方权限死结用 conflict-alignment，完成工作的复盘用 management-retro。
 license: MIT
 ---
 
@@ -42,7 +42,7 @@ license: MIT
 
 通常给：四格命题 → 有用的联系 → 底层问题陈述及反驳条件 → 方案对准检查与下一步调查。用户要短答时压缩为卡点、依据和下一步。已经找到底层且方案对准时直接确认，不为套方法制造问题。
 
-五镜是启发式，不替代领域事实和一手信息。追问方案，不追问人格；不给缺席者定动机。数据充足、可量化的问题，指标口径与实验交给metric-decision；有具体欺骗、胁迫或威胁线索交给interaction-risk-analysis。
+五镜是启发式，不替代领域事实和一手信息。追问方案，不追问人格；不给缺席者定动机。数据充足、可量化的问题，指标口径与实验交给 `metric-decision`；多方权限死结用 `conflict-alignment`；已经完成的工作要决定下次保留或停止什么，用 `management-retro`；评审一份已写好的方案用 `tech-review`。有具体欺骗、胁迫或威胁线索交给 `interaction-risk-analysis`。
 
 ## 按需深入
 

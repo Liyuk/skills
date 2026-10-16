@@ -14,9 +14,10 @@
 
 ```sh
 .venv/bin/python scripts/sync_catalog.py --write
+.venv/bin/python scripts/sync_shared_copies.py --write
 ```
 
-README目录、使用说明、客户端元数据和插件清单由脚本同步。Ask Liyuk的任务路径仍需人工维护，其中技能引用用行内代码标记，以便校验目录是否存在。
+README目录、使用说明、客户端元数据和插件清单由目录脚本同步。多份技能共用的文件以 shared/ 为原文，再同步进各技能包；包内副本不要手改。Ask Liyuk的任务路径仍需人工维护，其中技能引用用行内代码标记，以便校验目录是否存在。
 
 ## 提交与检查
 
@@ -26,6 +27,7 @@ README目录、使用说明、客户端元数据和插件清单由脚本同步�
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python scripts/validate_repo.py
 .venv/bin/python scripts/sync_catalog.py --check
+.venv/bin/python scripts/sync_shared_copies.py --check
 ```
 
 修改通过工作分支提交PR，说明问题、修改后的行为、实际检查和未验证范围。PR合并由维护者决定。工作约定见 [PR同步流程](docs/workflows/pr-sync.md)，方法与来源状态见 [目录](catalog/skills.json)。

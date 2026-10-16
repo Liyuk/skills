@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "source": "shared/decision-and-review-contract.md",
+      "destinations": [
+        "skills/eng-reporting/references/decision-and-review-contract.md",
+        "skills/management-retro/references/decision-and-review-contract.md",
+        "skills/metric-decision/references/decision-and-review-contract.md",
+        "skills/tech-planning/references/decision-and-review-contract.md",
+        "skills/tech-review/references/decision-and-review-contract.md"
+      ]
+    }
+  ],
+  "trees": [
+    {
+      "source": "shared/relation-forge",
+      "destinations": [
+        "skills/interaction-risk-analysis",
+        "skills/person-deep-analysis"
+      ]
+    }
+  ]
+}

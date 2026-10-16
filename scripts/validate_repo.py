@@ -4,9 +4,16 @@ import argparse
 import json
 from pathlib import Path
 import re
+import sys
 from urllib.parse import unquote, urlsplit
 
 import yaml
+
+ROOT_FOR_IMPORT = Path(__file__).resolve().parents[1]
+if str(ROOT_FOR_IMPORT) not in sys.path:
+    sys.path.insert(0, str(ROOT_FOR_IMPORT))
+
+from scripts.sync_shared_copies import copy_errors
 
 
 class UniqueLoader(yaml.SafeLoader):
@@ -84,6 +91,7 @@ def validate(root: Path) -> list[str]:
 
     entries = catalog['skills']
     names, paths = set(), set()
+    catalog_names = {e.get('name') for e in entries if isinstance(e, dict) and isinstance(e.get('name'), str)}
     try:
         readme = (root / 'README.md').read_text()
     except OSError:
@@ -114,6 +122,15 @@ def validate(root: Path) -> list[str]:
         description = meta.get('description')
         if not isinstance(description, str) or not description.strip() or len(description) > 1024:
             error(f'{name}: invalid description')
+        else:
+            boundary = entry.get('boundary')
+            if isinstance(boundary, str):
+                for other in sorted(catalog_names):
+                    if other == name:
+                        continue
+                    pattern = r'(?<![A-Za-z0-9-])' + re.escape(other) + r'(?![A-Za-z0-9-])'
+                    if re.search(pattern, boundary) and not re.search(pattern, description):
+                        error(f'{name}: description omits neighboring skill named in catalog boundary: {other}')
         if meta.get('license') != 'MIT' or not (package / 'LICENSE').is_file():
             error(f'{name}: missing MIT license declaration or file')
         invocation = entry.get('invocation')
@@ -200,9 +217,58 @@ def validate(root: Path) -> list[str]:
         mentioned = set(re.findall(r'`([a-z0-9]+(?:-[a-z0-9]+)*)`', flows.read_text()))
         for unknown in sorted(mentioned - names):
             error('task-flows mentions unknown skill: ' + unknown)
-    contracts = list((root / 'skills').glob('*/references/decision-and-review-contract.md'))
-    if len({p.read_bytes() for p in contracts}) > 1:
-        error('shared decision contract copies have drifted')
+    for message in readme_edition_errors(root):
+        error(message)
+    for message in repo_link_errors(root):
+        error(message)
+    for message in copy_errors(root):
+        error(message)
+    return errors
+
+
+def readme_edition_errors(root: Path) -> list[str]:
+    """Require the English default README and the Chinese edition to stay paired."""
+    errors = []
+    english = root / 'README.md'
+    chinese = root / 'README.zh-CN.md'
+    texts = {}
+    for path in (english, chinese):
+        if not path.is_file():
+            errors.append(f'missing required file: {path.relative_to(root)}')
+            continue
+        texts[path.name] = path.read_text()
+    if 'README.md' in texts and not texts['README.md'].startswith('[Chinese](README.zh-CN.md)'):
+        errors.append('README.md: first line must link to README.zh-CN.md')
+    if 'README.zh-CN.md' in texts and not texts['README.zh-CN.md'].startswith('[英文](README.md)'):
+        errors.append('README.zh-CN.md: first line must link to README.md')
+    if len(texts) == 2:
+        english_sections = len(re.findall(r'^## ', texts['README.md'], re.M))
+        chinese_sections = len(re.findall(r'^## ', texts['README.zh-CN.md'], re.M))
+        if english_sections != chinese_sections:
+            errors.append(
+                'README section count differs: '
+                f'README.md has {english_sections} level-2 headings, '
+                f'README.zh-CN.md has {chinese_sections}'
+            )
+    return errors
+
+
+def repo_link_errors(root: Path) -> list[str]:
+    """Report local Markdown links whose targets are not in the repository."""
+    errors = []
+    for source in sorted(root.rglob('*.md')):
+        relative = source.relative_to(root)
+        if any(part.startswith('.') for part in relative.parts):
+            continue
+        for line_number, line in enumerate(source.read_text().splitlines(), 1):
+            for match in re.finditer(r'(?<!!)\[[^\]]*\]\(([^\n]+?)\)', line):
+                target = match.group(1).strip().split(' "', 1)[0].strip('<>')
+                url = urlsplit(target)
+                if url.scheme or target.startswith('#') or target.startswith('//'):
+                    continue
+                destination = (source.parent / unquote(url.path)).resolve()
+                if not destination.exists():
+                    errors.append(f'{relative}:{line_number}: missing local link: {target}')
     return errors
 
 
@@ -215,7 +281,7 @@ def main():
         for error in errors:
             print('ERROR:', error)
         return 1
-    print('Validated skill packages, references, sources, invocation policies, eval inventory and plugin manifests.')
+    print('Validated skill packages, references, sources, invocation policies, eval inventory, plugin manifests, README editions, local links and shared copies.')
     return 0
 
 

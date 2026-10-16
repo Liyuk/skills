@@ -1,12 +1,19 @@
 ---
 name: metric-decision
-description: Use when the metric itself needs definition or validation, when a product/engineering metric changes unexpectedly, or when measurement evidence must support an action. Use tech-review for broader proposal review.
+description: Use when a metric needs definition or validation, a product or engineering metric changes unexpectedly, or measurement evidence must support an action. Do not use it for a broader proposal review (use tech-review), a capacity roadmap (use tech-planning), learning from completed work (use management-retro), rewriting an already settled conclusion (use eng-reporting), or structuring a symptom that is not yet a measurable question (use problem-location).
 license: MIT
 ---
 
 # 指标判断
 
 先确认这个数字在测什么、是怎么得到的，再决定它能支持什么行动。一个指标只有在对象、口径、数据质量和决策后果都清楚时，才适合拿来推动决定。
+
+## 什么时候用
+
+- 要定义一个指标，或核对它的对象、口径和数据质量；
+- 一个数字变了，需要判断变化是否可比、哪些解释还没被分开、下一步怎样验证。
+
+如果要评审一整份尚未实施的方案，用 `tech-review`。如果要决定能力投向和路线图，用 `tech-planning`。如果结论已经成立，只是要写成汇报，用 `eng-reporting`。如果要从已完成工作里决定下次保留、改变或停止什么，用 `management-retro`。症状还没形成可测量的问题时，用 `problem-location`。
 
 ## 工作方式
 

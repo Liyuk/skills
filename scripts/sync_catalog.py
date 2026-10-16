@@ -13,11 +13,22 @@ ORIGINS = {'migrated': '既有技能迁入', 'distilled': '素材提炼', 'navig
 CALIBRATION = {'source-backed': '有作者来源，适配未全量校准', 'partial': '部分条件经本人确认', 'candidate': '候选，待本人校准', 'not-applicable': '导航职责'}
 BEHAVIOR = {'structure-only': '结构检查', 'instruction-smoke': '有限指令冒烟', 'needs-retest': '本轮改动待行为重测'}
 BEHAVIOR_EN = {'structure-only': 'Structure check', 'instruction-smoke': 'Limited instruction smoke check', 'needs-retest': 'Behavioral retest pending'}
-REQUIRED = ['display_name', 'display_name_en', 'short_description', 'core_judgment', 'core_judgment_en', 'when_to_use', 'input_example', 'result_example', 'boundary', 'group', 'validation_report']
+REQUIRED = ['display_name', 'display_name_en', 'short_description', 'core_judgment', 'core_judgment_en', 'when_to_use', 'input_example', 'result_example', 'boundary', 'boundary_en', 'group', 'validation_report']
 
 
 def cell(value: str) -> str:
     return value.replace('|', '\\|').replace('\n', ' ')
+
+
+def read_readme(root: Path, name: str) -> str:
+    path = root / name
+    if not path.is_file():
+        raise ValueError(f'missing {name}')
+    return path.read_text()
+
+
+def neighboring_skills(text: str, names: set[str]) -> set[str]:
+    return {name for name in names if re.search(r'(?<![A-Za-z0-9-])' + re.escape(name) + r'(?![A-Za-z0-9-])', text)}
 
 
 def render(root: Path) -> dict[str, str]:
@@ -55,21 +66,24 @@ def render(root: Path) -> dict[str, str]:
         if not (root / report).is_file():
             raise ValueError(f'{name}: missing validation report')
 
-    chinese_readme = (root / 'README.md').read_text()
-    english_readme = (root / 'README.en.md').read_text()
-    for filename, content in [('README.md', chinese_readme), ('README.en.md', english_readme)]:
+    english_readme = read_readme(root, 'README.md')
+    chinese_readme = read_readme(root, 'README.zh-CN.md')
+    for filename, content in [('README.md', english_readme), ('README.zh-CN.md', chinese_readme)]:
         if content.count(START) != 1 or content.count(END) != 1 or content.index(END) < content.index(START):
             raise ValueError(f'{filename} requires one ordered catalog marker pair')
+    for e in entries:
+        if neighboring_skills(e['boundary'], names) != neighboring_skills(e['boundary_en'], names):
+            raise ValueError(f"{e['name']}: boundary and boundary_en name different neighboring skills")
     outputs = {}
-    rows_en = ['| Skill | Core judgment | Behavior check |', '| --- | --- | --- |']
-    rows_zh = ['| 指令 / 技能 | 核心判断 | 行为验证 |', '| --- | --- | --- |']
+    rows_en = ['| Skill | Core judgment | Use instead | Behavior check |', '| --- | --- | --- | --- |']
+    rows_zh = ['| 指令 / 技能 | 核心判断 | 改用 | 行为验证 |', '| --- | --- | --- | --- |']
     groups = list(dict.fromkeys(e['group'] for e in entries))
     for group in groups:
         for e in entries:
             if e['group'] == group:
-                rows_en.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name_en'])} · [Usage guide](docs/skills/{e['name']}.md) | {cell(e['core_judgment_en'])} | {BEHAVIOR_EN[e['behavior_validation']]} |")
-                rows_zh.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name'])} · [使用说明](docs/skills/{e['name']}.md) | {cell(e['core_judgment'])} | {BEHAVIOR[e['behavior_validation']]} |")
-    for filename, content, rows in [('README.md', chinese_readme, rows_zh), ('README.en.md', english_readme, rows_en)]:
+                rows_en.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name_en'])} · [Usage guide](docs/skills/{e['name']}.md) | {cell(e['core_judgment_en'])} | {cell(e['boundary_en'])} | {BEHAVIOR_EN[e['behavior_validation']]} |")
+                rows_zh.append(f"| [/{e['name']}]({e['path']}/SKILL.md) · {cell(e['display_name'])} · [使用说明](docs/skills/{e['name']}.md) | {cell(e['core_judgment'])} | {cell(e['boundary'])} | {BEHAVIOR[e['behavior_validation']]} |")
+    for filename, content, rows in [('README.md', english_readme, rows_en), ('README.zh-CN.md', chinese_readme, rows_zh)]:
         a = content.index(START) + len(START)
         b = content.index(END)
         outputs[filename] = content[:a] + '\n\n' + '\n'.join(rows) + '\n\n' + content[b:]
