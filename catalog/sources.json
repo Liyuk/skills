@@ -313,12 +313,12 @@
     {
       "id": "relation-forge",
       "repository": "https://github.com/Liyuk/relation-forge",
-      "commit": "a9e91f07a77c42abf01841461d622e11377a44d6",
+      "commit": "10aaf92821df8cc5867b1116303c3451bb8b3891",
       "worktree_modified": false,
       "files": [
         {
           "path": "skills/person-deep-analysis/SKILL.md",
-          "sha256": "f33b0d148d1f9d3f18d6f69f3a747e78e4e2583456ed81897e62ac4615d3a59a"
+          "sha256": "cd0f56a5d7f81305e82c557250364c34422109100b79a1bc17493c051de6b70e"
         },
         {
           "path": "skills/person-deep-analysis/agents/openai.yaml",
@@ -426,7 +426,7 @@
         },
         {
           "path": "skills/interaction-risk-analysis/SKILL.md",
-          "sha256": "dec5e8e0cc0671677c5121740ea51c136def6e6831e626ba642cce2b28bddabd"
+          "sha256": "4317532fa76a785815c42ba55584c348a3b8f0af9e34cf200ee59cda7b6739f1"
         },
         {
           "path": "skills/interaction-risk-analysis/agents/openai.yaml",
