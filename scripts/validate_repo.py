@@ -227,28 +227,28 @@ def validate(root: Path) -> list[str]:
 
 
 def readme_edition_errors(root: Path) -> list[str]:
-    """Require the Chinese default README and the English edition to stay paired."""
+    """Require the English default README and the Chinese edition to stay paired."""
     errors = []
-    chinese = root / 'README.md'
-    english = root / 'README.en.md'
+    english = root / 'README.md'
+    chinese = root / 'README.zh-CN.md'
     texts = {}
-    for path in (chinese, english):
+    for path in (english, chinese):
         if not path.is_file():
             errors.append(f'missing required file: {path.relative_to(root)}')
             continue
         texts[path.name] = path.read_text()
-    if 'README.md' in texts and '](README.en.md)' not in texts['README.md']:
-        errors.append('README.md: must link to README.en.md')
-    if 'README.en.md' in texts and '](README.md)' not in texts['README.en.md']:
-        errors.append('README.en.md: must link to README.md')
+    if 'README.md' in texts and not texts['README.md'].startswith('[Chinese](README.zh-CN.md)'):
+        errors.append('README.md: first line must link to README.zh-CN.md')
+    if 'README.zh-CN.md' in texts and not texts['README.zh-CN.md'].startswith('[英文](README.md)'):
+        errors.append('README.zh-CN.md: first line must link to README.md')
     if len(texts) == 2:
-        chinese_sections = len(re.findall(r'^## ', texts['README.md'], re.M))
-        english_sections = len(re.findall(r'^## ', texts['README.en.md'], re.M))
-        if chinese_sections != english_sections:
+        english_sections = len(re.findall(r'^## ', texts['README.md'], re.M))
+        chinese_sections = len(re.findall(r'^## ', texts['README.zh-CN.md'], re.M))
+        if english_sections != chinese_sections:
             errors.append(
                 'README section count differs: '
-                f'README.md has {chinese_sections} level-2 headings, '
-                f'README.en.md has {english_sections}'
+                f'README.md has {english_sections} level-2 headings, '
+                f'README.zh-CN.md has {chinese_sections}'
             )
     return errors
 

@@ -21,8 +21,8 @@ class ValidationTests(unittest.TestCase):
         self.put('catalog/sources.json', {'sources': [{'id': 'origin', 'role': 'test fixture'}]})
         self.put('.claude-plugin/plugin.json', {'name': 'liyuk-skills', 'version': '0.1.0', 'skills': ['./skills/sample']})
         self.put('.claude-plugin/marketplace.json', {'name': 'liyuk', 'owner': {'name': 'Liyuk'}, 'plugins': [{'name': 'liyuk-skills', 'source': './'}]})
-        self.write('README.md', '[English README](README.en.md)\n[sample](skills/sample/SKILL.md)\n')
-        self.write('README.en.md', '[Chinese](README.md)\n')
+        self.write('README.md', '[Chinese](README.zh-CN.md)\n[sample](skills/sample/SKILL.md)\n')
+        self.write('README.zh-CN.md', '[英文](README.md)\n')
 
     def write(self, name, text):
         p = self.root / name
@@ -134,8 +134,8 @@ class ValidationTests(unittest.TestCase):
         self.assertTrue(any('other: description omits neighboring skill' in e and 'sample' in e for e in errors))
 
     def test_readme_section_counts_must_match(self):
-        self.write('README.md', '[English README](README.en.md)\n[sample](skills/sample/SKILL.md)\n\n## 一\n\n## 二\n')
-        self.write('README.en.md', '[Chinese](README.md)\n\n## One\n')
+        self.write('README.md', '[Chinese](README.zh-CN.md)\n[sample](skills/sample/SKILL.md)\n\n## One\n\n## Two\n')
+        self.write('README.zh-CN.md', '[英文](README.md)\n\n## 一\n')
         self.assertTrue(any('section count differs' in e for e in self.check()))
 
     def test_missing_repo_link_is_reported(self):

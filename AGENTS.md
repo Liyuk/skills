@@ -13,7 +13,7 @@ This repository distills Liyuk's practical methods. Ask Liyuk is the navigator; 
 ## Skill maintenance
 
 - Keep each skills/<name> package self-contained. Local runtime links must stay inside it; no links to another skill or repository-only shared files.
-- catalog/skills.json owns names, paths, invocation modes, picker descriptions, usage examples and source/calibration/validation states. Run python scripts/sync_catalog.py --write after editing it; README catalog block, method map, plugin manifest, client metadata and docs/skills are generated. Keep Ask Liyuk's task-flows and actual methods manually synchronized.
+- catalog/skills.json owns names, paths, invocation modes, picker descriptions, usage examples, Chinese and English handoff boundaries, and source/calibration/validation states. Run python scripts/sync_catalog.py --write after editing it; README catalog block, method map, plugin manifest, client metadata and docs/skills are generated. Keep Ask Liyuk's task-flows and actual methods manually synchronized.
 - Explicit entries use disable-model-invocation: true and policy.allow_implicit_invocation: false together. Task methods remain discoverable unless the user changes policy.
 - Preserve facts, numbers, attribution and unknowns. Distinguish source-backed methods from new AI-generated candidates. Only explicit author confirmation is author endorsement.
 - Review and rewriting are separate unless the user requests both. Findings require evidence and impact; do not manufacture a fixed count.
