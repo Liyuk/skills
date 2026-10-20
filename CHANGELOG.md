@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Add a weekly Dependabot configuration for GitHub Actions and pip, grouping minor and patch updates and limiting open pull requests to five.
 - Name neighboring skills in each entrypoint description, and state the handoff in the skill body where the loaded method could otherwise continue.
 - Keep shared evidence-contract and RelationForge reference copies installable inside each skill package, with `shared/` as the only editable source.
 - Stop eng-reporting examples from upgrading a note into a stronger role, benefit, or mechanism than the source contains.
